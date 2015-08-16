@@ -1,5 +1,6 @@
 package com.shopping.service;
 import com.shopping.dao.UserDao;
+import com.shopping.pojo.Interest;
 import com.shopping.pojo.User;
 
 /**
@@ -25,8 +26,12 @@ public class UserService {
 	 * @param user
 	 * @return int
 	 */
-	public int addUser(User user) {
+	public int addUser(User user ) {
 		return userDao.addUser(user);
+	}
+	
+	public int addInterest(Interest interest){
+		return userDao.addInterest(interest);
 	}
 	
 	/**

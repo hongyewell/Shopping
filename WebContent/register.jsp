@@ -51,13 +51,13 @@ body {
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-sm-3 control-label">您最感兴趣</label>
+					<label class="col-sm-3 control-label">您较感兴趣</label>
 					<div class="col-sm-8">
-						<input name="interesting"  id="interesting1"  value="1" type="radio" />
+						<input name="interesting"  id="interesting1"  value="1" type="checkbox" />
 						<label for="interesting1">农药&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-						<input name="interesting"  id="interesting2"  value="2" type="radio" />
+						<input name="interesting"  id="interesting2"  value="2" type="checkbox" />
 						<label for="interesting2">种子&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-						<input name="interesting"  id="interesting3"  value="3" type="radio" />
+						<input name="interesting"  id="interesting3"  value="3" type="checkbox" />
 						<label for="interesting3">化肥</label>
 					</div>
 				</div>

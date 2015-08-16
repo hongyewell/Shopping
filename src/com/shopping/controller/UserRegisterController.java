@@ -1,11 +1,13 @@
 package com.shopping.controller;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.shopping.pojo.Interest;
 import com.shopping.pojo.User;
 import com.shopping.service.UserService;
 
@@ -43,14 +45,21 @@ public class UserRegisterController extends HttpServlet {
 				String password = req.getParameter("password");
 				String phone = req.getParameter("phone");
 				String address = req.getParameter("address");
-				String interesting = req.getParameter("interesting");
+				
+			
+				String [] interestID = req.getParameterValues("interesting");
 				
 				// 新建用户
-				User user = new User(username, password,phone,address,interesting);
+				User user = new User(username, password,phone,address);
+				
+				//新建用户兴趣
+				Interest interest = new Interest(username, interestID);
 				
 				int res = userService.addUser(user);
 				
-				if(res == 1) {	// 添加成功
+				int res2 = userService.addInterest(interest);
+				
+				if(res == 1 && res2 ==1) {	// 添加成功
 					// 跳转到用户列表页面
 					resp.sendRedirect(req.getContextPath()+"/login.jsp");
 					

@@ -32,7 +32,7 @@ public class ProductDao {
 	 */
 	public List<Product>queryAll(String username){
 		
-		String sql = "select * from products where typeID = (select interesting from users where username = ?);";
+		String sql = "select * from products where typeID in (select interestID from interest where username = ?);";
 		
 		Connection conn = DBUtil.getConn();
 		PreparedStatement pstmt = null;
@@ -52,8 +52,9 @@ public class ProductDao {
 				String price = rs.getString("price");
 				int number = rs.getInt("number");
 				int typeID = rs.getInt("typeID");
+				String picture= rs.getString("picture");
 				
-				Product product = new Product(id, prdname, city, price, number, typeID);
+				Product product = new Product(id, prdname, city, price, number, typeID, picture);
 				products.add(product);
 			}
 			return products;
