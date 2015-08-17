@@ -39,4 +39,14 @@
     <servlet-name>products</servlet-name>
     <url-pattern>/products</url-pattern>
   </servlet-mapping>
+  
+  <!-- 商品详情 -->
+  <servlet>
+  	<servlet-name>productDetail</servlet-name>
+  	<servlet-class>com.shopping.controller.ProductDetailController</servlet-class>
+  </servlet>
+ <servlet-mapping>
+    <servlet-name>productDetail</servlet-name>
+    <url-pattern>/productDetail</url-pattern>
+  </servlet-mapping>
 </web-app>

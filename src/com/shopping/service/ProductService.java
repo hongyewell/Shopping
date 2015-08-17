@@ -31,4 +31,18 @@ public class ProductService {
 		return productDao.queryAll(username);
 	}
 
+	
+	
+	/**
+	 * 商品详情
+	 *
+	 * @author: yeye
+	 * @createTime: 2015年8月17日 下午4:37:22
+	 * @history:
+	 * @param id
+	 * @return Product
+	 */
+	public Product getProductDetails(int id){
+		return productDao.getDetailsById(id);
+	}
 }

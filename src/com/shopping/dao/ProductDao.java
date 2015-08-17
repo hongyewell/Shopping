@@ -68,5 +68,49 @@ public class ProductDao {
 		
 		return null;
 	}
+	
+	/**
+	 * 根据商品编号获取商品详细信息
+	 *
+	 * @author: yeye
+	 * @createTime: 2015年8月17日 下午4:33:41
+	 * @history:
+	 * @param id
+	 * @return Product
+	 */
+	public Product getDetailsById(int id){
+		String sql ="select * from products where id = ?;";
+		Connection conn = DBUtil.getConn();
+		PreparedStatement pstmt  = null;
+		ResultSet rs = null;
+		
+		try {
+			pstmt = DBUtil.getPStmt(conn, sql);
+			pstmt.setInt(1, id);
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				Product product = new Product();
+				product.setId(rs.getInt("id"));
+				product.setPrdname(rs.getString("prdname"));
+				product.setCity(rs.getString("city"));
+				product.setPrice(rs.getString("price"));
+				product.setNumber(rs.getInt("number"));
+				product.setAddtime(rs.getTimestamp("addtime"));
+				product.setContact(rs.getString("contact"));
+				product.setDescription(rs.getString("description"));
+				product.setPicture(rs.getString("picture"));
+				return product;
+			}
+			else{
+				return null;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			DBUtil.closeConn(conn);
+			DBUtil.closeResultSet(rs);
+		}
+		return null;
+	}
 
 }

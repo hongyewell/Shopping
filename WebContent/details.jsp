@@ -4,13 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>用户注册</title>
+<title>商品详情</title>
 <link rel="stylesheet" href="css/bootstrap.min.css" />
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/regcheckdata.js"></script>
-<style>
-body{
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<style>
+			body{
 				font-family:"微软雅黑";
 				padding-top: 70px;
 				padding-bottom: 70px;
@@ -34,10 +33,10 @@ body{
 			.footer-top>div h4 a {
 				color: #563d7c;
 			}
-</style>
-</head>
-<body>
-        <!--
+		</style>
+	</head>
+	<body>
+		<!--
         	作者：1169902956@qq.com
         	时间：2015-08-17
         	描述：导航条
@@ -79,67 +78,88 @@ body{
 				
 			</div>
 		</nav>
-		
-		<div class="container">
-			<div style="width: 500px;margin: 40px auto;">
-			<h2 class="page-header text-center"><span class="glyphicon glyphicon-user"></span>  用户注册</h2>
-			<form action="${pageContext.request.contextPath }/addUser" method="post"  name="form" onsubmit="return checkdata()" class="form-horizontal">
-				<div class="form-group">
-					<label class="col-sm-3 control-label">用户名</label>
-					<div class="col-sm-8">
-						<input type="text" name="username" class="form-control" placeholder="只能输入字母或者数字" maxlength="10"/>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="col-sm-3 control-label">用户密码</label>
-					<div class="col-sm-8">
-						<input type="password" name="password" class="form-control" placeholder="密码长度至少六位" />
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="col-sm-3 control-label">密码确认</label>
-					<div class="col-sm-8">
-						<input type="password" name="password2" class="form-control" placeholder="请再次输入登录密码"/>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="col-sm-3 control-label">手机号码</label>
-					<div class="col-sm-8">
-						<input type="text" name="phone"  class="form-control" placeholder="仅支持中国大陆地区的手机号" maxlength="11"/>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="col-sm-3 control-label">常住地址</label>
-					<div class="col-sm-8">
-						<input type="text" name="address" class="form-control" placeholder="请输入您的常住地址"/>
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="col-sm-3 control-label">您较感兴趣</label>
-					<div class="col-sm-8">
-						<input name="interesting"  id="interesting1"  value="1" type="checkbox" />
-						<label for="interesting1">农药&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-						<input name="interesting"  id="interesting2"  value="2" type="checkbox" />
-						<label for="interesting2">种子&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-						<input name="interesting"  id="interesting3"  value="3" type="checkbox" />
-						<label for="interesting3">化肥</label>
-					</div>
-				</div>
-				<div class="form-group">
-					<div class="col-sm-offset-3 col-sm-8">
-						<button class="btn btn-primary btn-lg btn-block">注册</button>
-					</div>
-				</div>
-			</form>
-			</div>
-		</div>
+		<div style="height: 70px;"></div>
+		<!--
+        	作者：1169902956@qq.com
+        	时间：2015-08-17
+        	描述：主题内容
+        -->
+        <div class="container">
+        	<h3>商品详情</h3>
+        	<br />
+        	<div id="detail">  </div>
+        	<div class="row">
+        		<div class="col-md-6">
+        		<div class="thumbnail">
+        			<img src="img/001.jpg" />
+        		</div>
+        		</div>
+        	<div class="col-md-6">
+        		<div class="row">
+        			<div class="col-md-3">
+        				<h4>产品名称</h4>
+        			</div>
+        			<div class="col-md-9">
+        				<h4>农药</h4>
+        			</div>
+        			</div>
+        			<div class="row">
+        			<div class="col-md-3">
+        				<h4>产地</h4>
+        			</div>
+        			<div class="col-md-9">
+        				<h4>泾县</h4>
+        			</div>
+        			</div>
+        			<div class="row">
+        			<div class="col-md-3">
+        				<h4>价格</h4>
+        			</div>
+        			<div class="col-md-9">
+        				<h4>64</h4>
+        			</div>
+        			</div>
+        			<div class="row">
+        			<div class="col-md-3">
+        				<h4>数量</h4>
+        			</div>
+        			<div class="col-md-9">
+        				<h4>22</h4>
+        			</div>
+        			</div>
+        			<div class="row">
+        			<div class="col-md-3">
+        				<h4>添加时间</h4>
+        			</div>
+        			<div class="col-md-9">
+        				<h4>2015-08-17</h4>
+        			</div>
+        			</div>
+        			<div class="row">
+        			<div class="col-md-3">
+        				<h4>联系人</h4>
+        			</div>
+        			<div class="col-md-9">
+        				<h4>why</h4>
+        			</div>
+        			</div>
+        			<div class="row">
+        			<div class="col-md-3">
+        				<h4>产品信息</h4>
+        			</div>
+        			<div class="col-md-9">
+        				<h5>保花保果美果防裂果，对开花结果作物，有很好的保花保果，延长开花期，提高结果率，促进果实肥大，改变果实形态，防止裂果的作用。</h5>
+        			</div>
+        			</div>
+        	</div>
+        	</div>
+        </div>
+        
 		<!--
         	作者：1169902956@qq.com
         	时间：2015-08-17
         	描述：footer
         -->
-       <nav class="navbar  navbar-fixed-bottom">
-  		<div class="container">
 		<footer class="footer">
 			<div class="container">
 				<div class="row footer-top">
@@ -233,7 +253,6 @@ body{
 				
 			</div>
 		</footer>
-		</div>
-		</nav>
+		
 	</body>
 </html>

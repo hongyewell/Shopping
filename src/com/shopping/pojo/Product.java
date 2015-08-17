@@ -1,4 +1,6 @@
 package com.shopping.pojo;
+import java.sql.Timestamp;
+
 /**
 * @className:Product.java
 * @classDescription:
@@ -13,7 +15,13 @@ public class Product {
 	private Integer number;
 	private Integer typeID;
 	private String picture;
+	private String description;
+	private Timestamp addtime;
+	private String contact;
 	
+	public Product(){
+		
+	}
 	
 	public Product(Integer id, String prdname, String city, String price, Integer number, Integer typeID) {
 		this.id = id;
@@ -24,8 +32,6 @@ public class Product {
 		this.typeID = typeID;
 	}
 
-	
-	
 
 	public Product(Integer id, String prdname, String city, String price, Integer number, Integer typeID,
 			String picture) {
@@ -37,6 +43,20 @@ public class Product {
 		this.typeID = typeID;
 		this.picture = picture;
 	}
+	
+	public Product(Integer id, String prdname, String city, String price, Integer number, Integer typeID,
+			String picture, String description, Timestamp addtime, String contact) {
+		this.id = id;
+		this.prdname = prdname;
+		this.city = city;
+		this.price = price;
+		this.number = number;
+		this.typeID = typeID;
+		this.picture = picture;
+		this.description = description;
+		this.addtime = addtime;
+		this.contact = contact;
+	}
 
 
 
@@ -46,9 +66,13 @@ public class Product {
 	}
 
 
+
+
 	public void setId(Integer id) {
 		this.id = id;
 	}
+
+
 
 
 	public String getPrdname() {
@@ -56,9 +80,13 @@ public class Product {
 	}
 
 
+
+
 	public void setPrdname(String prdname) {
 		this.prdname = prdname;
 	}
+
+
 
 
 	public String getCity() {
@@ -66,9 +94,13 @@ public class Product {
 	}
 
 
+
+
 	public void setCity(String city) {
 		this.city = city;
 	}
+
+
 
 
 	public String getPrice() {
@@ -76,9 +108,13 @@ public class Product {
 	}
 
 
+
+
 	public void setPrice(String price) {
 		this.price = price;
 	}
+
+
 
 
 	public Integer getNumber() {
@@ -86,9 +122,13 @@ public class Product {
 	}
 
 
+
+
 	public void setNumber(Integer number) {
 		this.number = number;
 	}
+
+
 
 
 	public Integer getTypeID() {
@@ -96,9 +136,13 @@ public class Product {
 	}
 
 
+
+
 	public void setTypeID(Integer typeID) {
 		this.typeID = typeID;
 	}
+
+
 
 
 	public String getPicture() {
@@ -106,9 +150,58 @@ public class Product {
 	}
 
 
+
+
 	public void setPicture(String picture) {
 		this.picture = picture;
 	}
+
+
+
+
+	public String getDescription() {
+		return description;
+	}
+
+
+
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+
+
+
+	public Timestamp getAddtime() {
+		return addtime;
+	}
+
+
+
+
+	public void setAddtime(Timestamp addtime) {
+		this.addtime = addtime;
+	}
+
+
+
+
+	public String getContact() {
+		return contact;
+	}
+
+
+
+
+	public void setContact(String contact) {
+		this.contact = contact;
+	}
+
+
+
+
+	
 	
     
 	
