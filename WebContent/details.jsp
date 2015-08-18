@@ -87,72 +87,7 @@
         <div class="container">
         	<h3>商品详情</h3>
         	<br />
-        	<div id="detail">  </div>
-        	<div class="row">
-        		<div class="col-md-6">
-        		<div class="thumbnail">
-        			<img src="img/001.jpg" />
-        		</div>
-        		</div>
-        	<div class="col-md-6">
-        		<div class="row">
-        			<div class="col-md-3">
-        				<h4>产品名称</h4>
-        			</div>
-        			<div class="col-md-9">
-        				<h4>农药</h4>
-        			</div>
-        			</div>
-        			<div class="row">
-        			<div class="col-md-3">
-        				<h4>产地</h4>
-        			</div>
-        			<div class="col-md-9">
-        				<h4>泾县</h4>
-        			</div>
-        			</div>
-        			<div class="row">
-        			<div class="col-md-3">
-        				<h4>价格</h4>
-        			</div>
-        			<div class="col-md-9">
-        				<h4>64</h4>
-        			</div>
-        			</div>
-        			<div class="row">
-        			<div class="col-md-3">
-        				<h4>数量</h4>
-        			</div>
-        			<div class="col-md-9">
-        				<h4>22</h4>
-        			</div>
-        			</div>
-        			<div class="row">
-        			<div class="col-md-3">
-        				<h4>添加时间</h4>
-        			</div>
-        			<div class="col-md-9">
-        				<h4>2015-08-17</h4>
-        			</div>
-        			</div>
-        			<div class="row">
-        			<div class="col-md-3">
-        				<h4>联系人</h4>
-        			</div>
-        			<div class="col-md-9">
-        				<h4>why</h4>
-        			</div>
-        			</div>
-        			<div class="row">
-        			<div class="col-md-3">
-        				<h4>产品信息</h4>
-        			</div>
-        			<div class="col-md-9">
-        				<h5>保花保果美果防裂果，对开花结果作物，有很好的保花保果，延长开花期，提高结果率，促进果实肥大，改变果实形态，防止裂果的作用。</h5>
-        			</div>
-        			</div>
-        	</div>
-        	</div>
+        	<div id="detail"></div>
         </div>
         
 		<!--
@@ -253,6 +188,119 @@
 				
 			</div>
 		</footer>
+	<!--
+		获取到index.jsp请求的参数
+		作为隐藏域	
+	-->
+	<input type="hidden" id="proId" value="<%=request.getParameter("id") %>" /> 
 		
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/scripts/jquery-1.8.3.min.js"></script>
+	
+	<script type="text/javascript">
+		var contextPath = '${pageContext.request.contextPath}';
+	</script>
+	
+	<script type="text/javascript">
+		$(function() {
+			// 请求productDetailServlet中的doget方法
+			var id = $('#proId').val();	// 获取隐藏域中的值
+			var data = {'id': id};
+			$.post(contextPath+'/productDetail', data, 'json').done(function(datas) {
+				
+				// 将后台返回的字符串数据转换成json格式的
+				datas = JSON.parse(datas);
+				
+				var html = '';
+				
+					var product = datas;
+					var pic = 'img/'+product.picture;
+					
+					html += "<div class=\"row\">"
+							+ "<div class=\"col-md-6\">"
+							+ "<div class=\"thumbnail\">"
+							+ "<img src='"+pic+"' />"
+							+ "</div>"
+							+ "</div>"
+							+ "<div class=\"col-md-6\">"
+							+ "<div class=\"row\">"
+							+ "<div class=\"col-md-3\">"
+							+ "<h4>"
+							+ "产品名称"
+							+ "</h4>"
+							+ "</div>"
+							+ "<div class=\"col-md-9\">"
+							+ '<h4>'+product.prdname+'</h4>'
+							+ "</div>"
+							+ "</div>"
+							+ "<div class=\"row\">"
+							+ "<div class=\"col-md-3\">"
+							+ "<h4>"
+							+ "产地"
+							+ "</h4>"
+							+ "</div>"
+							+ "<div class=\"col-md-9\">"
+							+ '<h4>'+product.city+'</h4>'
+							+ "</div>"
+							+ "</div>"
+							+ "<div class=\"row\">"
+							+ "<div class=\"col-md-3\">"
+							+ "<h4>"
+							+ "价格"
+							+ "</h4>"
+							+ "</div>"
+							+ "<div class=\"col-md-9\">"
+							+ '<h4>'+product.price+'</h4>'
+							+ "</div>"
+							+ "</div>"
+							+ "<div class=\"row\">"
+							+ "<div class=\"col-md-3\">"
+							+ "<h4>"
+							+ "数量"
+							+ "</h4>"
+							+ "</div>"
+							+ "<div class=\"col-md-9\">"
+							+ '<h4>'+product.number+'</h4>'
+							+ "</div>"
+							+ "</div>"
+							+ "<div class=\"row\">"
+							+ "<div class=\"col-md-3\">"
+							+ "<h4>"
+							+ "添加时间"
+							+ "</h4>"
+							+ "</div>"
+							+ "<div class=\"col-md-9\">"
+							+ '<h4>'+product.addtime+'</h4>'
+							+ "</div>"
+							+ "</div>"
+							+ "<div class=\"row\">"
+							+ "<div class=\"col-md-3\">"
+							+ "<h4>"
+							+ "联系人"
+							+ "</h4>"
+							+ "</div>"
+							+ "<div class=\"col-md-9\">"
+							+ '<h4>'+product.contact+'</h4>'
+							+ "</div>"
+							+ "</div>"
+							+ "<div class=\"row\">"
+							+ "<div class=\"col-md-3\">"
+							+ "<h4>"
+							+ "产品信息"
+							+ "</h4>"
+							+ "</div>"
+							+ "<div class=\"col-md-9\">"
+							+ '<h4>'+product.description+'</h4>'
+							+ "</div>"
+							+ "</div>"
+							+ "</div>"
+							+ "</div>"
+	        			
+				$('#detail').html(html);
+				
+			}).fail(function(res) {
+			});
+			
+		});	
+	</script>
 	</body>
 </html>

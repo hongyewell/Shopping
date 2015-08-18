@@ -1,4 +1,4 @@
-aa<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -264,6 +264,9 @@ aa<%@ page language="java" contentType="text/html; charset=UTF-8"
 				for(var i = 0, len = datas.length; i < len; i++) {
 					var product = datas[i];
 					var pic = 'img/'+product.picture;
+					/*
+					 点击链接 请求的是details.jsp页面
+					*/
 					var link = 'details.jsp?id='+product.id;
 					
 					html += "<div class=\"col-md-3\">"

@@ -21,15 +21,16 @@ import com.shopping.service.ProductService;
 public class ProductDetailController extends HttpServlet {
 	
 	private static final long serialVersionUID = 3087922193990510890L;
-	
+
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		resp.setCharacterEncoding("utf-8");
+	    resp.setCharacterEncoding("utf-8");
 		
 		ProductService productService = new ProductService();
 		
 		Integer id =Integer.parseInt(req.getParameter("id")) ;
+		
 		Product productDetail = productService.getProductDetails(id);
 		
 		Gson gson = new Gson();
@@ -37,5 +38,7 @@ public class ProductDetailController extends HttpServlet {
 		PrintWriter out = resp.getWriter();
 		out.write(productDetailJson);
 	}
+	
+	
 
 }
