@@ -91,11 +91,14 @@
         	</div>
         	<br />
         	<div class="row">
-        	      	<div id="detail">
+        	<div class="col-md-9">
+        			<div id="detail">
         	
         			</div>
+        	</div>
+        	      	
         	
-        			   	<div class="col-md-3">
+        	<div class="col-md-3">
         		
 				<div class="thumbnail" >
         			<div class="row">
