@@ -45,4 +45,17 @@ public class ProductService {
 	public Product getProductDetails(int id){
 		return productDao.getDetailsById(id);
 	}
+	
+	/**
+	 * 获取浏览前三条的记录
+	 *
+	 * @author: yeye
+	 * @createTime: 2015年8月18日 下午8:56:36
+	 * @history:
+	 * @param list
+	 * @return List<Product>
+	 */
+	public List<Product>getViewList(String list){
+		return productDao.getViewList(list); 
+	}
 }

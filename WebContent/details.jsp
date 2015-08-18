@@ -85,9 +85,56 @@
         	描述：主题内容
         -->
         <div class="container">
-        	<h3>商品详情</h3>
+        	<div class="row">
+        		<div class="col-md-9"><h3>商品详情</h3></div>
+        		<div class="col-md-3"><h3>您浏览过的商品</h3></div>
+        	</div>
         	<br />
-        	<div id="detail"></div>
+        	<div class="row">
+        	      	<div id="detail">
+        	
+        			</div>
+        	
+        			   	<div class="col-md-3">
+        		
+				<div class="thumbnail" >
+        			<div class="row">
+        				<div class="col-md-4"><img src="img/002.jpg" class="pic" style="width: 90px; height: 80px;"  /></div>
+        				<div class="col-md-4" style="margin-top:18px">
+							<h4><a>农药1</a></h4>
+        				</div>
+        				<div class="col-md-4" style="margin-top:28px">
+        					<p>20元</p>
+        				</div>
+        			</div>
+				</div>
+				<div class="thumbnail" >
+        			<div class="row">
+        				<div class="col-md-4"><img src="img/002.jpg" class="pic" style="width: 90px; height: 80px;"  /></div>
+        				<div class="col-md-4" style="margin-top:18px">
+							<h4><a>农药1</a></h4>
+        				</div>
+        				<div class="col-md-4" style="margin-top:28px">
+        					<p>20元</p>
+        				</div>
+        			</div>
+				</div>
+				<div class="thumbnail" >
+        			<div class="row">
+        				<div class="col-md-4"><img src="img/002.jpg" class="pic" style="width: 90px; height: 80px;"  /></div>
+        				<div class="col-md-4" style="margin-top:18px">
+							<h4><a>农药1</a></h4>
+        				</div>
+        				<div class="col-md-4" style="margin-top:28px">
+        					<p>20元</p>
+        				</div>
+        			</div>
+				</div>
+        	</div>
+        	
+     
+        	</div>
+       
         </div>
         
 		<!--
@@ -216,12 +263,12 @@
 					var pic = 'img/'+product.picture;
 					
 					html += "<div class=\"row\">"
-							+ "<div class=\"col-md-6\">"
+							+ "<div class=\"col-md-4\">"
 							+ "<div class=\"thumbnail\">"
 							+ "<img src='"+pic+"' />"
 							+ "</div>"
 							+ "</div>"
-							+ "<div class=\"col-md-6\">"
+							+ "<div class=\"col-md-5\">"
 							+ "<div class=\"row\">"
 							+ "<div class=\"col-md-3\">"
 							+ "<h4>"

@@ -112,5 +112,40 @@ public class ProductDao {
 		}
 		return null;
 	}
+	
+	
+	/**
+	 * 获取最近浏览的前三条商品信息
+	 *
+	 * @author: yeye
+	 * @createTime: 2015年8月18日 下午8:40:40
+	 * @history:
+	 * @param list
+	 * @return ArrayList<Product>
+	 */
+	public List<Product>getViewList(String list){
+		List<Product> productlist = new ArrayList<Product>();
+		int iCount= 3;
+		if (list!=null && list.length()>0) {
+			String[] arr = list.split(",");
+			//如果商品记录打于等于3条
+			if (arr.length >= 3) {
+				for(int i = arr.length-1; i>=arr.length-iCount;i--)
+				{
+					productlist.add(getDetailsById(Integer.parseInt(arr[i])));
+				}
+			}
+			else
+			{
+				for (int i =arr.length-1;i>=0;i-- ) {
+					productlist.add(getDetailsById(Integer.parseInt(arr[i])));
+				}
+			}
+			return productlist;
+		}
+		else {
+			return null;
+		}
+	}
 
 }
