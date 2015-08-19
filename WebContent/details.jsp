@@ -337,7 +337,7 @@
 					var product = datas[i];
 					var pic = 'img/'+product.picture;
 					
-					html += + "<div class=\"row\">"
+					html += "<div class=\"row\">"
 							+ "<div class=\"thumbnail\" >"
 							+ "<div class=\"row\">"
 							+ "<div class=\"col-md-4\">"
