@@ -39,15 +39,24 @@ public class ProductListController extends HttpServlet {
 		HttpSession session = req.getSession();
 		
 		String username = (String) session.getAttribute("username");
-		
-	
 		ProductService productService = new ProductService();
-		List<Product> products = productService.getAllProduct( username);
 		
-		Gson gson = new Gson();
-		String productJson = gson.toJson(products);
-		PrintWriter out = resp.getWriter();
-		out.write(productJson);
-	
+		
+		if (username==null) {
+			List<Product> products = productService.getAllProduct();
+			
+			Gson gson = new Gson();
+			String productJson = gson.toJson(products);
+			PrintWriter out = resp.getWriter();
+			out.write(productJson);
+		}else {
+			List<Product> products = productService.getCareProduct(username);
+			
+			Gson gson = new Gson();
+			String productJson = gson.toJson(products);
+			PrintWriter out = resp.getWriter();
+			out.write(productJson);
+		}
+
 	}
 }

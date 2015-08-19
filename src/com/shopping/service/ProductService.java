@@ -19,16 +19,33 @@ public class ProductService {
 		this.productDao = new ProductDao();
 	}
 	
+	
+	
 	/**
-	 * 商品列表
+	 * 所有商品列表
+	 *
+	 * @author: yeye
+	 * @createTime: 2015年8月19日 下午7:44:14
+	 * @history:
+	 * @return List<Product>
+	 */
+	public List<Product>getAllProduct(){
+		return productDao.queryAllProduct();
+	}
+	
+	
+	
+	
+	/**
+	 * 感兴趣的商品列表
 	 *
 	 * @author: yeye
 	 * @createTime: 2015年8月13日 下午3:18:53
 	 * @history:
 	 * @return List<Product>
 	 */
-	public List<Product> getAllProduct(String username) {
-		return productDao.queryAll(username);
+	public List<Product> getCareProduct(String username) {
+		return productDao.queryCareProduct(username);
 	}
 
 	
@@ -45,6 +62,9 @@ public class ProductService {
 	public Product getProductDetails(int id){
 		return productDao.getDetailsById(id);
 	}
+	
+	
+	
 	
 	/**
 	 * 获取浏览前三条的记录
