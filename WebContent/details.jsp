@@ -90,52 +90,20 @@
         		<div class="col-md-3"><h3>您浏览过的商品</h3></div>
         	</div>
         	<br />
+        	
         	<div class="row">
         	<div class="col-md-9">
         			<div id="detail">
         	
         			</div>
         	</div>
-        	      	
         	
         	<div class="col-md-3">
-        		
-				<div class="thumbnail" >
-        			<div class="row">
-        				<div class="col-md-4"><img src="img/002.jpg" class="pic" style="width: 90px; height: 80px;"  /></div>
-        				<div class="col-md-4" style="margin-top:18px">
-							<h4><a>农药1</a></h4>
-        				</div>
-        				<div class="col-md-4" style="margin-top:28px">
-        					<p>20元</p>
-        				</div>
-        			</div>
-				</div>
-				<div class="thumbnail" >
-        			<div class="row">
-        				<div class="col-md-4"><img src="img/002.jpg" class="pic" style="width: 90px; height: 80px;"  /></div>
-        				<div class="col-md-4" style="margin-top:18px">
-							<h4><a>农药1</a></h4>
-        				</div>
-        				<div class="col-md-4" style="margin-top:28px">
-        					<p>20元</p>
-        				</div>
-        			</div>
-				</div>
-				<div class="thumbnail" >
-        			<div class="row">
-        				<div class="col-md-4"><img src="img/002.jpg" class="pic" style="width: 90px; height: 80px;"  /></div>
-        				<div class="col-md-4" style="margin-top:18px">
-							<h4><a>农药1</a></h4>
-        				</div>
-        				<div class="col-md-4" style="margin-top:28px">
-        					<p>20元</p>
-        				</div>
-        			</div>
-				</div>
-        	</div>
+        			<div id="viewlist">
         	
-     
+        			</div>
+        	</div>	
+        	
         	</div>
        
         </div>
@@ -346,6 +314,49 @@
 							+ "</div>"
 	        			
 				$('#detail').html(html);
+				
+			}).fail(function(res) {
+			});
+			
+		});	
+	</script>
+	
+	<script type="text/javascript">
+		$(function() {
+			// 请求productDetailServlet中的doget方法
+			var id = $('#proId').val();	// 获取隐藏域中的值
+			var data = {'id': id};
+			$.post(contextPath+'/ViewList', data, 'json').done(function(datas) {
+				
+				// 将后台返回的字符串数据转换成json格式的
+				datas = JSON.parse(datas);
+				
+				var html = '';
+				for(var i = 0, len = datas.length; i< len; i++){
+					
+					var product = datas[i];
+					var pic = 'img/'+product.picture;
+					
+					html += + "<div class=\"row\">"
+							+ "<div class=\"thumbnail\" >"
+							+ "<div class=\"row\">"
+							+ "<div class=\"col-md-4\">"
+						    + "<img src='"+pic+"' class=\"pic\" style=\"width: 90px; height: 80px;\"  />" 
+							+ "</div>"
+							+ "<div class=\"col-md-4\" style=\"margin-top:18px\">"
+							+ "<h4>"
+							+ '<a>'+product.prdname+'</a>' 
+							+ "</h4>"
+							+ "</div>"
+							+ "<div class=\"col-md-4\" style=\"margin-top:28px\">"
+							+ '<p>'+product.price+ '</p>' 
+							+ "</div>"
+							+ "</div>"
+							+ "</div>"
+							+ "</div>"
+				}
+	        			
+				$('#viewlist').html(html);
 				
 			}).fail(function(res) {
 			});

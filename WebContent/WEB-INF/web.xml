@@ -49,4 +49,14 @@
     <servlet-name>productDetail</servlet-name>
     <url-pattern>/productDetail</url-pattern>
   </servlet-mapping>
+  
+    <!-- 最近浏览 -->
+  <servlet>
+  	<servlet-name>ViewList</servlet-name>
+  	<servlet-class>com.shopping.controller.ViewListController</servlet-class>
+  </servlet>
+ <servlet-mapping>
+    <servlet-name>ViewList</servlet-name>
+    <url-pattern>/ViewList</url-pattern>
+  </servlet-mapping>
 </web-app>
