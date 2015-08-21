@@ -62,11 +62,11 @@
   
   <!-- 获取ip地址 -->
   <servlet>
-  	<servlet-name>ipGetTest</servlet-name>
-  	<servlet-class>com.shopping.controller.ipGetTest</servlet-class>
+  	<servlet-name>IpGetController</servlet-name>
+  	<servlet-class>com.shopping.controller.IpGetController</servlet-class>
   </servlet>
  <servlet-mapping>
-    <servlet-name>ipGetTest</servlet-name>
-    <url-pattern>/ipGetTest</url-pattern>
+    <servlet-name>IpGetController</servlet-name>
+    <url-pattern>/IpGetController</url-pattern>
   </servlet-mapping>
 </web-app>
