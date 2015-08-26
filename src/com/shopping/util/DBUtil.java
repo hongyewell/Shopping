@@ -1,11 +1,14 @@
 package com.shopping.util;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Properties;
 
 /**
 * @className:DBUtil.java
@@ -15,9 +18,32 @@ import java.sql.Statement;
 */
 public class DBUtil {
 	
+	private static String driver;
+	private static String url;
+	private static String username;
+	private static String password;
+	
+	
 	static{
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			InputStream in = DBUtil.class.getResourceAsStream("/config/dbconfig.properties");
+			Properties props = new Properties();
+			try {
+				props.load(in);
+			} catch (IOException e) {
+			
+				e.printStackTrace();
+			}
+			
+			 url = props.getProperty("url");
+			 driver = props.getProperty("driver");
+			 username = props.getProperty("username");
+			 password = props.getProperty("password");
+	 
+			/* System.out.println("连接数据库----------------"+url+driver+username+password);*/
+			 
+			Class.forName(driver);
+			
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -30,7 +56,8 @@ public class DBUtil {
 	public static Connection getConn() {
 		Connection conn = null;
 		try{
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopping?user=root&password=1234");
+			conn = DriverManager.getConnection(url,username,password);
+		     
 		}catch(SQLException e){
 			e.printStackTrace();
 		}

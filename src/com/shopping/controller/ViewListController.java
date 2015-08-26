@@ -21,10 +21,12 @@ import com.shopping.service.ProductService;
 * @createTime:2015年8月18日 下午8:59:03
 */
 public class ViewListController extends HttpServlet{
+	
 	private static final long serialVersionUID = -6247386431315604528L;
 	
 	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
    
 	    resp.setCharacterEncoding("utf-8");
 	    
@@ -41,6 +43,7 @@ public class ViewListController extends HttpServlet{
                           list = c.getValue();
                       }
                  }
+                  
             list +=  req.getParameter("id" )+"," ;
             
              //如果浏览记录超过1000条，清零.

@@ -68,6 +68,7 @@
 						<li><a href="#">市场导航</a></li>
 						<li><a href="#">经销商中心</a></li>
 						<li><a href="#">关于我们</a></li>
+						<li><a href="#">${username}</a></li>
 				    </ul>
 				    <ul class="nav navbar-nav navbar-right hidden-sm">
 				    		<li><a href="login.jsp">登录</a></li>

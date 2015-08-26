@@ -5,23 +5,21 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import com.shopping.pojo.BrowsingHistory;
 import com.shopping.pojo.Interest;
 import com.shopping.pojo.User;
 import com.shopping.util.DBUtil;
 
-
-
-/**
- * 用户注册
- * 
-* @className:UserDao.java
-* @classDescription:
-* @author:yeye
-* @createTime:2015年8月12日 下午8:04:22
-*/
 public class UserDao {
 	
-	
+	/**
+	 * 用户注册
+	 * 
+	* @className:UserDao.java
+	* @classDescription:
+	* @author:yeye
+	* @createTime:2015年8月12日 下午8:04:22
+	*/
 	public int addUser(User user){
 		String sql = "insert into users values (null,?,?,?,?)";
 		
@@ -132,6 +130,42 @@ public class UserDao {
 			
 		}
 		return null;
+	}
+	
+	
+	
+	/**
+	 * 添加用户浏览记录
+	 *
+	 * @author: yeye
+	 * @createTime: 2015年8月25日 下午8:56:28
+	 * @history:
+	 * @param browsingHistory
+	 * @return int
+	 */
+	public int addBrowsingHistory(BrowsingHistory browsingHistory){
+		String sql = "insert into browsinghistory values(null,?,?,?)";
+		
+		Connection conn = DBUtil.getConn();
+		PreparedStatement pstmt = null;
+		pstmt = DBUtil.getPStmt(conn, sql);
+		
+			try {
+				int res = 0;
+				pstmt.setString(1, browsingHistory.getUsername());
+				pstmt.setInt(2, browsingHistory.getProductId());
+				pstmt.setString(3, browsingHistory.getBrowsingtime());
+				
+				res = pstmt.executeUpdate();
+				return res;
+				
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}finally {
+				DBUtil.closeConn(conn);
+				DBUtil.closeStmt(pstmt);
+			}
+		return 0;
 	}
 
 }

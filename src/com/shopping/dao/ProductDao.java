@@ -174,7 +174,7 @@ public class ProductDao {
 		int iCount= 3;
 		if (list!=null && list.length()>0) {
 			String[] arr = list.split(",");
-			//如果商品记录打于等于3条
+			//如果商品记录大于等于3条
 			if (arr.length >= 3) {
 				for(int i = arr.length-1; i>=arr.length-iCount;i--)
 				{

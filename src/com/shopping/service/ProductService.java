@@ -78,4 +78,6 @@ public class ProductService {
 	public List<Product>getViewList(String list){
 		return productDao.getViewList(list); 
 	}
+	
+	
 }

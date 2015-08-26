@@ -1,5 +1,6 @@
 package com.shopping.service;
 import com.shopping.dao.UserDao;
+import com.shopping.pojo.BrowsingHistory;
 import com.shopping.pojo.Interest;
 import com.shopping.pojo.User;
 
@@ -46,6 +47,22 @@ public class UserService {
 	 */
 	public User login(String username,String password){
 		return userDao.queryByUserNameAndPassword(username, password);
+	}
+	
+	
+	
+	/**
+	 * 保存用户浏览记录
+	 *
+	 * @author: yeye
+	 * @createTime: 2015年8月25日 下午8:46:17
+	 * @history:
+	 * @param browsingHistory
+	 * @return int
+	 */
+	
+	public int addBrowsingHistory(BrowsingHistory browsingHistory){
+		return userDao.addBrowsingHistory(browsingHistory);
 	}
 
 }

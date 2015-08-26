@@ -1,5 +1,6 @@
 package com.shopping.controller;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -7,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.gson.Gson;
 import com.shopping.util.HttpClientUtil;
 import com.shopping.util.XmlParseUtil;
 
@@ -23,9 +25,10 @@ public class IpGetController extends HttpServlet {
 	 
 	
   @Override
-protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
+protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
 		throws ServletException, IOException {
 	  
+	  	resp.setCharacterEncoding("utf-8");
 	    HttpClientUtil httpClientUtil = new HttpClientUtil();
 	
 		String ip = getIpAddrByRequest(req);
@@ -36,6 +39,11 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 		XmlParseUtil  xmlParseUtil = new XmlParseUtil();
 		
 		String xml = xmlParseUtil.xmlParse(result);
+		
+		Gson gson = new Gson();
+		String ipAddress = gson.toJson(xml);
+		PrintWriter out = resp.getWriter();
+		out.write(ipAddress);
 		
 		System.out.println("解析后的数据================"+xml);
 		
