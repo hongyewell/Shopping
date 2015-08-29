@@ -31,7 +31,8 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 	  	resp.setCharacterEncoding("utf-8");
 	    HttpClientUtil httpClientUtil = new HttpClientUtil();
 	
-		String ip = getIpAddrByRequest(req);
+		/*String ip = getIpAddrByRequest(req);*/
+		String ip = "210.45.176.147";
 		
 		String result = httpClientUtil.httpGet(ip);
 	     System.out.println("================"+result);

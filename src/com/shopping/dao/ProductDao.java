@@ -47,7 +47,7 @@ public class ProductDao {
 				int id = rs.getInt("id");
 				String prdname = rs.getString("prdname");
 				String city = rs.getString("city");
-				String price = rs.getString("price");
+				int price = rs.getInt("price");
 				int number = rs.getInt("number");
 				int typeID = rs.getInt("typeID");
 				String picture= rs.getString("picture");
@@ -95,7 +95,7 @@ public class ProductDao {
 				int id = rs.getInt("id");
 				String prdname = rs.getString("prdname");
 				String city = rs.getString("city");
-				String price = rs.getString("price");
+				int price = rs.getInt("price");
 				int number = rs.getInt("number");
 				int typeID = rs.getInt("typeID");
 				String picture= rs.getString("picture");
@@ -139,7 +139,7 @@ public class ProductDao {
 				product.setId(rs.getInt("id"));
 				product.setPrdname(rs.getString("prdname"));
 				product.setCity(rs.getString("city"));
-				product.setPrice(rs.getString("price"));
+				product.setPrice(rs.getInt("price"));
 				product.setNumber(rs.getInt("number"));
 				product.setAddtime(rs.getTimestamp("addtime"));
 				product.setContact(rs.getString("contact"));

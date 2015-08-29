@@ -67,4 +67,14 @@
     <servlet-name>GetPropertiesUtil</servlet-name>
     <url-pattern>/GetPropertiesUtil</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CarServletController</display-name>
+    <servlet-name>CarServletController</servlet-name>
+    <servlet-class>com.shopping.controller.CarServletController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CarServletController</servlet-name>
+    <url-pattern>/CarServletController</url-pattern>
+  </servlet-mapping>
 </web-app>

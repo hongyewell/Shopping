@@ -1,13 +1,43 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%String path = request.getContextPath(); 
+      String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>商品详情</title>
 <link rel="stylesheet" href="css/bootstrap.min.css" />
+<link href="css/main.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="js/jquery.min.js" ></script>
 		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+	    <script type="text/javascript" src="js/lhgcore.js"></script>
+	    <script type="text/javascript" src="js/lhgdialog.js"></script>
+	    <script type="text/javascript">
+      function selflog_show(id)
+      { 
+         var num =  document.getElementById("number").value; 
+         J.dialog.get({id: 'haoyue_creat',title: '购物成功',width: 600,height:400, link: '<%=path%>/CarServletController?id='+id+'&num='+num+'&action=add', cover:true});
+      }
+      function add()
+      {
+         var num = parseInt(document.getElementById("number").value);
+         if(num<100)
+         {
+            document.getElementById("number").value = ++num;
+         }
+      }
+      function sub()
+      {
+         var num = parseInt(document.getElementById("number").value);
+         if(num>1)
+         {
+            document.getElementById("number").value = --num;
+         }
+      }
+     
+    </script>
 		<style>
 			body{
 				font-family:"微软雅黑";
@@ -79,7 +109,6 @@
 				
 			</div>
 		</nav>
-		<div style="height: 70px;"></div>
 		<!--
         	作者：1169902956@qq.com
         	时间：2015-08-17
@@ -92,19 +121,13 @@
         	</div>
         	<br />
         	
-        	<div class="row">
-        	<div class="col-md-9">
+        	<div class="row">   
         			<div id="detail">
         	
-        			</div>
-        	</div>
-        	
-        	<div class="col-md-3">
+        			</div>      	
         			<div id="viewlist">
         	
-        			</div>
-        	</div>	
-        	
+        			</div> 	
         	</div>
        
         </div>
@@ -234,10 +257,35 @@
 					var product = datas;
 					var pic = 'img/'+product.picture;
 					
-					html += "<div class=\"row\">"
-							+ "<div class=\"col-md-4\">"
+					html += "<div class=\"col-md-4\">"
 							+ "<div class=\"thumbnail\">"
 							+ "<img src='"+pic+"' />"
+							+ "</div>"	
+							+ "<div class=\"row text-center\">"
+							+ "购买数量："
+							+ "<span id=\"sub\" onclick=\"sub();\">"
+							+ "-"
+							+ "</span>"
+							+ "<input type=\"text\" id=\"number\" name=\"number\" value=\"1\" size=\"2\" />"
+							+ "<span id=\"add\" onclick=\"add();\">"
+							+ "+"
+							+ "</span>"
+							+ "</div>"
+							+ "<br />"
+							+ "<div class=\"row text-center\">"
+							+ "<button class=\"btn btn-default\">"
+							+ "立即购买"
+							+ "</button>"
+							+ "<a href=\"javascript:selflog_show("+product.id+")\">"
+							+ "<button class=\"btn btn-default\">"
+							+ "添加到购物车"
+							+ "</button>"
+							+ "</a>"
+							+ "<a href=\"CarServletController?action=show\"> "
+							+ "<button class=\"btn btn-default\">"
+							+ "查看购物车"
+							+ "</button>"
+							+ "</a>"
 							+ "</div>"
 							+ "</div>"
 							+ "<div class=\"col-md-5\">"
@@ -338,7 +386,7 @@
 					var product = datas[i];
 					var pic = 'img/'+product.picture;
 					
-					html += "<div class=\"row\">"
+					html += "<div class=\"col-md-3\">"
 							+ "<div class=\"thumbnail\" >"
 							+ "<div class=\"row\">"
 							+ "<div class=\"col-md-4\">"

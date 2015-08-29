@@ -147,7 +147,9 @@
 					<a href="#" class="thumbnail">
 						<img src="img/005.jpg" style="height: 300px;width: 100%;" />
 					</a>
+					
 				</div>
+				<div id="ipAddress"></div>
 				
 			</div>
 		</div>
@@ -294,6 +296,38 @@
 				}
 				
 				$('#products').html(html);
+				
+			}).fail(function(res) {
+			});
+			
+		});	
+	</script>
+	
+	
+	<!-- 获取IP地址 -->
+	
+	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/scripts/jquery-1.8.3.min.js"></script>
+	
+	<script type="text/javascript">
+		var contextPath = '${pageContext.request.contextPath}';
+	</script>
+	
+	<script type="text/javascript">
+		$(function() {
+			
+			$.post(contextPath+'/IpGetController', 'json').done(function(datas) {
+				
+				// 将后台返回的字符串数据转换成json格式的
+				datas = JSON.parse(datas);
+				var html = '';
+					var idAddress = datas;
+					html += "<div>"
+							
+							+ '<p>'+idAddress+'</p>'
+							
+						 + '</div>';
+							
+				$('#ipAddress').html(html);
 				
 			}).fail(function(res) {
 			});

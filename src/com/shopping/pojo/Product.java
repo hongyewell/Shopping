@@ -11,7 +11,7 @@ public class Product {
 	private Integer id;
 	private String prdname;
 	private String city;
-	private String price;
+	private Integer price;
 	private Integer number;
 	private Integer typeID;
 	private String picture;
@@ -23,7 +23,7 @@ public class Product {
 		
 	}
 	
-	public Product(Integer id, String prdname, String city, String price, Integer number, Integer typeID) {
+	public Product(Integer id, String prdname, String city, Integer price, Integer number, Integer typeID) {
 		this.id = id;
 		this.prdname = prdname;
 		this.city = city;
@@ -33,7 +33,7 @@ public class Product {
 	}
 
 
-	public Product(Integer id, String prdname, String city, String price, Integer number, Integer typeID,
+	public Product(Integer id, String prdname, String city, Integer price, Integer number, Integer typeID,
 			String picture) {
 		this.id = id;
 		this.prdname = prdname;
@@ -44,7 +44,7 @@ public class Product {
 		this.picture = picture;
 	}
 	
-	public Product(Integer id, String prdname, String city, String price, Integer number, Integer typeID,
+	public Product(Integer id, String prdname, String city, Integer price, Integer number, Integer typeID,
 			String picture, String description, Timestamp addtime, String contact) {
 		this.id = id;
 		this.prdname = prdname;
@@ -103,14 +103,14 @@ public class Product {
 
 
 
-	public String getPrice() {
+	public Integer getPrice() {
 		return price;
 	}
 
 
 
 
-	public void setPrice(String price) {
+	public void setPrice(Integer price) {
 		this.price = price;
 	}
 
@@ -196,15 +196,6 @@ public class Product {
 
 	public void setContact(String contact) {
 		this.contact = contact;
-	}
-
-
-
-
-	
-	
-    
-	
-	
+	}		
 
 }
