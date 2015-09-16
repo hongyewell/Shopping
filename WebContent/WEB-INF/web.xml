@@ -77,4 +77,34 @@
     <servlet-name>CarServletController</servlet-name>
     <url-pattern>/CarServletController</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GraphicsServlet</display-name>
+    <servlet-name>GraphicsServlet</servlet-name>
+    <servlet-class>com.shopping.controller.GraphicsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GraphicsServlet</servlet-name>
+    <url-pattern>/GraphicsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ImageServlet</display-name>
+    <servlet-name>ImageServlet</servlet-name>
+    <servlet-class>com.shopping.controller.ImageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ImageServlet</servlet-name>
+    <url-pattern>/ImageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>HttpServlet</display-name>
+    <servlet-name>HttpServlet</servlet-name>
+    <servlet-class>com.shopping.controller.HttpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HttpServlet</servlet-name>
+    <url-pattern>/HttpServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

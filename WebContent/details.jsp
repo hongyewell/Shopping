@@ -320,11 +320,7 @@
 							+ "</div>"
 							+ "</div>"
 							+ "<div class=\"row\">"
-							+ "<div class=\"col-md-3\">"
-							+ "<h4>"
-							+ "数量"
-							+ "</h4>"
-							+ "</div>"
+							+ "<div class=\"col-md-3\"><h4>数量</h4></div>"
 							+ "<div class=\"col-md-9\">"
 							+ '<h4>'+product.number+'</h4>'
 							+ "</div>"
