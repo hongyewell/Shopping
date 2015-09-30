@@ -30,8 +30,10 @@ public class GoodsListController extends HttpServlet {
 
 		resp.setCharacterEncoding("utf-8");
 		GoodsService goodsService = new GoodsService();
-		Integer type = 1 ;
+		/*System.out.println(req.getParameter("type"));*/
+		Integer type =Integer.parseInt(req.getParameter("type")) ;
 		List<Goods> goods = goodsService.getAllGoods(type);
+		
 		Gson gson = new Gson();
 		String goodsJson = gson.toJson(goods);
 		PrintWriter out = resp.getWriter();

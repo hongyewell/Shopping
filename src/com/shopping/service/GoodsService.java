@@ -26,7 +26,7 @@ private GoodsDao goodsDao;
 	 * @history:
 	 * @return List<Goods>
 	 */
-	public List<Goods>getAllGoods(int type){
+	public List<Goods>getAllGoods(Integer type){
 		return goodsDao.queryAllGoods(type);
 		
 	}

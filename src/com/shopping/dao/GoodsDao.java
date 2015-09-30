@@ -25,13 +25,14 @@ public class GoodsDao {
 	 * @history:
 	 * @return List<Goods>一组商品信息
 	 */
-	public List<Goods>queryAllGoods(int type){
-		String sql = "select * from goods where goods_type = ?;";
+	public List<Goods>queryAllGoods(Integer type){
+		String sql = "select * from goods where goods_type = ? ;";
 		Connection conn = DBUtil.getConn();
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
 			pstmt = DBUtil.getPStmt(conn, sql);
+			pstmt.setInt(1, type);
 			rs = pstmt.executeQuery();
 			
 			List<Goods> goods = new ArrayList<Goods>();

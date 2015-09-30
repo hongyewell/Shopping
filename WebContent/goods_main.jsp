@@ -1886,7 +1886,7 @@
 					</div>
 					<div class="con1fl_nr">
 						<ul>
-						<div class="mygoods"></div>
+						<div class="mygoods1"></div>
 							<!-- <li class="con1fl_nrli1">
 								<div class="con1fl_nrli_con_box">
 									<p>
@@ -2429,144 +2429,7 @@
 					</div>
 					<div class="con1fl_nr">
 						<ul>
-						<div class="mygoods"></div>
-							<!-- <li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="吗胍`乙酸铜20%(可湿性粉剂) 20g*200袋/件" class="lazy" src="img/18-43-51-64-19486.jpg.thumb.jpg" title="吗胍`乙酸铜20%(可湿性粉剂) 20g*200袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="吗胍`乙酸铜20%(可湿性粉剂)20g*200袋/件">吗胍`乙酸铜20%(可湿性�</a></p>
-										<p>规格：20g*200袋/件</p>
-										<p>深圳诺普信农化股份有限</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥200元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="烯酰吗啉50%（水分散粒剂） 10g*400袋/件" class="lazy" src="img/18-37-27-54-19486.jpg.thumb.jpg" title="烯酰吗啉50%（水分散粒剂） 10g*400袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="烯酰吗啉50%（水分散粒剂）10g*400袋/件">烯酰吗啉50%（水分散粒�</a></p>
-										<p>规格：10g*400袋/件</p>
-										<p>深圳诺普信农化股份有限</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥1100元/件</span>
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="霜脲`锰锌72%(可湿性粉剂) 100g*50袋/件" class="lazy" src="img/11-30-03-80-19486.jpg.thumb.jpg" title="霜脲`锰锌72%(可湿性粉剂) 100g*50袋/件" src="" width="154" height="154" />
-										</a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="霜脲`锰锌72%(可湿性粉剂)100g*50袋/件">霜脲`锰锌72%(可湿性粉�</a>
-										</p>
-										<p>规格：100g*50袋/件</p>
-										<p>山东潍坊双星农药有限公</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥270元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli2">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="氯溴异氰尿酸50%（可溶粉剂） 100g*40袋/件" class="lazy" src="img/11-21-59-45-19486.jpg.thumb.jpg" title="氯溴异氰尿酸50%（可溶粉剂） 100g*40袋/件" src="" width="154" height="154" />
-										</a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="氯溴异氰尿酸50%（可溶粉剂）100g*40袋/件">氯溴异氰尿酸50%（可溶�</a></p>
-										<p>规格：100g*40袋/件</p>
-										<p>河南银田精细化工有限公</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥420元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="甲霜`霜脲氰25%(可湿性粉剂) 100g*60袋/件" class="lazy" src="img/11-13-29-87-19486.jpg.thumb.jpg" title="甲霜`霜脲氰25%(可湿性粉剂) 100g*60袋/件" src="" width="154" height="154" />
-										</a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="甲霜`霜脲氰25%(可湿性粉剂)100g*60袋/件">甲霜`霜脲氰25%(可湿性�</a>
-										</p>
-										<p>规格：100g*60袋/件</p>
-										<p>江苏宝灵化工股份有限公</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥530元/件</span>
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="咪鲜胺45%（微乳剂） 10g*400袋/件" class="lazy" src="img/11-01-09-60-19486.jpg.thumb.jpg" title="咪鲜胺45%（微乳剂） 10g*400袋/件" src="" width="154" height="154" />
-										</a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="咪鲜胺45%（微乳剂）10g*400袋/件">咪鲜胺45%（微乳剂）</a>
-										</p>
-										<p>规格：10g*400袋/件</p>
-										<p>山东省青岛泰生生物科技</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥630元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="甲基硫菌灵70%(可湿性粉剂) 500g*20袋/件" class="lazy" src="img/18-18-48-98-19486.jpg.thumb.jpg" title="甲基硫菌灵70%(可湿性粉剂) 500g*20袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="甲基硫菌灵70%(可湿性粉剂)500g*20袋/件">甲基硫菌灵70%(可湿性粉</a></p>
-										<p>规格：500g*20袋/件</p>
-										<p>河北冠龙农化有限公司</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥485元/件</span>
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli4">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="多菌灵50%（可湿性粉剂） 500g*20袋/件" class="lazy" src="img/18-14-50-88-19486.jpg.thumb.jpg" title="多菌灵50%（可湿性粉剂） 500g*20袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="多菌灵50%（可湿性粉剂）500g*20袋/件">多菌灵50%（可湿性粉剂�</a></p>
-										<p>规格：500g*20袋/件</p>
-										<p>河北冠龙农化有限公司</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥310元/件</span></div>
-								</div>
-							</li> -->
+						<div class="mygoods2"></div>
 						</ul>
 					</div>
 				</div>
@@ -2888,7 +2751,7 @@
 					</div>
 					<div class="con1fl_nr">
 						<ul>
-						<div class="mygoods"></div>
+						<div class="mygoods3"></div>
 							<!-- <li class="con1fl_nrli1">
 								<div class="con1fl_nrli_con_box">
 									<p>
@@ -3268,7 +3131,7 @@
 					</div>
 					<div class="con1fl_nr">
 						<ul>
-						<div class="mygoods"></div>
+						<div class="mygoods4"></div>
 							<!-- <li class="con1fl_nrli1">
 								<div class="con1fl_nrli_con_box">
 									<p>
@@ -3560,7 +3423,7 @@
 					</div>
 					<div class="con1fl_nr">
 						<ul>
-						<div class="mygoods"></div>
+						<div class="mygoods5"></div>
 							<!-- <li class="con1fl_nrli1">
 								<div class="con1fl_nrli_con_box">
 									<p>
@@ -3849,7 +3712,7 @@
 					</div>
 					<div class="con1fl_nr">
 						<ul>
-						<div class="mygoods"></div>
+						<div class="mygoods6"></div>
 							<!-- <li class="con1fl_nrli1">
 								<div class="con1fl_nrli_con_box">
 									<p>
@@ -4144,7 +4007,7 @@
 					</div>
 					<div class="con1fl_nr">
 						<ul>
-						<div class="mygoods"></div>
+						<div class="mygoods7"></div>
 							<!-- <li class="con1fl_nrli1">
 								<div class="con1fl_nrli_con_box">
 									<p>
@@ -5952,51 +5815,41 @@
 		</script>
 	
 		<script type="text/javascript">
-		
-		    /* for(var j =1;j<=9;j++)
-		    	{
-		        var type = {'type': j};
-		    	 test(type);
-		    	}
-		
-		    var test = function(type){ */
 		    $(function(){
-				$.post(contextPath+'/goods','json').done(function(datas) {
-					console.log(datas);
-					// 将后台返回的字符串数据转换成json格式的
-					datas = JSON.parse(datas);
-					
-					var html = '';
-					for(var i = 0, len = datas.length; i < len; i++) {
-						var goods = datas[i];
-						var pic = 'img/'+goods.goods_img;
-						/*
-						 点击链接 请求的是details.jsp页面
-						*/
-						/* var link = 'details.jsp?id='+product.id; */
-						
-						html += "<li class=\"con1fl_nrli1\">"
-						        + "<div class=\"con1fl_nrli_con_box\">"
-						        + "<p>"
-						        + '<a href=\"goods_detail.jsp\">'
-						        + '<img alt='+goods.goods_name+' class=\"lazy\" src='+pic+' title='+goods.goods_name+' src='+pic+' width=\"154\" height=\"154\"/>'
-						        + "</a>"
-						        + "</p>"
-						        + "<div class=\"con1fl_nrtxt\">"
-						        + '<p><a href=\"goods_detail.jsp\" title='+goods.goods_name+'>'+goods.goods_name+'</a></p>'
-						        + '<p>'+goods.goods_standard+'</p>'
-						        + '<p>'+goods.goods_producer+'</p>'
-						        + "</div>"
-						        + '<div class=\"con1fl_nrli_pri_box\"><span class=\"con1fl_nrli_pri_pre\">'+goods.goods_price+'</span></div>'
-						        + "</div>"
-						        + "</li>"			
-					}
-					
-					$('.mygoods').html(html);
-					
-				}).fail(function(res) {
-				});		    	
-		    });
+		    	for(var j=1; j<=7; j++){
+		    		(function(j){
+		    			var data = {'type': j};
+			    		var myDiv=$('.mygoods'+j);
+		    			$.post(contextPath+'/goods',data,'json').done(function(datas){
+							datas = JSON.parse(datas);
+							var html = '';
+							for(var i = 0, len = datas.length; i < len; i++) {
+								var goods = datas[i];
+								var pic = 'img/'+goods.goods_img;
+								html += "<li class=\"con1fl_nrli1\">"
+								        + "<div class=\"con1fl_nrli_con_box\">"
+								        + "<p>"
+								        + '<a href=\"goods_detail.jsp\">'
+								        + '<img alt='+goods.goods_name+' class=\"lazy\" src='+pic+' title='+goods.goods_name+' src='+pic+' width=\"154\" height=\"154\"/>'
+								        + "</a>"
+								        + "</p>"
+								        + "<div class=\"con1fl_nrtxt\">"
+								        + '<p><a href=\"goods_detail.jsp\" title='+goods.goods_name+'>'+goods.goods_name+'</a></p>'
+								        + '<p>'+goods.goods_standard+'</p>'
+								        + '<p>'+goods.goods_producer+'</p>'
+								        + "</div>"
+								        + '<div class=\"con1fl_nrli_pri_box\"><span class=\"con1fl_nrli_pri_pre\">'+goods.goods_price+'</span></div>'
+								        + "</div>"
+								        + "</li>";			
+							}
+							
+							myDiv.html(html);
+							
+						}).fail(function(res) {
+						});	
+		    		})(j);
+		    	}
+	    });
 		</script>
 		<script type="text/javascript">
 			show_task('moduleid=1&html=index');
