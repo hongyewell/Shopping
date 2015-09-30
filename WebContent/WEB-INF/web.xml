@@ -115,4 +115,12 @@
     <servlet-name>goods</servlet-name>
     <url-pattern>/goods</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>goodsDetail</servlet-name>
+    <servlet-class>com.shopping.controller.GoodsDetailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>goodsDetail</servlet-name>
+    <url-pattern>/goodsDetail</url-pattern>
+  </servlet-mapping>
 </web-app>

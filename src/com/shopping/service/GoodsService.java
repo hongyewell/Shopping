@@ -26,9 +26,23 @@ private GoodsDao goodsDao;
 	 * @history:
 	 * @return List<Goods>
 	 */
-	public List<Goods>getAllGoods(Integer type){
+	public List<Goods>getAllGoods(int type){
 		return goodsDao.queryAllGoods(type);
 		
+	}
+	
+	
+	/**
+	 * 获取商品详情
+	 *
+	 * @author: yeye
+	 * @createTime: 2015年9月30日 下午8:00:27
+	 * @history:
+	 * @param id
+	 * @return Goods
+	 */
+	public Goods getGoodsDetails(int id){
+		return goodsDao.getDetailsById(id);
 	}
 
 }

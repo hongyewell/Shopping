@@ -3,9 +3,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>安徽惠富强农资交易平台</title>
-<link href="css/trade.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/fromapporpc.js"></script>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>安徽惠富强农资交易平台</title>
+		<meta name="keywords" content="安徽惠富强农资交易平台,中国农药网,农药,农药信息网" />
+		<meta name="description" content="安徽惠富强农资交易平台全国领先的农药交易平台，为广大中小农药企业提供品牌的宣传推广服务，帮您的企业拉到真实的订单，让客户买到货真价实的农药产品。" />
+
+		<link href="css/trade.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript">
 			window.onerror = function() {
 				return true;
@@ -124,7 +128,7 @@
 			<div class="headmid">
 				<div class="logo">
 					<a href="#">
-						<img src="img/logo.jpg" title="安徽惠富强农资交易平台" />
+						<img src="img/hfqlogo.png" title="安徽惠富强农资交易平台" />
 					</a>
 				</div>
 				<div class="search">
@@ -143,23 +147,7 @@
 						<a href="#" rel="nofollow">多菌灵</a>
 					</div>
 				</div>
-				<div class="wei">
-					<div class="weixin">
-						<p>
-							<a rel="nofollow" href="#">
-								<img src="img/code1.jpg" title="扫一扫关注安徽惠富强农资交易平台官方微信" width="72px" height="72px"></a>
-						</p>
-						<p class="weixsp">微信</p>
-					</div>
-					<div class="weibo">
-						<p>
-							<a rel="nofollow" href="#" target="_blank">
-								<img src="img/code2.jpg" title="农药第一网APP" width="72px" height="72px">
-							</a>
-						</p>
-						<p class="weibsp"><a rel="nofollow" href="#" target="_blank">APP</a></p>
-					</div>
-				</div>
+				
 				<div class="shop"><span class="shsp"><a rel="nofollow" href="#">去购物车结算</a></span><b class="shb" id="tipscartnum"></b>
 					<img alt="购物车" src="img/arrow_r.png" />
 				</div>
@@ -1217,7 +1205,7 @@
 							<script type="text/javascript" src="js/slide.js"></script>
 							<div id="slide_a62" class="slide" style="width:1007px;height:295px;">
 								<a href="#" target="_blank">
-									<img src="img/hfq.png" width="1007" height="295" alt="手机首次下单减免20元" />
+									<img src="img/11-20-49-36-1.png" width="1007" height="295" alt="手机首次下单减免20元" />
 								</a>
 								<a href="#" target="_blank">
 									<img src="img/17-12-41-91-1.png" width="1007" height="295" alt="山东滨农大规格除草剂，农场好帮手！" />
@@ -1251,29 +1239,18 @@
 		<div id="content_1">
 			<div>
 				<div>
-					<div class="navbot">
-						<h4 class="navbot_bt">农药真假查询</h4>
-						<ul class="navbot_ul">
-							<li class="navbot_li">
-								<a rel="nofollow" target="_blank" href="http://202.127.42.135/A1.ASPX">农药登记产品查询</a>
-							</li>
-							<li class="navbot_li">
-								<a rel="nofollow" target="_blank" href="http://www.chinapesticide.gov.cn/service/aspx/B2.aspx">通过企业名称查询产品</a>
-							</li>
-							<li class="navbot_li">
-								<a rel="nofollow" target="_blank" href="http://www.chinapesticide.gov.cn/service/zhcx/qyml.html">企业名录查询</a>
-							</li>
-							<li class="navbot_li">
-								<a rel="nofollow" target="_blank" href="http://www.chinapesticide.gov.cn/service/aspx/B4.aspx">通过作物防治查询产品</a>
-							</li>
-							<li class="navbot_lisp">
-								<a rel="nofollow" target="_blank" href="http://www.chinapesticide.gov.cn/service/zhcx/yxcfxx.html">有效信息成分查询</a>
-							</li>
-						</ul>
-					</div>
+					
 					<div class="sli_tj">
 						<ul>
-							<li class="slide_li">
+                            <li class="slide_li">
+								<a href="#">
+									<img alt="高效氯氰菊酯10%(微乳剂) 200ml*30瓶/件" width="180" height="180" title="高效氯氰菊酯10%(微乳剂) 200ml*30瓶/件" src="img/huifuqiang.jpg" class="sli_img" />
+								</a>
+								<p class="slide_text"   >农资物流信息管理系统</p>
+							</li>
+
+
+							<li class="slide_li_3">
 								<a href="#">
 									<img alt="高效氯氰菊酯10%(微乳剂) 200ml*30瓶/件" width="180" height="180" title="高效氯氰菊酯10%(微乳剂) 200ml*30瓶/件" src="img/10-41-51-62-1836.jpg.thumb.jpg" class="sli_img" />
 								</a>
@@ -1317,9 +1294,9 @@
 										<input type="checkbox" style="display:none;" name="goto" value="1" class="login_dsche" id="goto" checked />
 										<a href="#" rel="nofollow" class="toprdl_lisp">忘记密码</a></div>
 									<input name="submit" type="submit" value="&nbsp;" class="toprdl_lbtn">
-										<a href="#" rel="nofollow" class="toprdl_lisp2">我不是会员？请点击这里注册</a></div>
+										<a href="#" rel="nofollow" class="toprdl_lisp2">我不是会员？请点击这里注册</a>
 							</form>
-						</div>
+						</div></div>
 					</div>
 				</div>
 				<script language="javascript">
@@ -1344,7 +1321,7 @@
 						<li class="slncp">
 							<div class="slncp_pic">
 								<a href="#">
-									<img src="img/001.jpg" class="lazy" alt="吗胍`乙酸铜20%(可湿性粉剂) 20g*200袋/件" title="吗胍`乙酸铜20%(可湿性粉剂) 20g*200袋/件" width="154" height="154"></a>
+									<img src="img/18-43-51-64-19486.jpg.thumb.jpg" class="lazy" alt="吗胍`乙酸铜20%(可湿性粉剂) 20g*200袋/件" title="吗胍`乙酸铜20%(可湿性粉剂) 20g*200袋/件" width="154" height="154"></a>
 							</div>
 							<div class="slncp_txt">
 								<p>
@@ -1356,7 +1333,7 @@
 						<li class="slncp">
 							<div class="slncp_pic">
 								<a href="#">
-									<img src="img/002.jpg" class="lazy" alt="烯酰吗啉50%（水分散粒剂） 10g*400袋/件" title="烯酰吗啉50%（水分散粒剂） 10g*400袋/件" width="154" height="154"></a>
+									<img src="img/18-37-27-54-19486.jpg.thumb.jpg" class="lazy" alt="烯酰吗啉50%（水分散粒剂） 10g*400袋/件" title="烯酰吗啉50%（水分散粒剂） 10g*400袋/件" width="154" height="154"></a>
 							</div>
 							<div class="slncp_txt">
 								<p>
@@ -1369,7 +1346,7 @@
 						<li class="slncp">
 							<div class="slncp_pic">
 								<a href="#">
-									<img src="img/003.jpg" class="lazy" alt="灭蝇胺80%（水分散粒剂） 5g*480袋/件" title="灭蝇胺80%（水分散粒剂） 5g*480袋/件" width="154" height="154"></a>
+									<img src="img/18-30-38-73-19486.jpg.thumb.jpg" class="lazy" alt="灭蝇胺80%（水分散粒剂） 5g*480袋/件" title="灭蝇胺80%（水分散粒剂） 5g*480袋/件" width="154" height="154"></a>
 							</div>
 							<div class="slncp_txt">
 								<p>
@@ -1382,7 +1359,7 @@
 						<li class="slncp">
 							<div class="slncp_pic">
 								<a href="#">
-									<img src="img/004.jpg" class="lazy" alt="阿维`甲氰1.8%(乳油) 10ml*800袋/件" title="阿维`甲氰1.8%(乳油) 10ml*800袋/件" width="154" height="154"></a>
+									<img src="img/18-22-08-78-19486.jpg.thumb.jpg" class="lazy" alt="阿维`甲氰1.8%(乳油) 10ml*800袋/件" title="阿维`甲氰1.8%(乳油) 10ml*800袋/件" width="154" height="154"></a>
 							</div>
 							<div class="slncp_txt">
 								<p>
@@ -1397,7 +1374,7 @@
 						<li class="slncp">
 							<div class="slncp_pic">
 								<a href="#">
-									<img src="img/005.jpg" class="lazy" alt="高效氯氟氰菊酯 2.5%(乳油) 500ml*20瓶/件" title="高效氯氟氰菊酯 2.5%(乳油) 500ml*20瓶/件" width="154" height="154"></a>
+									<img src="img/11-08-16-16-1.jpg.thumb.jpg" class="lazy" alt="高效氯氟氰菊酯 2.5%(乳油) 500ml*20瓶/件" title="高效氯氟氰菊酯 2.5%(乳油) 500ml*20瓶/件" width="154" height="154"></a>
 							</div>
 							<div class="slncp_txt">
 								<p>
@@ -1409,7 +1386,7 @@
 						<li class="slncp">
 							<div class="slncp_pic">
 								<a href="#">
-									<img src="img/006.jpg" class="lazy" alt="高效氯氟氰菊酯2.5%(乳油) 300ml*20瓶/件" title="高效氯氟氰菊酯2.5%(乳油) 300ml*20瓶/件" width="154" height="154"></a>
+									<img src="img/14-49-35-72-1.jpg.thumb.jpg" class="lazy" alt="高效氯氟氰菊酯2.5%(乳油) 300ml*20瓶/件" title="高效氯氟氰菊酯2.5%(乳油) 300ml*20瓶/件" width="154" height="154"></a>
 							</div>
 							<div class="slncp_txt">
 								<p>
@@ -1421,7 +1398,7 @@
 						<li class="slncp">
 							<div class="slncp_pic">
 								<a href="#">
-									<img src="img/007.jpg" class="lazy" alt="毒死蜱480克/升(乳油) 80ml*60瓶/件" title="毒死蜱480克/升(乳油) 80ml*60瓶/件" width="154" height="154">
+									<img src="img/20110714111146694809f88f7cb3237a54bb53773498d2a4a7.jpg.thumb.jpg" class="lazy" alt="毒死蜱480克/升(乳油) 80ml*60瓶/件" title="毒死蜱480克/升(乳油) 80ml*60瓶/件" width="154" height="154">
 
 								</a>
 							</div>
@@ -1436,7 +1413,7 @@
 						<li class="slncp">
 							<div class="slncp_pic">
 								<a href="#">
-									<img src="img/008.jpg" class="lazy" alt="毒死蜱48%(乳油) 200ml*20瓶/件" title="毒死蜱48%(乳油) 200ml*20瓶/件" width="154" height="154"></a>
+									<img src="img/10-39-51-20-1.jpg.thumb.jpg" class="lazy" alt="毒死蜱48%(乳油) 200ml*20瓶/件" title="毒死蜱48%(乳油) 200ml*20瓶/件" width="154" height="154"></a>
 							</div>
 							<div class="slncp_txt">
 								<p><a href="#" title="毒死蜱48%(乳油)200ml*20瓶/件">毒死蜱48%(乳油)200ml*20瓶/件</a></p>
@@ -1449,7 +1426,7 @@
 						<li class="slncp">
 							<div class="slncp_pic">
 								<a href="#">
-									<img src="img/009.jpg" class="lazy" alt="草甘膦铵盐88.8%(可溶粉剂) 44g*200袋/件" title="草甘膦铵盐88.8%(可溶粉剂) 44g*200袋/件" width="154" height="154">
+									<img src="img/14-23-20-64-1.jpg.thumb.jpg" class="lazy" alt="草甘膦铵盐88.8%(可溶粉剂) 44g*200袋/件" title="草甘膦铵盐88.8%(可溶粉剂) 44g*200袋/件" width="154" height="154">
 
 								</a>
 							</div>
@@ -1463,7 +1440,7 @@
 						<li class="slncp">
 							<div class="slncp_pic">
 								<a href="#">
-									<img src="img/010.jpg" class="lazy" alt="高效氯氰菊酯10%(微乳剂) 200ml*30瓶/件" title="高效氯氰菊酯10%(微乳剂) 200ml*30瓶/件" width="154" height="154"></a>
+									<img src="img/10-41-51-62-1836.jpg.thumb.jpg" class="lazy" alt="高效氯氰菊酯10%(微乳剂) 200ml*30瓶/件" title="高效氯氰菊酯10%(微乳剂) 200ml*30瓶/件" width="154" height="154"></a>
 							</div>
 							<div class="slncp_txt">
 								<p>
@@ -1476,7 +1453,7 @@
 						<li class="slncp">
 							<div class="slncp_pic">
 								<a href="#">
-									<img src="img/001.jpg" class="lazy" alt="镁硼钙铁锌 1000g*15袋/件" title="镁硼钙铁锌 1000g*15袋/件" width="154" height="154"></a>
+									<img src="img/201107011134523172bd8272058d409ecb2d1ae80e403ba71d.gif" class="lazy" alt="镁硼钙铁锌 1000g*15袋/件" title="镁硼钙铁锌 1000g*15袋/件" width="154" height="154"></a>
 							</div>
 							<div class="slncp_txt">
 								<p><a href="#" title="镁硼钙铁锌1000g*15袋/件">镁硼钙铁锌1000g*15袋/件</a></p>
@@ -1487,7 +1464,7 @@
 						<li class="slncp">
 							<div class="slncp_pic">
 								<a href="#">
-									<img src="img/002.jpg" class="lazy" alt="有机硅 100ml*60瓶/件" title="有机硅 100ml*60瓶/件" width="154" height="154"></a>
+									<img src="img/10-23-00-12-19486.jpg.thumb.jpg" class="lazy" alt="有机硅 100ml*60瓶/件" title="有机硅 100ml*60瓶/件" width="154" height="154"></a>
 							</div>
 							<div class="slncp_txt">
 								<p><a href="#" title="有机硅100ml*60瓶/件">有机硅100ml*60瓶/件</a></p>
@@ -1508,7 +1485,7 @@
 				</script>
 				<div class="topr">
 					<h4 class="toprgg_bt2">
-										<em style="color:#FF457A;font-size:18px;">热点资讯</em><span><a href="#">更多>>
+										<em style="color:#339933;font-size:18px;">热点资讯</em><span><a href="#">更多>>
 											
 										</a></span></h4>
 					<div class="toprgg_box">
@@ -1779,7 +1756,7 @@
 										<a href="#" title="茶尺蠖核型多角体病毒">茶尺蠖</a></li>
 									<li class="con1fl_navli"><a href="#" title="棉铃虫核型多角体病毒">核型病毒</a></li>
 									<li class="con1fl_navli"><a href="#" title="球孢白僵菌">球孢白</a></li>
-									<li class="con1fl_navli"><a href="#" title="苏云金杆菌">苏云金</a></li>
+									<li class="con1fl_navli"><a href="#" title="金好年">金好年</a></li>
 									<li class="con1fl_navli"><a href="#" title="蛇床子素">蛇床子</a></li>
 									<li class="con1fl_navli"><a href="#" title="甜菜夜蛾核型多角体病毒">甜菜夜</a></li>
 									<li class="con1fl_navli"><a href="#" title="斜纹夜蛾核型多角体病毒">斜纹夜</a></li>
@@ -1886,132 +1863,7 @@
 					</div>
 					<div class="con1fl_nr">
 						<ul>
-						<div class="mygoods1"></div>
-							<!-- <li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="灭蝇胺80%（水分散粒剂） 5g*480袋/件" class="lazy" src="img/18-30-38-73-19486.jpg.thumb.jpg" title="灭蝇胺80%（水分散粒剂） 5g*480袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p><a href="#" title="灭蝇胺80%（水分散粒剂）5g*480袋/件">灭蝇胺80%（水分散粒剂�</a></p>
-										<p>规格：5g*480袋/件</p>
-										<p>广东中迅农科股份有限公</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥830元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="阿维`甲氰1.8%(乳油) 10ml*800袋/件" class="lazy" src="img/18-22-08-78-19486.jpg.thumb.jpg" title="阿维`甲氰1.8%(乳油) 10ml*800袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="阿维`甲氰1.8%(乳油)10ml*800袋/件">阿维`甲氰1.8%(乳油)</a>
-										</p>
-										<p>规格：10ml*800袋/件</p>
-										<p>广东省东莞市瑞德丰生物</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥600元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="高效氯氟氰菊酯5%（微乳剂） 20ml*400袋/件" class="lazy" src="img/18-14-01-77-19486.jpg.thumb.jpg" title="高效氯氟氰菊酯5%（微乳剂） 20ml*400袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p><a href="#" title="高效氯氟氰菊酯5%（微乳剂）20ml*400袋/件">高效氯氟氰菊酯5%（微乳</a></p>
-										<p>规格：20ml*400袋/件</p>
-										<p>广东省东莞市瑞德丰生物</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥530元/件</span>
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli2">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="苦参碱0.3%(水剂)新高度 500ml*20瓶/件" class="lazy" src="img/17-58-28-76-19486.jpg.thumb.jpg" title="苦参碱0.3%(水剂)新高度 500ml*20瓶/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="苦参碱0.3%(水剂)新高度500ml*20瓶/件">苦参碱0.3%(水剂)新高度</a></p>
-										<p>规格：500ml*20瓶/件</p>
-										<p>陕西国丰化工有限公司</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥510元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="吡虫啉30%（微乳剂） 100ml*45瓶/件" class="lazy" src="img/17-52-37-81-19486.jpg.thumb.jpg" title="吡虫啉30%（微乳剂） 100ml*45瓶/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="吡虫啉30%（微乳剂）100ml*45瓶/件">吡虫啉30%（微乳剂）</a></p>
-										<p>规格：100ml*45瓶/件</p>
-										<p>深圳诺普信农化股份有限</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥820元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="灭幼脲25%（悬浮剂） 200g*20瓶/件" class="lazy" src="img/17-43-53-10-19486.jpg.thumb.jpg" title="灭幼脲25%（悬浮剂） 200g*20瓶/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="灭幼脲25%（悬浮剂）200g*20瓶/件">灭幼脲25%（悬浮剂）</a></p>
-										<p>规格：200g*20瓶/件</p>
-										<p>广东省东莞市瑞德丰生物</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥150元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="苦参碱0.3（水剂） 200ml*40瓶/件" class="lazy" src="img/17-33-55-40-19486.jpg.thumb.jpg" title="苦参碱0.3（水剂） 200ml*40瓶/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="苦参碱0.3（水剂）200ml*40瓶/件">苦参碱0.3（水剂）</a></p>
-										<p>规格：200ml*40瓶/件</p>
-										<p>陕西国丰化工有限公司</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥970元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli4">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="苏云金杆菌8000IU/微升（悬浮剂） 200g*30瓶/件" class="lazy" src="img/17-25-45-43-19486.jpg.thumb.jpg" title="苏云金杆菌8000IU/微升（悬浮剂） 200g*30瓶/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="苏云金杆菌8000IU/微升（悬浮剂）200g*30瓶/件">苏云金杆菌8000IU/微升�</a></p>
-										<p>规格：200g*30瓶/件</p>
-										<p>河南省柘城县新威农药有</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥800元/件</span></div>
-								</div>
-							</li> -->
+							<div id="d1"></div>
 						</ul>
 					</div>
 				</div>
@@ -2429,7 +2281,7 @@
 					</div>
 					<div class="con1fl_nr">
 						<ul>
-						<div class="mygoods2"></div>
+							<div id="d2"></div>
 						</ul>
 					</div>
 				</div>
@@ -2751,144 +2603,7 @@
 					</div>
 					<div class="con1fl_nr">
 						<ul>
-						<div class="mygoods3"></div>
-							<!-- <li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="高效氟吡甲禾灵108克/升(乳油) 200g*20瓶/件" class="lazy" src="img/18-15-33-80-19486.jpg.thumb.jpg" title="高效氟吡甲禾灵108克/升(乳油) 200g*20瓶/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="高效氟吡甲禾灵108克/升(乳油)200g*20瓶/件">高效氟吡甲禾灵108克/升</a></p>
-										<p>规格：200g*20瓶/件</p>
-										<p>天津市华宇农药有限公司</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥330元/件</span>
-
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="草甘膦30%(水剂) 200g*50瓶/件" class="lazy" src="img/17-56-53-71-19486.jpg.thumb.jpg" title="草甘膦30%(水剂) 200g*50瓶/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="草甘膦30%(水剂)200g*50瓶/件">草甘膦30%(水剂)</a></p>
-										<p>规格：200g*50瓶/件</p>
-										<p>天津市华宇农药有限公司</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥235元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="异丙甲草胺720克/升(乳油) 100ml*40瓶/件" class="lazy" src="img/16-23-36-80-19486.jpg.thumb.jpg" title="异丙甲草胺720克/升(乳油) 100ml*40瓶/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="异丙甲草胺720克/升(乳油)100ml*40瓶/件">异丙甲草胺720克/升(乳�</a></p>
-										<p>规格：100ml*40瓶/件</p>
-										<p>山东省青岛金尔农化研制</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥220元/件</span>
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli2">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="氰氟草酯20%(可分散油悬浮剂) 50ml*100瓶/箱/件" class="lazy" src="img/11-42-06-88-19486.jpg.thumb.jpg" title="氰氟草酯20%(可分散油悬浮剂) 50ml*100瓶/箱/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="氰氟草酯20%(可分散油悬浮剂)50ml*100瓶/箱/件">氰氟草酯20%(可分散油悬</a>
-										</p>
-										<p>规格：50ml*100瓶/箱/�</p>
-										<p>江苏丰山集团股份有限公</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥1100元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="氰氟草酯20%(可分散油悬浮剂) 100ml*50瓶/件" class="lazy" src="img/11-36-15-29-19486.jpg.thumb.jpg" title="氰氟草酯20%(可分散油悬浮剂) 100ml*50瓶/件" src="" width="154" height="154" />
-										</a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="氰氟草酯20%(可分散油悬浮剂)100ml*50瓶/件">氰氟草酯20%(可分散油悬</a>
-										</p>
-										<p>规格：100ml*50瓶/件</p>
-										<p>江苏丰山集团股份有限公</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥825元/件</span>
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="灭草松480克/升（液剂） 110g*50瓶/件" class="lazy" src="img/10-47-14-36-19486.jpg.thumb.jpg" title="灭草松480克/升（液剂） 110g*50瓶/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p><a href="#" title="灭草松480克/升（液剂）110g*50瓶/件">灭草松480克/升（液剂）</a></p>
-										<p>规格：110g*50瓶/件</p>
-										<p>广东省佛山市盈辉作物科</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥440元/件</span>
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="烟嘧`莠去津23%%(可分散油悬浮剂) 100ml*50瓶/件" class="lazy" src="img/10-32-52-96-19486.jpg.thumb.jpg" title="烟嘧`莠去津23%%(可分散油悬浮剂) 100ml*50瓶/件" src="" width="154" height="154" />
-										</a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="烟嘧`莠去津23%%(可分散油悬浮剂)100ml*50瓶/件">烟嘧`莠去津23%%(可分散</a></p>
-										<p>规格：100ml*50瓶/件</p>
-										<p>广东省佛山市盈辉作物科</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥385元/件</span>
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli4">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="乙氧氟草醚24%(乳油) 12ml*120盒/件" class="lazy" src="img/10-20-49-76-19486.jpg.thumb.jpg" title="乙氧氟草醚24%(乳油) 12ml*120盒/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="乙氧氟草醚24%(乳油)12ml*120盒/件">乙氧氟草醚24%(乳油)</a></p>
-										<p>规格：12ml*120盒/件</p>
-										<p>江苏省苏科农化有限责任</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥1320元/件</span>
-									</div>
-								</div>
-							</li> -->
+							<div id="d3"></div>
 						</ul>
 					</div>
 				</div>
@@ -2997,905 +2712,10 @@
 				</div>
 				<div class="clear"></div>
 			</div>
-			<div class="con1f_4 F-4" id="con1f_4">
-				<div class="con1fl_4">
-					<h2 class="con4fl_bt"><span class="con1fl_btsp4">4F杀螨剂</span></h2>
-					<div class="con1fl_nav">
-						<div class="con1fl_nav_con">
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">螨虫混</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="柴油·阿维菌素">阿维·柴</a></li>
-									<li class="con1fl_navli"><a href="#" title="甲氰菊酯·哒螨灵">甲氰·哒</a></li>
-									<li class="con1fl_navli"><a href="#" title="矿物油·炔螨特">矿物·炔</a></li>
-									<li class="con1fl_navli">
-										<a href="#" title="矿物油·阿维菌素">阿维·矿</a>
-									</li>
-									<li class="con1fl_navli"><a href="#" title="矿物油·哒螨灵">矿物·哒</a></li>
-									<li class="con1fl_navli">
-										<a href="#" title="灭幼脲·哒螨灵">灭幼·哒</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">有机锡</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="苯丁锡">苯丁锡</a></li>
-									<li class="con1fl_navli"><a href="#" title="三唑锡">三唑锡</a></li>
-									<li class="con1fl_navli"><a href="#" title="三磷锡">三磷锡</a></li>
-									<p class="clear"></p>
-									</ul>
-									<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">菊酯类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="甲氰菊酯">甲氰菊酯</a></li>
-									<li class="con1fl_navli"><a href="#" title="联苯菊酯">联苯菊酯</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">矿物源</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="硫磺">硫磺</a></li>
-									<li class="con1fl_navli"><a href="#" title="石硫合剂">石硫合剂</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">有机氮</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="单甲脒">单甲脒</a></li>
-									<li class="con1fl_navli"><a href="#" title="双甲脒">双甲脒</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">噻烷类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="噻螨酮">噻螨酮</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">嗪酮类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="哒螨灵">哒螨灵</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">有机硫</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="炔螨特">炔螨特</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">有机氯</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="三氯杀螨醇">杀螨醇</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">抗生素</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="阿维菌素">阿维</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">四嗪类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="四螨嗪">四螨嗪</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">有机溴</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="溴螨酯">溴螨酯</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">苯氧唑</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="唑螨酯">唑螨酯</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">酮酸类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="螺螨酯">螺螨酯</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">苯肼类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="联苯肼酯">联苯肼酯</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">唑啉类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="乙螨唑">乙螨唑</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-						</div>
-					</div>
-					<div class="con1fl_nr">
-						<ul>
-						<div class="mygoods4"></div>
-							<!-- <li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="炔螨特73%(乳油) 200g*20瓶/件" class="lazy" src="img/15-47-10-65-19486.jpg.thumb.jpg" title="炔螨特73%(乳油) 200g*20瓶/件" src="" width="154" height="154" />
-										</a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="炔螨特73%(乳油)200g*20瓶/件">炔螨特73%(乳油)</a></p>
-										<p>规格：200g*20瓶/件</p>
-										<p>天津市华宇农药有限公司</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥345元/件</span>
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="哒螨灵15%(乳油) (100ml+100ml)*20盒/件" class="lazy" src="img/16-45-46-71-19486.jpg.thumb.jpg" title="哒螨灵15%(乳油) (100ml+100ml)*20盒/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="哒螨灵15%(乳油)(100ml+100ml)*20盒/件">哒螨灵15%(乳油)</a></p>
-										<p>规格：(100ml+100ml)*2</p>
-										<p>江苏省盐城双宁农化有限</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥600元/件</span>
-
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="三唑锡25%(可湿性粉剂) 100g*50袋/件" class="lazy" src="img/16-33-17-33-19486.jpg.thumb.jpg" title="三唑锡25%(可湿性粉剂) 100g*50袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="三唑锡25%(可湿性粉剂)100g*50袋/件">三唑锡25%(可湿性粉剂)</a></p>
-										<p>规格：100g*50袋/件</p>
-										<p>江苏省盐城双宁农化有限</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥370元/件</span>
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli2">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="三唑锡20%（悬浮剂） 200g*20瓶/件" class="lazy" src="img/14-55-56-36-19486.jpg.thumb.jpg" title="三唑锡20%（悬浮剂） 200g*20瓶/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="三唑锡20%（悬浮剂）200g*20瓶/件">三唑锡20%（悬浮剂）</a></p>
-										<p>规格：200g*20瓶/件</p>
-										<p>天津市汉邦植物保护剂有</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥310元/件</span>
-
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="哒螨灵20%（可湿性粉剂） 100g*40袋/件" class="lazy" src="img/19-23-37-94-19486.jpg.thumb.jpg" title="哒螨灵20%（可湿性粉剂） 100g*40袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="哒螨灵20%（可湿性粉剂）100g*40袋/件">哒螨灵20%（可湿性粉剂�</a></p>
-										<p>规格：100g*40袋/件</p>
-										<p>陕西恒田化工有限公司</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥165元/件</span>
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="哒螨灵20%（可湿性粉剂） 10g*300袋/件" class="lazy" src="img/19-20-17-22-19486.jpg.thumb.jpg" title="哒螨灵20%（可湿性粉剂） 10g*300袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p><a href="#" title="哒螨灵20%（可湿性粉剂）10g*300袋/件">哒螨灵20%（可湿性粉剂�</a></p>
-										<p>规格：10g*300袋/件</p>
-										<p>陕西恒田化工有限公司</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥160元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="三唑锡25%（可湿性粉剂） 100g*40袋/件" class="lazy" src="img/18-21-20-13-19486.jpg.thumb.jpg" title="三唑锡25%（可湿性粉剂） 100g*40袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="三唑锡25%（可湿性粉剂）100g*40袋/件">三唑锡25%（可湿性粉剂�</a></p>
-										<p>规格：100g*40袋/件</p>
-										<p>陕西恒田化工有限公司</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥300元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli4">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="哒螨灵20%(可湿性粉剂) 100g*50袋/件" class="lazy" src="img/10-45-40-28-19486.jpg.thumb.jpg" title="哒螨灵20%(可湿性粉剂) 100g*50袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="哒螨灵20%(可湿性粉剂)100g*50袋/件">哒螨灵20%(可湿性粉剂)</a></p>
-										<p>规格：100g*50袋/件</p>
-										<p>江苏蓝丰生物化工股份有</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥200元/件</span>
-									</div>
-								</div>
-							</li> -->
-						</ul>
-					</div>
-				</div>
-				<div class="con1fr">
-					<ul class="con4fr_bt">
-						<li class="con1fr_btlion">
-							<a href="#">农资趣事</a></li>
-						<li class="con1fr_btli"><a href="#">打假专区</a></li>
-					</ul>
-					<div class="con4fr_bt_con">
-						<h5 class="toprgg_bt3">
-			<a href="#" class="colored" title="清明时节 农事繁忙">清明时节 农事繁忙</a>
-		</h5>
-						<div class="con1fr_tli">
-							<p class="toprgg_bpic"><img alt="" title="" src="img/11-03-12-78-31540.jpg" width="103" height="80" /></p>
-							<p class="con1fr_txt">清明时节雨纷纷，河北一地区清明时节一片繁忙景象，具体来详细了解下：[<a href="#" class="colored">详细</a>]</p>
-						</div>
-						<ul>
-							<li class="con1fr_dli"><span class="toprgg_sp">09-11</span><a href="#" class="con1fr_dot" title="空调大棚如何内种出“菌中之王”">空调大棚如何内种出“菌中之王</a></li>
-							<li class="con1fr_dli"><span class="toprgg_sp">09-10</span><a href="#" class="con1fr_dot" title="马铃薯有哪些新吃法">马铃薯有哪些新吃法</a></li>
-							<li class="con1fr_dli"><span class="toprgg_sp">09-04</span><a href="#" class="con1fr_dot" title="板店黄金梨：一亩园顶十亩田">板店黄金梨：一亩园顶十亩田</a></li>
-							<li class="con1fr_dli"><span class="toprgg_sp">09-02</span><a href="#" class="con1fr_dot" title="玉米地里种蘑菇，粮菌双丰收">玉米地里种蘑菇，粮菌双丰收</a></li>
-							<li class="con1fr_dli"><span class="toprgg_sp">08-28</span><a href="#" class="con1fr_dot" title="农村创业有三大优势">农村创业有三大优势</a></li>
-						</ul>
-						<ul class="con1fr_lul">
-							<li class="con1fr_lli1">
-								<a href="http://www.nongyao001.com/com/shandonglvbahg/"><img alt="山东绿霸化工股份有限公司" title="山东绿霸化工股份有限公司" src="img/17-45-12-48-19486.png" width="143" height="80"></a>
-							</li>
-							<li class="con1fr_lli2">
-								<a href="http://www.nongyao001.com/com/sddtnh/"><img alt="山东东泰农化有限公司" title="山东东泰农化有限公司" src="img/10-30-32-66-23293.png" width="143" height="80"></a>
-							</li>
-							<li class="con1fr_lli1">
-								<a href="http://www.nongyao001.com/com/sddzxl/"><img alt="山东省德州祥龙生化有限公司" title="山东省德州祥龙生化有限公司" src="img/16-15-58-23-23293.png" width="143" height="80"></a>
-							</li>
-							<li class="con1fr_lli2">
-								<a href="http://www.nongyao001.com/com/hfshye/"><img alt="威海韩孚生化药业有限公司   " title="威海韩孚生化药业有限公司   " src="img/15-39-17-19-19486.png" width="143" height="80"></a>
-							</li>
-							<li class="con1fr_lli1">
-								<a href="http://www.nongyao001.com/com/shuangfeng/"><img alt="重庆双丰化工有限公司" title="重庆双丰化工有限公司" src="img/17-39-18-41-19486.png" width="143" height="80"></a>
-							</li>
-							<li class="con1fr_lli2">
-								<a href="http://www.nongyao001.com/com/zjxahg/"><img alt="浙江新安化工集团股份有限公司" title="浙江新安化工集团股份有限公司" src="img/17-44-22-80-19486.png" width="143" height="80"></a>
-							</li>
-						</ul>
-					</div>
-					<div class="con4fr_bt_con">
-						<h5 class="toprgg_bt3"><a href="#" class="colored" title="四川泸州开展农资专项打假活动">四川泸州开展农资专项打假活动</a></h5>
-						<div class="con1fr_tli">
-							<p class="toprgg_bpic"><img alt="" title="" src="img/10-54-00-80-28365.png" width="103" height="80" /></p>
-							<p class="con1fr_txt">为了维护经销商和农药使用者的合法权益，保障农资产品和农产品的质量和安全，进一步...[<a href="#" class="colored">详细</a>]</p>
-						</div>
-						<ul>
-							<li class="con1fr_dli"><span class="toprgg_sp">09-04</span><a href="#" class="con1fr_dot" title="江苏破获涉嫌无证生产五氟磺草胺农药案">江苏破获涉嫌无证生产五氟磺草</a></li>
-							<li class="con1fr_dli"><span class="toprgg_sp">08-18</span><a href="#" class="con1fr_dot" title="打假硬手段也要上">打假硬手段也要上</a></li>
-							<li class="con1fr_dli"><span class="toprgg_sp">08-10</span><a href="#" class="con1fr_dot" title="央视曝光郏县农资“忽悠团”">央视曝光郏县农资“忽悠团”</a></li>
-							<li class="con1fr_dli"><span class="toprgg_sp">08-06</span><a href="#" class="con1fr_dot" title="农业部：通报2015年春季肥料监督抽查情况">农业部：通报2015年春季肥料监</a></li>
-							<li class="con1fr_dli"><span class="toprgg_sp">07-29</span><a href="#" class="con1fr_dot" title="60户菜农被假化肥坑苦 领到95万元赔偿款">60户菜农被假化肥坑苦 领到95万</a></li>
-						</ul>
-						<ul class="con1fr_lul">
-							<li class="con1fr_lli1">
-								<a href="http://www.nongyao001.com/com/cangzhouzhicheng/"><img alt="河北省沧州志诚化工有限公司 " title="河北省沧州志诚化工有限公司 " src="img/14-33-51-19-19486.png" width="143" height="80"></a>
-							</li>
-							<li class="con1fr_lli2">
-								<a href="http://www.nongyao001.com/com/shenqiu/"><img alt="河南省沈丘县农药厂" title="河南省沈丘县农药厂" src="img/16-50-54-11-19486.png" width="143" height="80"></a>
-							</li>
-							<li class="con1fr_lli1">
-								<a href="http://www.nongyao001.com/com/xt1985/"><img alt="南京领先化工有限公司" title="南京领先化工有限公司" src="img/10-38-07-64-23293.png" width="143" height="80"></a>
-							</li>
-							<li class="con1fr_lli2">
-								<a href="http://www.nongyao001.com/com/zzxhnykj0014/"><img alt="鑫豪农业科技有限公司" title="鑫豪农业科技有限公司" src="img/15-40-01-81-12012.jpg" width="143" height="80"></a>
-							</li>
-							<li class="con1fr_lli1">
-								<a href="http://www.nongyao001.com/com/chazi/"><img alt="山东新禾农药化工" title="山东新禾农药化工" src="img/22-40-41-81-15374.jpg" width="143" height="80"></a>
-							</li>
-							<li class="con1fr_lli2">
-								<a href="http://www.nongyao001.com/com/bfnr8583/"><img alt="河南·北方农人生物技术有限公司" title="河南·北方农人生物技术有限公司" src="img/14-09-40-36-23293.png" width="143" height="80"></a>
-							</li>
-						</ul>
-					</div>
-					<script>
-						settab({
-							navEle: '.con4fr_bt li',
-							contentEle: '.con4fr_bt_con',
-							navCls: 'con1fr_btli',
-							navOnCls: 'con1fr_btlion',
-							triggerEvent: 'mouseover'
-						});
-					</script>
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div class="con1f_5 F-5" id="con1f_5">
-				<div class="con1fl_5">
-					<h2 class="con5fl_bt"><span class="con1fl_btsp5">5F调节剂</span></h2>
-					<div class="con1fl_nav">
-						<div class="con1fl_nav_con">
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">生长类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="胺鲜酯">胺鲜酯</a></li>
-									<li class="con1fl_navli"><a href="#" title="吲哚丁酸">吲哚丁</a></li>
-									<li class="con1fl_navli"><a href="#" title="复硝酚钠">复硝酚</a></li>
-									<li class="con1fl_navli"><a href="#" title="复硝酚钾">复硝酚</a></li>
-									<li class="con1fl_navli"><a href="#" title="芸苔素内酯">芸苔素</a></li>
-									<li class="con1fl_navli"><a href="#" title="吲哚乙酸">吲哚乙</a></li>
-									<li class="con1fl_navli"><a href="#" title="萘乙酸">萘乙酸</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">乙烯类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="2-(乙酰氧基)苯甲酸">2-(乙酰</a></li>
-									<li class="con1fl_navli"><a href="#" title="赤霉素">赤霉素</a></li>
-									<li class="con1fl_navli"><a href="#" title="赤霉酸A4+A7">赤霉酸</a></li>
-									<li class="con1fl_navli"><a href="#" title="赤霉酸">赤霉酸</a></li>
-									<li class="con1fl_navli"><a href="#" title="乙烯利">乙烯利</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">分裂素</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="苄氨基嘌呤 ">苄氨基</a></li>
-									<li class="con1fl_navli"><a href="#" title="噻苯隆">噻苯隆</a></li>
-									<li class="con1fl_navli"><a href="#" style="color:#993300" title="氯吡脲">氯吡脲</a></li>
-									<li class="con1fl_navli"><a href="#" title="羟烯腺嘌呤">羟烯腺嘌呤</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">延缓类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="矮壮素">矮壮素</a></li>
-									<li class="con1fl_navli"><a href="#" style="color:#993300" title="多效唑">多效唑</a></li>
-									<li class="con1fl_navli"><a href="#" title="丁酰肼">丁酰肼</a></li>
-									<li class="con1fl_navli"><a href="#" title="甲哌鎓">缩节胺</a></li>
-									<li class="con1fl_navli"><a href="#" title="氯化胆碱">氯化胆碱</a></li>
-									<li class="con1fl_navli"><a href="#" title="S-诱抗素">S-诱抗素</a></li>
-									<li class="con1fl_navli"><a href="#" title="烯效唑">烯效唑</a></li>
-									<li class="con1fl_navli"><a href="#" title="仲丁灵">仲丁灵</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">其它类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="硅丰环">硅丰环</a></li>
-									<li class="con1fl_navli"><a href="#" title="三十烷醇">三十烷醇</a>
-
-									</li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-						</div>
-					</div>
-					<div class="con1fl_nr">
-						<ul>
-						<div class="mygoods5"></div>
-							<!-- <li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="多效唑15%(可湿性粉剂) 500g*20袋/件" class="lazy" src="img/09-48-36-75-19486.jpg.thumb.jpg" title="多效唑15%(可湿性粉剂) 500g*20袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="多效唑15%(可湿性粉剂)500g*20袋/件">多效唑15%(可湿性粉剂)</a></p>
-										<p>规格：500g*20袋/件</p>
-										<p>江苏丰山集团股份有限公</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥280元/件</span>
-
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="芸苔素内酯0.0075%(水剂) 5ml*600袋/件" class="lazy" src="img/16-51-46-63-19486.jpg.thumb.jpg" title="芸苔素内酯0.0075%(水剂) 5ml*600袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="芸苔素内酯0.0075%(水剂)5ml*600袋/件">芸苔素内酯0.0075%(水剂</a></p>
-										<p>规格：5ml*600袋/件</p>
-										<p>成都新朝阳作物科学有限</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥1380元/件</span>
-
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="芸苔素内酯0.004%（水剂） 10ml*1000袋/件" class="lazy" src="img/11-23-34-70-19486.jpg.thumb.jpg" title="芸苔素内酯0.004%（水剂） 10ml*1000袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p><a href="#" title="芸苔素内酯0.004%（水剂）10ml*1000袋/件">芸苔素内酯0.004%（水剂</a></p>
-										<p>规格：10ml*1000袋/件</p>
-										<p>北京中植科华农业技术有</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥2070元/件</span>
-
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli2">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="多效唑15%(可湿性粉剂) 180g*50袋/件" class="lazy" src="img/18-54-30-28-19486.jpg.thumb.jpg" title="多效唑15%(可湿性粉剂) 180g*50袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="多效唑15%(可湿性粉剂)180g*50袋/件">多效唑15%(可湿性粉剂)</a>
-										</p>
-										<p>规格：180g*50袋/件</p>
-										<p>江苏建农植物保护有限公</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥265元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="多效唑15%(可湿性粉剂) 500g*20袋/件" class="lazy" src="img/17-19-26-50-19486.jpg.thumb.jpg" title="多效唑15%(可湿性粉剂) 500g*20袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="多效唑15%(可湿性粉剂)500g*20袋/件">多效唑15%(可湿性粉剂)</a></p>
-										<p>规格：500g*20袋/件</p>
-										<p>江苏建农植物保护有限公</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥290元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="多效唑15%(可湿性粉剂) 35g*100袋/件" class="lazy" src="img/17-06-09-86-19486.jpg.thumb.jpg" title="多效唑15%(可湿性粉剂) 35g*100袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="多效唑15%(可湿性粉剂)35g*100袋/件">多效唑15%(可湿性粉剂)</a></p>
-										<p>规格：35g*100袋/件</p>
-										<p>江苏建农植物保护有限公</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥110元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="芸苔`嘌呤2.01%(水分散粒剂) 3g*800袋/件" class="lazy" src="img/17-58-56-43-19486.jpg.thumb.jpg" title="芸苔`嘌呤2.01%(水分散粒剂) 3g*800袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="芸苔`嘌呤2.01%(水分散粒剂)3g*800袋/件">芸苔`嘌呤2.01%(水分散�</a></p>
-										<p>规格：3g*800袋/件</p>
-										<p>陕西韦尔奇作物保护有限</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥1840元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli4">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="氯吡脲0.1%(可溶液剂) 50g*120盒/件" class="lazy" src="img/19-17-43-18-19486.jpg.thumb.jpg" title="氯吡脲0.1%(可溶液剂) 50g*120盒/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="氯吡脲0.1%(可溶液剂)50g*120盒/件">氯吡脲0.1%(可溶液剂)</a></p>
-										<p>规格：50g*120盒/件</p>
-										<p>四川施特优化工有限公司</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥855元/件</span></div>
-								</div>
-							</li> -->
-						</ul>
-					</div>
-				</div>
-				<div class="con1fr">
-					<ul class="con5fr_bt">
-						<li class="con5fr_btlion">
-							<a href="#">技术支持</a></li>
-					</ul>
-					<h5 class="toprgg_bt3"><a href="#" class="colored" title="蘑菇蜜饯的加工技术">蘑菇蜜饯的加工技术</a>
 			
-		</h5>
-					<div class="con1fr_tli">
-						<p class="toprgg_bpic"><img alt="" title="" src="img/14-30-08-68-28365.jpg" width="103" height="80" /></p>
-						<p class="con1fr_txt">　　蘑菇蜜饯不仅营养价值高，而且口感好，是人们十分喜爱的传统风味食品。其加工技...[<a href="#" class="colored">详细</a>]</p>
-					</div>
-					<ul>
-						<li class="con1fr_dli"><span class="toprgg_sp">09-23</span><a href="#" class="con1fr_dot" title="提早应对“秋寒”  巧施叶面肥很关键">提早应对“秋寒”  巧施叶面肥</a></li>
-						<li class="con1fr_dli"><span class="toprgg_sp">09-23</span><a href="#" class="con1fr_dot" title="盆栽月季石榴的栽培要点">盆栽月季石榴的栽培要点</a></li>
-						<li class="con1fr_dli"><span class="toprgg_sp">09-23</span><a href="#" class="con1fr_dot" title="春植香蕉优质高产栽培技术">春植香蕉优质高产栽培技术</a></li>
-						<li class="con1fr_dli"><span class="toprgg_sp">09-23</span><a href="#" class="con1fr_dot" title="抗旱保苗保麦技术方法">抗旱保苗保麦技术方法</a></li>
-						<li class="con1fr_dli"><span class="toprgg_sp">09-23</span><a href="#" class="con1fr_dot" title="无公害板栗高产高效栽培技术">无公害板栗高产高效栽培技术</a></li>
-					</ul>
-					<ul class="con1fr_lul">
-						<li class="con1fr_lli1">
-							<a href="http://www.nongyao001.com/com/sdshenxing/">
-								<img alt="山东神星药业有限公司" title="山东神星药业有限公司" src="山东神星药业有限公司17-42-48-99-19486.png" width="143" height="80"></a>
-						</li>
-						<li class="con1fr_lli2">
-							<a href="http://www.nongyao001.com/com/longhuaxinye/">
-								<img alt="北京市隆华新业卫生杀虫剂有限公司" title="北京市隆华新业卫生杀虫剂有限公司" src="img/201005171137141936a58fa53007c1a2b175a7985373a502b0.jpg" width="143" height="80"></a>
-						</li>
-						<li class="con1fr_lli1">
-							<a href="http://www.nongyao001.com/com/shenqiu/">
-								<img alt="河南省沈丘县农药厂" title="河南省沈丘县农药厂" src="img/16-50-54-11-19486.png" width="143" height="80"></a>
-						</li>
-						<li class="con1fr_lli2">
-							<a href="http://www.nongyao001.com/com/jinsai/">
-								<img alt="河北省张家口金赛制药有限公司" title="河北省张家口金赛制药有限公司" src="img/17-22-07-19-19486.png" width="143" height="80"></a>
-						</li>
-						<li class="con1fr_lli1">
-							<a href="http://www.nongyao001.com/com/syshuangxingyjc/">
-								<img alt="辽宁省沈阳市双兴卫生消杀药剂厂" title="辽宁省沈阳市双兴卫生消杀药剂厂" src="img/17-29-10-67-19486.png" width="143" height="80"></a>
-						</li>
-						<li class="con1fr_lli2">
-							<a href="http://www.nongyao001.com/com/dalianjinmao/">
-								<img alt="辽宁省大连金猫鼠药有限公司" title="辽宁省大连金猫鼠药有限公司" src="img/17-24-45-54-19486.png" width="143" height="80"></a>
-						</li>
-					</ul>
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div class="con1f_6 F-6" id="con1f_6">
-				<div class="con1fl_6">
-					<h2 class="con6fl_bt"><span class="con1fl_btsp6">6F叶面肥</span></h2>
-					<div class="con1fl_nav">
-						<div class="con1fl_nav_con">
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">膨大类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="大田膨大素">大田</a></li>
-									<li class="con1fl_navli"><a href="#" title="果树膨大素">果树</a></li>
-									<li class="con1fl_navli"><a href="#" title="花卉膨大素">花卉</a></li>
-									<li class="con1fl_navli"><a href="#" title="蔬菜膨大素">蔬菜</a></li>
-									<li class="con1fl_navli"><a href="#" title="药用膨大素">药用膨</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">元素类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="氮肥">氮肥</a></li>
-									<li class="con1fl_navli"><a href="#" title="钼肥">钼肥</a></li>
-									<li class="con1fl_navli"><a href="#" title="钙肥">钙肥</a></li>
-									<li class="con1fl_navli"><a href="#" title="钾肥">钾肥</a></li>
-									<li class="con1fl_navli"><a href="#" title="磷酸二氢钾">二氢钾</a></li>
-									<li class="con1fl_navli"><a href="#" title="磷元素">磷元素</a></li>
-									<li class="con1fl_navli"><a href="#" title="硫元素">硫元素</a></li>
-									<li class="con1fl_navli"><a href="#" title="锰肥">锰肥</a></li>
-									<li class="con1fl_navli"><a href="#" title="镁元素">镁元素</a></li>
-									<li class="con1fl_navli"><a href="#" title="硼肥">硼肥</a></li>
-									<li class="con1fl_navli"><a href="#" title="铁元素">铁元素</a></li>
-									<li class="con1fl_navli"><a href="#" title="铜元素">铜元素</a></li>
-									<li class="con1fl_navli"><a href="#" title="锌肥">锌肥</a></li>
-									<li class="con1fl_navli"><a href="#" title="硝酸钙">硝酸钙</a></li>
-									<li class="con1fl_navli"><a href="#" title="硝酸钾">硝酸钾</a></li>
-									<li class="con1fl_navli"><a href="#" title="叶面类">叶面类</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">生根类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="大田生根类">大田</a></li>
-									<li class="con1fl_navli"><a href="#" title="果树生根类">果树</a></li>
-									<li class="con1fl_navli"><a href="#" title="花卉生根类">花卉</a></li>
-									<li class="con1fl_navli"><a href="#" title="蔬菜生根类">蔬菜</a></li>
-									<li class="con1fl_navli"><a href="#" title="药用生根类">药用生</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">氨基酸</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="氨基酸">氨基酸</a></li>
-									<li class="con1fl_navli"><a href="#" title="腐植酸">腐植酸</a></li>
-									<li class="con1fl_navli"><a href="#" title="黄腐酸">黄腐酸</a></li>
-									<li class="con1fl_navli"><a href="#" title="核苷酸">核苷酸</a></li>
-									<li class="con1fl_navli"><a href="#" title="壳聚糖">壳聚糖</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">冲施类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="大田冲施肥">大田</a></li>
-									<li class="con1fl_navli"><a href="#" title="果树冲施肥">果树</a></li>
-									<li class="con1fl_navli"><a href="#" title="花卉冲施肥">花卉</a></li>
-									<li class="con1fl_navli"><a href="#" title="蔬菜冲施肥">蔬菜</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">生物类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="枯草芽孢杆菌">枯草芽孢杆菌</a></li>
-									<li class="con1fl_navli"><a href="#" title="木霉菌">木霉菌</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">有机类</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="大田有机类">大田</a></li>
-									<li class="con1fl_navli"><a href="#" title="果树有机类">果树</a></li>
-									<li class="con1fl_navli"><a href="#" title="花卉有机类">花卉</a></li>
-									<li class="con1fl_navli"><a href="#" title="蔬菜有机类">蔬菜</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear"></p>
-							</div>
-							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">提取物</b>
-								<ul class="con1fl_navul">
-									<li class="con1fl_navli"><a href="#" title="多聚糖">多聚糖</a></li>
-									<li class="con1fl_navli"><a href="#" title="蛋白肽">蛋白肽</a></li>
-									<li class="con1fl_navli"><a href="#" title="海藻素">海藻素</a></li>
-									<li class="con1fl_navli"><a href="#" title="甲壳素">甲壳素</a>
-									</li>
-									<li class="con1fl_navli"><a href="#" title="维生素">维生素</a></li>
-									<li class="con1fl_navli"><a href="#"  title="鱼蛋白">鱼蛋白</a></li>
-									<p class="clear"></p>
-								</ul>
-								<p class="clear">
-
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="con1fl_nr">
-						<ul>
-						<div class="mygoods6"></div>
-							<!-- <li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="抗寒防冻剂 25g*9*50袋/件" class="lazy" src="img/18-07-35-83-19486.jpg.thumb.jpg" title="抗寒防冻剂 25g*9*50袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="抗寒防冻剂25g*9*50袋/件">抗寒防冻剂</a></p>
-										<p>规格：25g*9*50袋/件</p>
-										<p>安丘市绿博生物肥业有限</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥180元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="新生力-甲壳素腐植酸钾(冲施肥) 4kg*5袋*50件/吨" class="lazy" src="img/17-02-22-24-797.jpg.thumb.jpg" title="新生力-甲壳素腐植酸钾(冲施肥) 4kg*5袋*50件/吨" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="新生力-甲壳素腐植酸钾(冲施肥)4kg*5袋*50件/吨">新生力-甲壳素腐植酸钾(</a>
-										</p>
-										<p>规格：4kg*5袋*50件/吨</p>
-										<p>潍坊市新生力生物技术有</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥2950元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="顺直膨大鲜花王 （25g*4袋）*100盒/件" class="lazy" src="img/10-34-59-86-19486.jpg.thumb.jpg" title="顺直膨大鲜花王 （25g*4袋）*100盒/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="顺直膨大鲜花王（25g*4袋）*100盒/件">顺直膨大鲜花王</a>
-										</p>
-										<p>规格：（25g*4袋）*100</p>
-										<p>河南省五谷丰农化有限公</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥400元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli2">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="水(糯)稻粒粒饱 30g*200袋/件" class="lazy" src="img/15-28-24-30-18304.jpg.thumb.jpg" title="水(糯)稻粒粒饱 30g*200袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p><a href="#" title="水(糯)稻粒粒饱30g*200袋/件">水(糯)稻粒粒饱</a></p>
-										<p>规格：30g*200袋/件</p>
-										<p>安丘春雨生物肥业有限公</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥90元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="地下根茎膨大素(水溶肥) 25g*6包*60袋/件" class="lazy" src="img/16-44-32-65-18041.jpg.thumb.jpg" title="地下根茎膨大素(水溶肥) 25g*6包*60袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="地下根茎膨大素(水溶肥)25g*6包*60袋/件">地下根茎膨大素(水溶肥)</a></p>
-										<p>规格：25g*6包*60袋/件</p>
-										<p>山东华尔联邦生物科技有</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥170元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="益妙EDDHA-FE螯合铁6 专业矫治果树花卉苗木黄化/黄叶 25kg/桶/件" class="lazy" src="img/10-17-25-32-19618.jpg.thumb.jpg" title="益妙EDDHA-FE螯合铁6 专业矫治果树花卉苗木黄化/黄叶 25kg/桶/件" src="" width="154" height="154" />
-										</a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="益妙EDDHA-FE螯合铁6 专业矫治果树花卉苗木黄化/黄叶25kg/桶/件">益妙EDDHA-FE螯合铁6 专</a>
-										</p>
-										<p>规格：25kg/桶/件</p>
-										<p>杨凌益妙螯合技术有限公</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥1160元/桶</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="含腐植酸水溶肥料(大田专用) 1000g*12瓶/件" class="lazy" src="img/11-34-01-71-19486.jpg.thumb.jpg" title="含腐植酸水溶肥料(大田专用) 1000g*12瓶/件" src="" width="154" height="154" />
-										</a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="含腐植酸水溶肥料(大田专用)1000g*12瓶/件">含腐植酸水溶肥料(大田�</a></p>
-										<p>规格：1000g*12瓶/件</p>
-										<p>佛山市植宝化工有限公司</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥305元/件</span>
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli4">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="高纯硼(含腐植酸水溶肥料) 1000g*12瓶/件" class="lazy" src="img/11-33-26-62-19486.jpg.thumb.jpg" title="高纯硼(含腐植酸水溶肥料) 1000g*12瓶/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="高纯硼(含腐植酸水溶肥料)1000g*12瓶/件">高纯硼(含腐植酸水溶肥�</a></p>
-										<p>规格：1000g*12瓶/件</p>
-										<p>佛山市植宝化工有限公司</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥660元/件</span></div>
-								</div>
-							</li> -->
-						</ul>
-					</div>
-				</div>
-				<div class="con1fr">
-					<ul class="con6fr_bt">
-						<li class="con6fr_btlion">
-							<a href="#">政策法规</a></li>
-					</ul>
-					<h5 class="toprgg_bt3">
-						<a href="#" class="colored" title="农业部：研究部署农业扶贫开发重大政策举措">农业部：研究部署农业扶贫开发重</a>
-					</h5>
-					<div class="con1fr_tli">
-						<p class="toprgg_bpic"><img alt="" title="" src="img/11-14-26-36-31540.png" width="103" height="80" /></p>
-						<p class="con1fr_txt">7月30日，农业部召开部扶贫开发工作领导小组会议，学习贯彻近期中央领导关于扶贫开...[<a href="#" class="colored">详细</a>]</p>
-					</div>
-					<ul>
-						<li class="con1fr_dli"><span class="toprgg_sp">09-12</span><a href="#" class="con1fr_dot" title="工信部：麦草畏原药等30项农药行业标准发布">工信部：麦草畏原药等30项农药</a></li>
-						<li class="con1fr_dli"><span class="toprgg_sp">09-05</span><a href="#" class="con1fr_dot" title="农业部：办公厅关于肥料登记行政审批有关事项的通知">农业部：办公厅关于肥料登记行</a></li>
-						<li class="con1fr_dli"><span class="toprgg_sp">08-28</span><a href="#" class="con1fr_dot" title="2015年农村征地拆迁补偿标准">2015年农村征地拆迁补偿标准</a></li>
-						<li class="con1fr_dli"><span class="toprgg_sp">08-22</span><a href="#" class="con1fr_dot" title="我国发布首个病毒杀虫剂地方标准">我国发布首个病毒杀虫剂地方标</a></li>
-						<li class="con1fr_dli"><span class="toprgg_sp">08-18</span><a href="#" class="con1fr_dot" title="农业部：部署主要农作物全程机械化推进行动">农业部：部署主要农作物全程机</a></li>
-					</ul>
-					<ul class="con1fr_lul">
-						<li class="con1fr_lli1">
-							<a href="#">
-								<img alt="陕西恒田化工有限公司" title="陕西恒田化工有限公司" src="img/18-06-33-47-19486.png" width="143" height="80"></a>
-						</li>
-						<li class="con1fr_lli2">
-							<a href="#">
-								<img alt="河北三农农用化工有限公司" title="河北三农农用化工有限公司" src="img/14-32-45-59-19486.png" width="143" height="80"></a>
-						</li>
-						<li class="con1fr_lli1">
-							<a href="#">
-								<img alt="山东绿霸化工股份有限公司" title="山东绿霸化工股份有限公司" src="img/17-45-12-48-19486.png" width="143" height="80"></a>
-						</li>
-						<li class="con1fr_lli2">
-							<a href="http://www.nongyao001.com/com/sddtnh/">
-								<img alt="山东东泰农化有限公司" title="山东东泰农化有限公司" src="img/10-30-32-66-23293.png" width="143" height="80"></a>
-						</li>
-						<li class="con1fr_lli1">
-							<a href="#">
-								<img alt="青岛海纳生物科技有限公司" title="青岛海纳生物科技有限公司" src="img/17-52-52-52-19486.png" width="143" height="80"></a>
-						</li>
-						<li class="con1fr_lli2">
-							<a href="#">
-								<img alt="国光农化股份有限公司" title="国光农化股份有限公司" src="img/15-12-08-58-19486.png" width="143" height="80"></a>
-						</li>
-					</ul>
-				</div>
-				<div class="clear"></div>
-			</div>
 			<div class="con1f_7 F-7" id="con1f_7">
 				<div class="con1fl_7">
-					<h2 class="con7fl_bt"><span class="con1fl_btsp7">7F其他</span></h2>
+					<h2 class="con7fl_bt"><span class="con1fl_btsp7">4F其他</span></h2>
 					<div class="con1fl_nav">
 						<div class="con1fl_nav_con">
 							<div class="con1fl_nav_con_box"> <b class="con1fl_navbt">原药类</b>
@@ -4007,137 +2827,7 @@
 					</div>
 					<div class="con1fl_nr">
 						<ul>
-						<div class="mygoods7"></div>
-							<!-- <li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="噁霉灵99%（原药） 4g*200袋/件" class="lazy" src="img/12-02-43-68-19486.jpg.thumb.jpg" title="噁霉灵99%（原药） 4g*200袋/件" src="" width="154" height="154" />
-										</a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="噁霉灵99%（原药）4g*200袋/件">噁霉灵99%（原药）</a></p>
-										<p>规格：4g*200袋/件</p>
-										<p>威海韩孚生化药业有限公</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥510元/件</span>
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="聚醛`甲萘威6%(颗粒剂) 160g*50袋/件" class="lazy" src="img/08-57-09-55-19486.jpg.thumb.jpg" title="聚醛`甲萘威6%(颗粒剂) 160g*50袋/件" src="" width="154" height="154" />
-										</a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="聚醛`甲萘威6%(颗粒剂)160g*50袋/件">聚醛`甲萘威6%(颗粒剂)</a></p>
-										<p>规格：160g*50袋/件</p>
-										<p>江苏省徐州诺特化工有限</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥150元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli1">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="四聚乙醛5%(颗粒剂) 200g*50袋/件" class="lazy" src="img/16-49-24-93-19486.jpg.thumb.jpg" title="四聚乙醛5%(颗粒剂) 200g*50袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="四聚乙醛5%(颗粒剂)200g*50袋/件">四聚乙醛5%(颗粒剂)</a></p>
-										<p>规格：200g*50袋/件</p>
-										<p>法国戴商高士公司</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥550元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli2">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="霜脲氰94%（原药） 10ｇ*400袋/件" class="lazy" src="img/16-38-57-99-19486.jpg.thumb.jpg" title="霜脲氰94%（原药） 10ｇ*400袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="霜脲氰94%（原药）10ｇ*400袋/件">霜脲氰94%（原药）</a></p>
-										<p>规格：10ｇ*400袋/件</p>
-										<p>甘肃华实农业科技有限公</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥1840元/件</span>
-
-									</div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="杀虫气雾剂	0.18%(气雾剂) 360ml*36瓶/件" class="lazy" src="img/11-58-58-44-1252.jpg.thumb.jpg" title="杀虫气雾剂	0.18%(气雾剂) 360ml*36瓶/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="杀虫气雾剂	0.18%(气雾剂)360ml*36瓶/件">杀虫气雾剂	0.18%(气雾�</a></p>
-										<p>规格：360ml*36瓶/件</p>
-										<p>福建泉州高科日化制造有</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥335元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="四聚乙醛6%(颗粒剂) 350g*20袋/件" class="lazy" src="img/11-05-50-72-23731.jpg.thumb.jpg" title="四聚乙醛6%(颗粒剂) 350g*20袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p><a href="#" title="四聚乙醛6%(颗粒剂)350g*20袋/件">四聚乙醛6%(颗粒剂)</a></p>
-										<p>规格：350g*20袋/件</p>
-										<p>瑞士龙沙有限公司</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥180元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli3">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="草甘膦95%(原药) （40g+40g）*100袋/件" class="lazy" src="img/15-53-03-66-24179.jpg.thumb.jpg" title="草甘膦95%(原药) （40g+40g）*100袋/件" src="" width="154" height="154" />
-										</a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="草甘膦95%(原药)（40g+40g）*100袋/件">草甘膦95%(原药)</a></p>
-										<p>规格：（40g+40g）*100</p>
-										<p>威海韩孚生化药业有限公</p>
-									</div>
-									<div class="con1fl_nrli_pri_box">
-										<span class="con1fl_nrli_pri_pre">￥300元/件</span></div>
-								</div>
-							</li>
-							<li class="con1fl_nrli4">
-								<div class="con1fl_nrli_con_box">
-									<p>
-										<a href="#">
-											<img alt="溴敌隆0.005%(毒饵) 50g*200袋/件" class="lazy" src="img/14-55-19-53-23628.jpg.thumb.jpg" title="溴敌隆0.005%(毒饵) 50g*200袋/件" src="" width="154" height="154" /></a>
-									</p>
-									<div class="con1fl_nrtxt">
-										<p>
-											<a href="#" title="溴敌隆0.005%(毒饵)50g*200袋/件">溴敌隆0.005%(毒饵)</a></p>
-										<p>规格：50g*200袋/件</p>
-										<p>开封市普朗克生物化学有</p>
-									</div>
-									<div class="con1fl_nrli_pri_box"><span class="con1fl_nrli_pri_pre">￥110元/件</span></div>
-								</div>
-							</li> -->
+							<div id="d4"></div>
 						</ul>
 					</div>
 				</div>
@@ -4146,8 +2836,7 @@
 						<li class="con7fr_btlion">
 							<a href="#">人物周刊</a></li>
 					</ul>
-					<h5 class="toprgg_bt3">
-																							<a href="#" class="colored" title="耕耘核桃洼 编织幸福梦">耕耘核桃洼 编织幸福梦</a></h5>
+					<h5 class="toprgg_bt3"><a href="#" class="colored" title="耕耘核桃洼 编织幸福梦">耕耘核桃洼 编织幸福梦</a></h5>
 					<div class="con1fr_tli">
 						<p class="toprgg_bpic"><img alt="" title="" src="img/09-22-14-53-29630.jpg" width="103" height="80" /></p>
 						<p class="con1fr_txt">她承包荒山、栽植刺槐、种核桃树、办合作社，用柔弱的身躯扛起领村崛起、带民致富的...[<a href="#" class="colored">详细</a>]</p>
@@ -4189,7 +2878,7 @@
 				<div class="clear"></div>
 			</div>
 			<div class="con8f" id="con1f_8">
-				<h2 class="con8f_bt"><span class="con8f_btsp">8F购买记录</span></h2>
+				<h2 class="con8f_bt"><span class="con8f_btsp">5F购买记录</span></h2>
 				<ul class="con8f_ul" id="scrolltrade">
 					<li class="con8f_li">
 						<div class="con8f_pic">
@@ -4261,7 +2950,7 @@
 							<p>1000ml*10瓶/件</p>
 							<p>利民化工股份有限公司</p>
 							<p class="con8f_bot"> <a href="/sell/show-70726.html" class="con8f_gm">我要购买</a>
-								<p class="con8f_pri"><span class="con8f_pri1">￥<span><span class="con8f_pri2">460</span></p>
+								<p class="con8f_pri"><span class="con8f_pri1">￥</span><span class="con8f_pri2">460</span></p>
 							</p>
 						</div>
 					</li>
@@ -4277,7 +2966,10 @@
 							<p>20g*360袋/件</p>
 							<p>中国农科院植保所廊坊农</p>
 							<p class="con8f_bot"> <a href="/sell/show-75900.html" class="con8f_gm">我要购买</a>
-								<p class="con8f_pri"><span class="con8f_pri1">￥<span><span class="con8f_pri2">580</span></p>
+								<p class="con8f_pri">
+								<span class="con8f_pri1">￥</span>
+								<span class="con8f_pri2">580</span>
+								</p>
 							</p>
 						</div>
 					</li>
@@ -4294,7 +2986,7 @@
 							<p>济南中科绿色生物工程有</p>
 							<p class="con8f_bot">
 								<a href="/sell/show-11895.html" class="con8f_gm">我要购买</a>
-								<p class="con8f_pri"><span class="con8f_pri1">￥<span><span class="con8f_pri2">225</span>
+								<p class="con8f_pri"><span class="con8f_pri1">￥</span><span class="con8f_pri2">225</span>
 
 								</p>
 							</p>
@@ -4314,7 +3006,7 @@
 							<p>江苏克胜集团股份有限公</p>
 							<p class="con8f_bot">
 								<a href="/sell/show-67052.html" class="con8f_gm">我要购买</a>
-								<p class="con8f_pri"><span class="con8f_pri1">￥<span>
+								<p class="con8f_pri"><span class="con8f_pri1">￥</span>
 													<span class="con8f_pri2">235</span></p>
 							</p>
 						</div>
@@ -4335,7 +3027,7 @@
 							<p>山东华阳农药化工集团有</p>
 							<p class="con8f_bot">
 								<a href="/sell/show-85004.html" class="con8f_gm">我要购买</a>
-								<p class="con8f_pri"><span class="con8f_pri1">￥<span>
+								<p class="con8f_pri"><span class="con8f_pri1">￥</span>
 																	<span class="con8f_pri2">115</span></p>
 							</p>
 						</div>
@@ -4356,7 +3048,7 @@
 							<p>江苏富田农化有限公司</p>
 							<p class="con8f_bot">
 								<a href="/sell/show-66961.html" class="con8f_gm">我要购买</a>
-								<p class="con8f_pri"><span class="con8f_pri1">￥<span>
+								<p class="con8f_pri"><span class="con8f_pri1">￥</span>
 																					<span class="con8f_pri2">660</span></p>
 							</p>
 						</div>
@@ -4375,7 +3067,7 @@
 							<p>利民化工股份有限公司</p>
 							<p class="con8f_bot">
 								<a href="/sell/show-59325.html" class="con8f_gm">我要购买</a>
-								<p class="con8f_pri"><span class="con8f_pri1">￥<span>
+								<p class="con8f_pri"><span class="con8f_pri1">￥</span>
 																										<span class="con8f_pri2">390</span></p>
 							</p>
 						</div>
@@ -4415,7 +3107,7 @@
 							<p>石家庄市久农丰化工科技</p>
 							<p class="con8f_bot">
 								<a href="/sell/show-85413.html" class="con8f_gm">我要购买</a>
-								<p class="con8f_pri"><span class="con8f_pri1">￥<span>
+								<p class="con8f_pri"><span class="con8f_pri1">￥</span>
 																					<span class="con8f_pri2">115</span></p>
 							</p>
 						</div>
@@ -4434,7 +3126,7 @@
 							<p>200ml*20瓶/件</p>
 							<p>天津市施普乐农药技术发</p>
 							<p class="con8f_bot"> <a href="/sell/show-84952.html" class="con8f_gm">我要购买</a>
-								<p class="con8f_pri"><span class="con8f_pri1">￥<span><span class="con8f_pri2">275</span></p>
+								<p class="con8f_pri"><span class="con8f_pri1">￥</span><span class="con8f_pri2">275</span></p>
 							</p>
 						</div>
 					</li>
@@ -4449,7 +3141,7 @@
 							<p>200ml*20瓶/件</p>
 							<p>山东华阳农药化工集团有</p>
 							<p class="con8f_bot"> <a href="/sell/show-66127.html" class="con8f_gm">我要购买</a>
-								<p class="con8f_pri"><span class="con8f_pri1">￥<span><span class="con8f_pri2">180</span></p>
+								<p class="con8f_pri"><span class="con8f_pri1">￥</span><span class="con8f_pri2">180</span></p>
 							</p>
 						</div>
 					</li>
@@ -4464,7 +3156,7 @@
 							<p>100ml*60瓶/件</p>
 							<p>石家庄市久农丰化工科技</p>
 							<p class="con8f_bot"> <a href="/sell/show-85413.html" class="con8f_gm">我要购买</a>
-								<p class="con8f_pri"><span class="con8f_pri1">￥<span><span class="con8f_pri2">115</span></p>
+								<p class="con8f_pri"><span class="con8f_pri1">￥</span><span class="con8f_pri2">115</span></p>
 							</p>
 						</div>
 					</li>
@@ -4479,7 +3171,7 @@
 							<p>1000g*15袋/件</p>
 							<p>山东潍坊固信农化有限公</p>
 							<p class="con8f_bot"> <a href="/sell/show-16068.html" class="con8f_gm">我要购买</a>
-								<p class="con8f_pri"><span class="con8f_pri1">￥<span><span class="con8f_pri2">90</span></p>
+								<p class="con8f_pri"><span class="con8f_pri1">￥</span><span class="con8f_pri2">90</span></p>
 							</p>
 						</div>
 					</li>
@@ -4494,7 +3186,7 @@
 							<p>100ml*40瓶/件</p>
 							<p>河南科邦化工有限公司</p>
 							<p class="con8f_bot"> <a href="/sell/show-39998.html" class="con8f_gm">我要购买</a>
-								<p class="con8f_pri"><span class="con8f_pri1">￥<span><span class="con8f_pri2">225</span></p>
+								<p class="con8f_pri"><span class="con8f_pri1">￥</span><span class="con8f_pri2">225</span></p>
 							</p>
 						</div>
 					</li>
@@ -4509,7 +3201,7 @@
 							<p>300ml*20瓶/件</p>
 							<p>河北三农农用化工有限公</p>
 							<p class="con8f_bot"> <a href="/sell/show-38657.html" class="con8f_gm">我要购买</a>
-								<p class="con8f_pri"><span class="con8f_pri1">￥<span><span class="con8f_pri2">275</span></p>
+								<p class="con8f_pri"><span class="con8f_pri1">￥</span><span class="con8f_pri2">275</span></p>
 							</p>
 						</div>
 					</li>
@@ -4524,7 +3216,7 @@
 							<p>500ml*20瓶/件</p>
 							<p>江苏辉胜农药有限公司</p>
 							<p class="con8f_bot"> <a href="/sell/show-72060.html" class="con8f_gm">我要购买</a>
-								<p class="con8f_pri"><span class="con8f_pri1">￥<span><span class="con8f_pri2">330</span></p>
+								<p class="con8f_pri"><span class="con8f_pri1">￥</span><span class="con8f_pri2">330</span></p>
 							</p>
 						</div>
 					</li>
@@ -4607,7 +3299,7 @@
 				</ul>
 			</div>
 			<div class="con8f" id="con1f_9">
-				<h2 class="con8f_bt"><span class="con9f_btsp">9F病虫害知识库</span></h2>
+				<h2 class="con8f_bt"><span class="con9f_btsp">6F病虫害知识库</span></h2>
 				<div class="con8f_ul">
 					<ul class="con9f_bt">
 						<li class="con9f_btlion"><a href="#" title="点击查看更多">蔬菜病害</a></li>
@@ -5759,7 +4451,7 @@
 					</div>
 					<!--footxt end-->
 					<div class="footpic">
-						<img style="cursor: hand;" alt="51啦统计" onclick="window.open('http://www.51honest.org/wscredit/detail.credit?action=preLevel&credcode=NO.20000030555','','resizable=yes,location=yes,toolbar=yes,menubar=yes,scrollbars=yes,status=yes')" src="img/80.gif"
+						<img style="cursor: hand;" alt="51啦统计" onclick="window.open('http://www.51honest.org/wscredit/detail.credit?action=preLevel&credcode=NO.20000030555','','resizable=yes,location=yes,toolbar=yes,menubar=yes,scrollbars=yes,status=yes')" src="img/117-40/80.gif"
 						border="0" complete="complete" align="top" />
 						<a id="_pingansec_bottomimagelarge_shiming" href="#">
 							<img src="img/bottom_large_img.png" />
@@ -5785,22 +4477,13 @@
 			<div class="gd_menu_4" id="con1f_3">
 				<a rel="nofollow" href="javascript:scrollTocom(2205)">3F &nbsp;除草剂</a>
 			</div>
-			<div class="gd_menu_5" id="con1f_4">
-				<a rel="nofollow" href="javascript:scrollTocom(2785)">4F &nbsp;杀螨剂</a>
-			</div>
-			<div class="gd_menu_6" id="con1f_5">
-				<a rel="nofollow" href="javascript:scrollTocom(3355)">5F &nbsp;调节剂</a>
-			</div>
-			<div class="gd_menu_7" id="con1f_6">
-				<a rel="nofollow" href="javascript:scrollTocom(3920)">6F &nbsp;叶面肥</a>
-			</div>
 			<div class="gd_menu_8" id="con1f_7">
-				<a rel="nofollow" href="javascript:scrollTocom(4490)">7F &nbsp;其它</a>
+				<a rel="nofollow" href="javascript:scrollTocom(4490)">4F &nbsp;其它</a>
 			</div>
 			<div class="gd_menu_9" id="con1f_8">
-				<a rel="nofollow" href="javascript:scrollTocom(5050)">8F &nbsp;购买记录</a>
+				<a rel="nofollow" href="javascript:scrollTocom(5050)">5F &nbsp;购买记录</a>
 			</div>
-			<div class="gd_menu_10" id="con1f_9"><a rel="nofollow" href="javascript:scrollTocom(5480)">9F &nbsp;病虫害</a>
+			<div class="gd_menu_10" id="con1f_9"><a rel="nofollow" href="javascript:scrollTocom(5480)">6F &nbsp;病虫害</a>
 			</div>
 			<div class="gd_menu_13" id="back2top">
 				<a rel="nofollow" href="javascript:void(0);">返回顶部</a>
@@ -5819,17 +4502,19 @@
 		    	for(var j=1; j<=7; j++){
 		    		(function(j){
 		    			var data = {'type': j};
-			    		var myDiv=$('.mygoods'+j);
+			    		var myDiv=$('#d'+j);
 		    			$.post(contextPath+'/goods',data,'json').done(function(datas){
 							datas = JSON.parse(datas);
 							var html = '';
 							for(var i = 0, len = datas.length; i < len; i++) {
 								var goods = datas[i];
 								var pic = 'img/'+goods.goods_img;
+								var link = 'goods_details.jsp?id='+goods.goods_id;
+								
 								html += "<li class=\"con1fl_nrli1\">"
 								        + "<div class=\"con1fl_nrli_con_box\">"
 								        + "<p>"
-								        + '<a href=\"goods_detail.jsp\">'
+								        + '<a href='+link+'>'
 								        + '<img alt='+goods.goods_name+' class=\"lazy\" src='+pic+' title='+goods.goods_name+' src='+pic+' width=\"154\" height=\"154\"/>'
 								        + "</a>"
 								        + "</p>"
@@ -5844,6 +4529,8 @@
 							}
 							
 							myDiv.html(html);
+							
+							
 							
 						}).fail(function(res) {
 						});	
@@ -5879,10 +4566,7 @@
 				s.parentNode.insertBefore(hm, s);
 			})();
 		</script>
-
-		</script>
-		<script src="http://kefu.qycn.com/vclient/state.php?webid=99706" language="javascript" type="text/javascript">
-		</script>
+		<script src="http://kefu.qycn.com/vclient/state.php?webid=99706" language="javascript" type="text/javascript"></script>
 	</body>
 
 </html>

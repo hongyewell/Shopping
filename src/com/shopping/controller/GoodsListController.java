@@ -30,7 +30,6 @@ public class GoodsListController extends HttpServlet {
 
 		resp.setCharacterEncoding("utf-8");
 		GoodsService goodsService = new GoodsService();
-		/*System.out.println(req.getParameter("type"));*/
 		Integer type =Integer.parseInt(req.getParameter("type")) ;
 		List<Goods> goods = goodsService.getAllGoods(type);
 		
