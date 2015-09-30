@@ -107,4 +107,12 @@
     <servlet-name>HttpServlet</servlet-name>
     <url-pattern>/HttpServlet</url-pattern>
   </servlet-mapping>
+    <servlet>
+    <servlet-name>goods</servlet-name>
+    <servlet-class>com.shopping.controller.GoodsListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>goods</servlet-name>
+    <url-pattern>/goods</url-pattern>
+  </servlet-mapping>
 </web-app>

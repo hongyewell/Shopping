@@ -1,0 +1,10 @@
+@charset "gb2312";
+/*************************************
+*by hongyewell
+*2015-09-28
+**************************************/
+@import url("body.css");
+@import url("common.css");
+@import url("function.css");
+@import url("admin.css");
+@import url("company_common.css");

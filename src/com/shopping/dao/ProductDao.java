@@ -4,15 +4,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.text.Normalizer.Form;
 import java.util.ArrayList;
 import java.util.List;
-
 import com.shopping.pojo.Product;
 import com.shopping.util.DBUtil;
-
-import jdk.nashorn.internal.objects.annotations.Where;
-import sun.text.resources.cldr.om.FormatData_om;
 
 /**
 * @className:ProductDao.java
