@@ -123,4 +123,12 @@
     <servlet-name>goodsDetail</servlet-name>
     <url-pattern>/goodsDetail</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>ShopCarController</servlet-name>
+    <servlet-class>com.shopping.controller.ShopCarController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShopCarController</servlet-name>
+    <url-pattern>/ShopCarController</url-pattern>
+  </servlet-mapping>
 </web-app>

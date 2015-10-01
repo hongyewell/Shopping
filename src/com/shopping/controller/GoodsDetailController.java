@@ -32,7 +32,7 @@ public class GoodsDetailController extends HttpServlet {
 		String goodsDetailJson = gson.toJson(goodsDetail);
 		PrintWriter out = resp.getWriter();
 		out.write(goodsDetailJson);
-		System.out.println(goodsDetailJson);
+		
 	}
 
 }
