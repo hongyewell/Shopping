@@ -11,7 +11,7 @@ public class Goods {
 	private String goods_standard;
 	private String goods_producer;
 	private String goods_img;
-	private String goods_price;
+	private int goods_price;
 	private int goods_type;
 	private String goods_number;
 	private String goods_element;
@@ -28,9 +28,7 @@ public class Goods {
 	
 
 	public Goods(int goods_id, String goods_name, String goods_standard, String goods_producer, String goods_img,
-			String goods_price, int goods_type, String goods_number, String goods_element, String goods_registration,
-			String goods_deadline, String goods_publish, String goods_prevention, int goods_minNum,
-			String goods_instructions) {
+			int goods_price, int goods_type) {
 		super();
 		this.goods_id = goods_id;
 		this.goods_name = goods_name;
@@ -39,14 +37,6 @@ public class Goods {
 		this.goods_img = goods_img;
 		this.goods_price = goods_price;
 		this.goods_type = goods_type;
-		this.goods_number = goods_number;
-		this.goods_element = goods_element;
-		this.goods_registration = goods_registration;
-		this.goods_deadline = goods_deadline;
-		this.goods_publish = goods_publish;
-		this.goods_prevention = goods_prevention;
-		this.goods_minNum = goods_minNum;
-		this.goods_instructions = goods_instructions;
 	}
 
 
@@ -90,11 +80,11 @@ public class Goods {
 		this.goods_img = goods_img;
 	}
 
-	public String getGoods_price() {
+	public int getGoods_price() {
 		return goods_price;
 	}
 
-	public void setGoods_price(String goods_price) {
+	public void setGoods_price(int goods_price) {
 		this.goods_price = goods_price;
 	}
 

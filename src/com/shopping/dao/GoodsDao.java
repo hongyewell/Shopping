@@ -43,9 +43,9 @@ public class GoodsDao {
 				String goods_standard = rs.getString("goods_standard");
 				String goods_producer = rs.getString("goods_producer");
 				String goods_img = rs.getString("goods_img");	
-				String goods_price = rs.getString("goods_price");
+				int goods_price = rs.getInt("goods_price");
 				int goods_type = rs.getInt("goods_type");
-				Goods good = new Goods(goods_id, goods_name, goods_standard, goods_producer, goods_img, goods_price, goods_type, goods_price, goods_price, goods_price, goods_price, goods_price, goods_price, goods_type, goods_price);
+				Goods good = new Goods(goods_id, goods_name, goods_standard, goods_producer, goods_img, goods_price, goods_type);
 				goods.add(good);
 			}
 			return goods;
@@ -86,7 +86,7 @@ public class GoodsDao {
 				goods.setGoods_standard(rs.getString("goods_standard"));
 				goods.setGoods_producer(rs.getString("goods_producer"));
 				goods.setGoods_img(rs.getString("goods_img"));
-				goods.setGoods_price(rs.getString("goods_price"));
+				goods.setGoods_price(rs.getInt("goods_price"));
 				goods.setGoods_type(rs.getInt("goods_type"));
 				goods.setGoods_number(rs.getString("goods_number"));
 				goods.setGoods_element(rs.getString("goods_element"));

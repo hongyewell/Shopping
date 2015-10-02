@@ -28,6 +28,8 @@ public class GoodsListController extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+		
+		
 		resp.setCharacterEncoding("utf-8");
 		GoodsService goodsService = new GoodsService();
 		Integer type =Integer.parseInt(req.getParameter("type")) ;

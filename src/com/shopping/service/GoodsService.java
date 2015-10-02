@@ -3,6 +3,7 @@ package com.shopping.service;
 import java.util.List;
 import com.shopping.dao.GoodsDao;
 import com.shopping.pojo.Goods;
+import com.shopping.pojo.ShoppingCart;
 
 /**
 * @className:GoodsService.java
@@ -43,6 +44,18 @@ private GoodsDao goodsDao;
 	 */
 	public Goods getGoodsDetails(int id){
 		return goodsDao.getDetailsById(id);
+	}
+
+
+	public boolean addToCart(int id, ShoppingCart sc) {
+		Goods goods = goodsDao.getDetailsById(id);
+		
+		if (goods!= null) {
+		    sc.addGoods(goods);
+		}else {
+			
+		}
+		return false;
 	}
 
 }

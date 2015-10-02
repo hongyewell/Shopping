@@ -1544,6 +1544,10 @@
     			document.getElementById("buysum").innerHTML= price*buynum;
     		}
     	}
+    	function addCart(id){
+    		var buynum = $("#buynum").val();
+    		window.location.href = "<%=request.getContextPath()%>/ShopCarController?id="+id+"&num="+buynum;
+    	}
     </script>
  
     <!--获取到goods_main.jsp请求的参数作为隐藏域-->
@@ -1623,7 +1627,7 @@
 					          + '<a href="#" class="sel_detrtra">'
 					          + '<img src="img/sell_icongm.gif" onclick="" title="购买" />'
 					          + '</a>'
-					          + '<a href="<%=request.getContextPath()%>/ShopCarController?id='+goods.goods_id+'&num='+$("#buynum").val()+'" class="sel_detrtra">'
+					          + '<a onclick="addCart('+goods.goods_id+')" class="sel_detrtra">'
 					          + '<img src="img/sell_iconjr.jpg" title="加入购物车" />'
 					          + '</a>'
 					          + '<a href="#" class="sel_detrtra">'

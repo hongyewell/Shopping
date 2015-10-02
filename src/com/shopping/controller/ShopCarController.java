@@ -8,6 +8,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.shopping.pojo.ShoppingCart;
+import com.shopping.service.GoodsService;
+import com.shopping.util.GoodsTradeWebUtils;
+
 /**
 * @className:ShopCarController.java
 * @classDescription:
@@ -20,12 +24,28 @@ public class ShopCarController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
 			throws ServletException, IOException {
+		//获取商品的id
+		String idStr = req.getParameter("id");
+	/*	int id = -1;
+		boolean flag = false;
+		id = Integer.parseInt(idStr);
 		
-		String id = req.getParameter("id");
+		if (id>0) {
+			//获取购物车对象
+			ShoppingCart sc = GoodsTradeWebUtils.getShoppingCart(req);
+			
+			//调用GoodsService的addToCart()方法把商品放到购物车中
+			GoodsService goodsService = new GoodsService();
+			flag = goodsService.addToCart(id,sc);
+		}
+		
+		
+		//直接调用getBooks()方法；
+		getGoods(req,resp);*/
 		String number = req.getParameter("num");
-		System.out.println(id+"==="+number);
+		System.out.println("商品id："+idStr+"，，，，，购买数量："+number);
 		HttpSession session = req.getSession();
-		session.setAttribute("id", id);
+		session.setAttribute("id", idStr);
 		resp.sendRedirect(req.getContextPath()+"/shop_car.jsp");
 		
 	}
