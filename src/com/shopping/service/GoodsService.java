@@ -52,8 +52,7 @@ private GoodsDao goodsDao;
 		
 		if (goods!= null) {
 		    sc.addGoods(goods);
-		}else {
-			
+		    return true;
 		}
 		return false;
 	}

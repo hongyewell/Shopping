@@ -1,13 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
- <title>我的购物车_安徽惠富强农资交易平台</title>
+ <title>购物结算_第一步_安徽惠富强农资交易平台</title>
     <link href="css/trade.css" rel="stylesheet" />
+    <script type="text/javascript">window.onerror = function () { return true; }</script>
     <script type="text/javascript">window.onerror = function () { return true; }</script>
     <script type="text/javascript" src="js/lang.js"></script>
     <script type="text/javascript" src="js/config.js"></script>
@@ -1041,129 +1040,210 @@
     <div class="clear">
         <script type="text/javascript" src="js/cart.js"></script>
     </div>
-    <!-- 控制数量 -->
-     <script type="text/javascript">
-    	function sub(price){
-    	    var buynum = $("#buynum").val(); 
-    		if(buynum>1){
-    			$("#buynum").val(--buynum);
-    			document.getElementById("buysum").innerHTML= price*buynum;
-    		}
-    	};
-    	
-    	function add(price){
-    		var buynum = $("#buynum").val();
-    		if(buynum<20){
-    			$("#buynum").val(++buynum);
-    			document.getElementById("buysum").innerHTML= price*buynum;
-    		}
-    	}
-    	
-    </script>
     <div id="content">
         <div class="thr_scar">
-            <div>
-                <p class="thr_sctitsm">商品已成功加入购物车！</p>
-                <p class="thr_sctitp"><a href="/sell/" rel="nofollow" class="thr_sctitpa">
-                    <img src="img/gw_btn.jpg" alt="继续购物" /></a><a href="/member/" rel="nofollow"><img src="img/zx_btn.jpg" alt="个人中心" /></a></p>
-                <p class="clear"></p>
-            </div>
-            <div class="thr_sctxt">
-            
-                <form action="">
-                    <table class="thr_scform" cellspacing="0" cellpadding="0">
-                        <tr>
-                            <td>商品编号</td>
-                            <td>商品图片</td>
-                            <td>商品名称</td>
-                            <td>单价</td>
-                            <td>商品数量</td>
-                            <td>总价</td>
-                            <td>操作</td>
-                        </tr>
-                        <c:forEach items="${sessionScope.ShoppingCart.items}" var="item">
-                        <tr>
-                            <td>${item.goods.goods_number}</td>
-                            <td>
-                                <img src="img/${item.goods.goods_img}" width="62" height="62" /></td>
-                            <td>${item.goods.goods_name}</td>
-                            <td><span class="thr_scfpri">￥${item.goods.goods_price}</span></td>
-                            <td>
-                                <input type="button" onclick="sub(${item.goods.goods_price})" value="-" class="thr_scfbtn"/>
-                                <input id="buynum"  type="text" value="2" class="thr_scfinp"/>
-                                <input type="button" onclick="add(${item.goods.goods_price})" value="+"  class="thr_scfbtn2"/>
-                            </td>
-                            <td><span class="thr_scfpri">￥<b id="buysum">700.00</b></span></td>
-                            <td>
-                               <a href="#" rel="nofollow" onclick=""  class="thr_scfa">暂不结算</a>|
-                               <a href="#" rel="nofollow" onclick="" class="thr_scfa">删除</a>
-                             </td> 
-                        </tr>
-                        </c:forEach>
-                       
-                        <tr>
-                            <td colspan="7" class="price">商品总金额共计（不包含运费）：<span class="thr_scfsp">￥<b id="total_amount">700</b><b>元</b></span></td>
-                        </tr>
-                    </table>
-                    <div class="thr_scjs">
-                        <p class="thr_scjsp">如果在购买过程中有任何疑问请拨:<span class="colored">400-6076-152</span></p>
-                        <a rel="nofollow" href="goods_buy.jsp" class="thr_scjsa"><img src="img/js_btn.gif"></a></div>
+            <input type="hidden" name="step" value="2" />
+            <div class="thr_scacbt">
+                <img src="img/step1.gif"></div>
+            <div class="thr_scacbox">
+                <h3 class="thr_scactit">1、选择收货人</h3>
+                <div class="thr_scacnr">
+                    <p class="thr_scacsp"><a href="javascript:void(0)" rel="nofollow" onclick="fixaddress(this)">
+                        <img src="img/xg_btn.jpg" title="点击修改选择的收货地址" alt="修改收货地址" width="120" /></a> <a href="javascript:void(0)" rel="nofollow" onclick="addaddress(1)">
+                            <img src="img/xz_btn.jpg" title="点击增加新的收货地址" alt="新增收货地址" width="120" /></a></p>
+                    <p class="thr_scacspzs">
+                        *注释：请确认您的收货信息，如有错误请点击【修改收货信息】，待核对无误后在进行下一步 
+
+                    </p>
+                </div>
+                <form method="post" onsubmit="return checkAddress();" id="editaddress">
+                    <h3 class="thr_scactit">新增收货人信息</h3>
+                    <div class="thr_scacnr">
+                        <p class="thr_scxgp">联&nbsp;&nbsp;系&nbsp;人：<input name="address[truename]" id="truename" type="text" class="thr_scxginp"><span class="colored2">*</span><span class="colored2" id="msg_truename"></span></p>
+                        <p class="thr_scxgp">选择地区：<input name="address[areaid]" id="areaid_1" type="hidden" value="0" /><input id="name_3" type="hidden" value="" /><span id="load_area_1"><select onchange="load_area(this.value, 1,this.options[selectedIndex].text,0);" class="thr_scxgsel"><option value="0">请选择地区</option>
+                            <option value="1">北京</option>
+                            <option value="2">上海</option>
+                            <option value="3">天津</option>
+                            <option value="4">重庆</option>
+                            <option value="5">河北</option>
+                            <option value="6">山西</option>
+                            <option value="7">内蒙古</option>
+                            <option value="8">辽宁</option>
+                            <option value="9">吉林</option>
+                            <option value="10">黑龙江</option>
+                            <option value="11">江苏</option>
+                            <option value="12">浙江</option>
+                            <option value="13">安徽</option>
+                            <option value="14">福建</option>
+                            <option value="15">江西</option>
+                            <option value="16">山东</option>
+                            <option value="17">河南</option>
+                            <option value="18">湖北</option>
+                            <option value="19">湖南</option>
+                            <option value="20">广东</option>
+                            <option value="21">广西</option>
+                            <option value="22">海南</option>
+                            <option value="23">四川</option>
+                            <option value="24">贵州</option>
+                            <option value="25">云南</option>
+                            <option value="26">西藏</option>
+                            <option value="27">陕西</option>
+                            <option value="28">甘肃</option>
+                            <option value="29">青海</option>
+                            <option value="30">宁夏</option>
+                            <option value="31">新疆</option>
+                            <option value="32">台湾</option>
+                            <option value="33">香港</option>
+                            <option value="34">澳门</option>
+                        </select>
+                            <select onchange="load_area(this.value, 1,this.options[selectedIndex].text,0);" class="thr_scxgsel"></select>
+                            <select id="lastarea" onchange="load_area(this.value, 1,this.options[selectedIndex].text,0);" class="thr_scxgsel"></select>
+                        </span>
+                            <script type="text/javascript">var area_title = new Array; area_title[1] = '请选择地区'; var area_extend = new Array; area_extend[1] = 'class="thr_scxgsel"'; var area_areaid = new Array; area_areaid[1] = '0'; var area_deep = new Array; area_deep[1] = '0';</script>
+                            <script type="text/javascript" src="js/area.js"></script>
+                            <span class="colored2" id="msg_areaid"></span></p>
+                        <p class="thr_scxgp2">
+                            <input name="address[address]" type="text" id="address" class="thr_scxginp2"><span class="colored2">*</span><span class="colored2" id="msg_address"></span> 无需再填写省市区(县),填写具体的街道/村镇地址即可</p>
+                        <p class="thr_scxgp">手机号码：<input name="address[mobile]" id="mobile" type="text" class="thr_scxginp"><span class="colored2">*</span><span class="colored2" id="msg_mobile"></span></p>
+                        <p class="thr_scxgp">固定电话：<input name="address[telephone]" id="telephone" type="text" class="thr_scxginp"><span class="colored2" id="msg_telephone"></span></p>
+                        <p class="thr_scxgp">
+                            <input name="sub_address" type="submit" value="" class="thr_scxgbtn">
+                            <a href="/sell/cart.php?step=1">暂不添加</a> <span class="colored2">* 注释：确认无误后，请点击【保存信息】</span></p>
+                    </div>
                 </form>
             </div>
-            <!--thr_sctxt end-->
-            <div class="thr_scolbox">
-                <h4 class="thr_scolbt">看了又看的产品</h4>
-                <div class="thr_scolnr">
-                    <p class="thr_scoll"><a id="RightButton3" rel="nofollow" href="javascript:void(0);">
-                        <img src="img/arrow_sl.gif"></a></p>
-                    <div id="thr_scolm_Box3" style="float: left;">
-                        <ul id="thr_scolm3" class="thr_scolm">
-                            <form name="look16112" action="/sell/cart.php" method="post">
-                                <li class="thr_scolmli">
-                                    <div class="thr_scolmpic">
-                                        <img src="img/14-49-35-72-1.jpg.thumb.jpg" width="138" height="138"></div>
-                                    <div class="thr_scolmtxt">
-                                        <p><a href="show-16112.html" target="_blank">高效氯氟氰菊酯2.5%(乳油</a></p>
-                                        <p>规格：300ml*20瓶/件</p>
-                                        <p>登记证：PD20083026</p>
-                                        <p>山东省济南天邦化工有限</p>
-                                        <p><b class="thr_scolmb">￥140元</b></p>
-                                        <p>
-                                            <input class="thr_scolmtsp" type="submit" name="submits" value="加入购物车" /></p>
-                                    </div>
-                                    <p class="clear"></p>
-                                </li>
-                                <input type="hidden" name="itemid" value="16112" />
-                                <input type="hidden" name="total" value="5" />
-                            </form>
-                        </ul>
-                    </div>
-                    <p class="thr_scolr"><a id="LeftButton3" rel="nofollow" href="javascript:void(0);">
-                        <img src="img/arrow_sr.gif"></a></p>
+            <!--thr_scacbox end-->
+
+            <div class="thr_scacbox">
+                <h3 class="thr_scactit">2、选择支付方式</h3>
+                <div class="thr_scaczt" id="yuepaybox">
+                    <p><b class="thr_scaczbt">余额支付</b></p>
+                    <p class="thr_scacsp2">
+                        <span class="thr_scachym">
+                            <input type="checkbox" name="useyue" id="useyue" value="1" /><label for="useyue"> 使用余额支付</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp; <b style="color: red; font-size: 20px;">您的可用余额还有 0.00 元</b> </span>
+                        <span style="display: none;">
+                            <input type="radio" id="yuezhifupay" style="display: none;" value="余额支付" name="pay" />
+                        </span>
+                    </p>
+
                 </div>
-                <script type="text/javascript">
-                    var MarqueeDiv3 = new Marquee(
-                    {
-                        MSClass: ["thr_scolm_Box3", "thr_scolm3"],
-                        Direction: 4,
-                        Step: 0.1,
-                        Width: 1047,
-                        Height: 144,
-                        Timer: 20,
-                        DelayTime: 3000,
-                        WaitTime: 3000,
-                        ScrollStep: 0,
-                        SwitchType: 0,
-                        AutoStart: true
-                    });
-                    $("#LeftButton3").click(function (e) { e.preventDefault(); MarqueeDiv3.Run("Left") });//跳过等待时间向左滚动 可以用Marquee.Run(2)代替
-                    $("#RightButton3").click(function (e) { e.preventDefault(); MarqueeDiv3.Run("Right") });//跳过等待时间向右滚动
-                    $('#thr_scolm3').css({
-                        fontSize: '12px'
-                    });
-                </script>
+                <div class="thr_scaczt" id="onlinepay">
+                    <p><b class="thr_scaczbt">在线支付</b><span class="colored2">*【支付宝】与【财付通】均支持网银在线支付。【银联在线支付】需开通网银才可支付。【快捷支付】无需开通网银，只需银行卡号即可支付。</span></p>
+                    <ul>
+                        <li class="thr_scaczli">
+                            <p class="thr_scaczrad">
+                                <input name="pay" id="zhifubao" type="radio" value="支付宝"></p>
+                            <p class="thr_scaczpic">
+                                <label for="zhifubao">
+                                    <img src="img/zf_zfb.gif"></label></p>
+                        </li>
+                        <li class="thr_scaczli">
+                            <p class="thr_scaczrad">
+                                <input name="pay" id="caifutong" type="radio" value="财付通"></p>
+                            <p class="thr_scaczpic">
+                                <label for="caifutong">
+                                    <img src="img/zf_cft.gif"></label></p>
+                        </li>
+
+                        <li class="thr_scaczli">
+                            <p class="thr_scaczrad">
+                                <input name="pay" id="yinlian" type="radio" value="银联支付"></p>
+                            <p class="thr_scaczpic">
+                                <label for="yinlian">
+                                    <img src="img/chinapay.jpg"></label></p>
+                        </li>
+
+                        <li class="thr_scaczli">
+                            <p class="thr_scaczrad">
+                                <input name="pay" id="wukazhifu" type="radio" value="无卡支付"></p>
+                            <p class="thr_scaczpic">
+                                <label for="wukazhifu">
+                                    <img src="img/nocard.png"></label></p>
+                        </li>
+
+                        <p class="clear"></p>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                <div class="thr_scaczt2" id="offlinepay">
+                    <p><b class="thr_scaczbt">银行转账</b><span class="colored2">(*特别注意：打完款后请拨打查询电话 0371-86551595)</span></p>
+                    <ul>
+						<li class="thr_scaczli2">
+							<p class="thr_scaczrad2">
+								<input id="nyyh" name="pay" type="radio" value="中国农业银行">
+							</p>
+							<p class="thr_scaczpic2">
+								<label for="nyyh"> <img src="img/zf_nh.gif"></label>
+							</p>
+							<p class="thr_scacztxt">
+								<label for="nyyh">开户行：中国农业银行<br /> 账号：6228 4807 1102
+									4807 119<br /> 收款人：白玉峰
+								</label>
+							</p>
+						</li>
+						<li class="thr_scaczli2">
+							<p class="thr_scaczrad2">
+								<input id="yzcx" name="pay" type="radio" value="中国邮政储蓄银行">
+							</p>
+							<p class="thr_scaczpic2">
+								<label for="yzcx"> <img src="img/zf_yz.gif"></label>
+							</p>
+							<p class="thr_scacztxt">
+								<label for="yzcx">开户行：中国邮政储蓄银行<br /> 账号：6210 9849 1000
+									0814 409<br /> 收款人:白玉峰
+								</label>
+							</p>
+						</li>
+						<li class="thr_scaczli2">
+							<p class="thr_scaczrad2">
+								<input id="jsyh" name="pay" type="radio" value="中国建设银行">
+							</p>
+							<p class="thr_scaczpic2">
+								<label for="jsyh"> <img src="img/zf_jh.gif"></label>
+							</p>
+							<p class="thr_scacztxt">
+								<label for="jsyh">开户行：中国建设银行 <br /> 账号：6227 0024 3313
+									0035 938<br /> 收款人:白玉峰
+								</label>
+							</p>
+						</li>
+						<li class="thr_scaczli2">
+							<p class="thr_scaczrad2">
+								<input id="gsyh" name="pay" type="radio" value="中国工商银行">
+							</p>
+							<p class="thr_scaczpic2">
+								<label for="gsyh"> <img src="img/zf_gh.gif"></label>
+							</p>
+							<p class="thr_scacztxt">
+								<label for="gsyh">开户行：中国工商银行 <br /> 账号：6222 3000 6535
+									5748<br /> 收款人:白玉峰
+								</label>
+							</p>
+						</li>
+						<li class="thr_scaczli2">
+							<p class="thr_scaczrad2">
+								<input id="ncxys" name="pay" type="radio" value="中国农村信用合作社">
+							</p>
+							<p class="thr_scaczpic2">
+								<label for="ncxys"><img src="img/zf_ncxys.gif"></label>
+							</p>
+							<p class="thr_scacztxt">
+								<label for="ncxys"> 开户行：中国农村信用合作社<br /> 账号：6229
+									91100801 2773 10<br /> 收款人:白玉峰
+								</label> <br /> <span class="colored2">信用社网银付款3到5个<br />工作日到账，请耐心等待
+								</span>
+							</p>
+						</li>
+						<p class="clear"></p>
+                    </ul>
+                </div>
+                <!--thr_scaczt2 end-->
+                <p class="thr_scaczd">
+                    <input name="submits" type="button" onclick="javascript:window.location.href='makeOrder.jsp'" class="thr_scacbtn2" /></p>
             </div>
-            <!--thr_scolbox end-->
+            <!--thr_scacbox end-->
+            </form>       
         </div>
         <!--thr_scar end-->
     </div>
@@ -1264,7 +1344,7 @@
                 </div>
                 <!--footxt end-->
                 <div class="footpic">
-                    <img style="cursor: hand;" alt="51啦统计" onclick="window.open('http://www.51honest.org/wscredit/detail.credit?action=preLevel&credcode=NO.20000030555','','resizable=yes,location=yes,toolbar=yes,menubar=yes,scrollbars=yes,status=yes')" src="http://www.51honest.org/wscredit/resources/images/ident/117-40/80.gif" border="0" complete="complete" align="top" />
+                    <img style="cursor: hand;" alt="51啦统计" onclick="window.open('http://www.51honest.org/wscredit/detail.credit?action=preLevel&credcode=NO.20000030555','','resizable=yes,location=yes,toolbar=yes,menubar=yes,scrollbars=yes,status=yes')" src="img/80.gif" border="0" complete="complete" align="top" />
                     <script src="js/anquan_authen_124x47.js"></script>
                     <a key="52117f8a24306332d3f29ae5" logo_size="124x47" logo_type="official" href="http://www.anquan.org">
                         <script src="js/aq_auth.js"></script>
@@ -1298,7 +1378,7 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
-   
+    
     <script src="http://kefu.qycn.com/vclient/state.php?webid=99706" language="javascript" type="text/javascript"></script>
     <!--footer end-->
 </body>

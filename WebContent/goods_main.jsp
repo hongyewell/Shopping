@@ -1292,9 +1292,12 @@
 											init_md5();
 										</script>
 										<input type="checkbox" style="display:none;" name="goto" value="1" class="login_dsche" id="goto" checked />
-										<a href="#" rel="nofollow" class="toprdl_lisp">忘记密码</a></div>
-									<input name="submit" type="submit" value="&nbsp;" class="toprdl_lbtn">
-										<a href="#" rel="nofollow" class="toprdl_lisp2">我不是会员？请点击这里注册</a>
+										<a href="#" rel="nofollow" class="toprdl_lisp"></a></div>
+										 <a href="#" style="float:left;color:#E4C471;"  >忘记密码？</a> 
+										 <a href="#" style="float:right;color:#E4C471;">免费注册</a>
+									<input name="submit" type="submit" value="&nbsp;" class="toprdl_lbtn" style="margin-left:100px;">
+										
+										
 							</form>
 						</div></div>
 					</div>

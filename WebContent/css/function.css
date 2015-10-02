@@ -71,8 +71,8 @@
 .thr_scform td.price{text-align:right;padding-right:70px;}
 .thr_scfpri{font-size:14px;color:#75B03C;}
 .thr_scfinp{border:1px solid #c7c6c6;text-align:center;width:33px;height:21px;margin:0 5px;}
-.thr_scfbtn, .thr_scfbtn2{background:url(../image/minus.gif) no-repeat;width:24px;height:19px;cursor:pointer;border:none;}
-.thr_scfbtn2{background:url(../image/plus.gif) no-repeat;}
+.thr_scfbtn, .thr_scfbtn2{background:url(../img/minus.gif) no-repeat;width:24px;height:19px;cursor:pointer;border:none;}
+.thr_scfbtn2{background:url(../img/plus.gif) no-repeat;}
 .thr_scfa{padding:0 8px;}
 .thr_scfsp{font-size:18px;color:#75B03C;}
 .thr_scjs{margin:14px 5px 20px 0;font-size:16px;height:35px;}
@@ -128,8 +128,8 @@
 .thr_scxginp2{width:330px;}
 .thr_scxgsel{width:82px;height:26px;border:1px solid #cccaca;margin:0 0 0 7px;}
 .thr_scxgbtn{background:url(../img/bc_btn.jpg) no-repeat;width:86px;height:30px;cursor:pointer;border:none;margin:0 10px 0 67px;}
-.thr_scqrbox{border:1px solid #d70200;}
-.thr_scqrbt{font-size:14px;color:#fff;padding:9px 0 9px 12px;background:#d70200;border-bottom:1px solid #be0100;}
+.thr_scqrbox{border:1px solid #75B03C;}
+.thr_scqrbt{font-size:14px;color:#fff;padding:9px 0 9px 12px;background:#75B03C;border-bottom:1px solid #75B03C;}
 .thr_scqrbg{width:100%;border-top:1px solid #9b9b9b;border-left:1px solid #9b9b9b;}
 .thr_scqrbg td{padding:8px;text-align:center;border-right:1px solid #9b9b9b;border-bottom:1px solid #9b9b9b;}
 .thr_scqrbg td.bg{background:#eceaea;}
@@ -139,7 +139,7 @@
 .thr_scqrbg td.txt{text-align:left;}
 .thr_scqrbg td.det{text-align:left;padding-left:25px;}
 .thr_scqrbtn{background:url(../image/qrsc_btn.gif) no-repeat;width:142px;height:33px;cursor:pointer;border:none;margin-left:22px;}
-.thr_scqrbtn2{background:url(../image/zxzf_btn.gif) no-repeat;width:107px;height:33px;cursor:pointer;border:none;}
+.thr_scqrbtn2{background:url(../img/zxzf_btn.jpg) no-repeat;width:107px;height:33px;cursor:pointer;border:none;}
 .thr_scqrnr{padding:16px 6px 0;}
 .thr_scqrtit{padding:0 0 6px 12px;font-size:14px;}
 .thr_scqrdd{text-align:right;padding:22px 15px 22px 0;}

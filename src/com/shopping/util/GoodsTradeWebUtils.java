@@ -30,7 +30,7 @@ public class GoodsTradeWebUtils {
 			sc = new ShoppingCart();
 			session.setAttribute("ShoppingCart", sc);
 		}
-		return null;
+		return sc;
 		
 	}
 

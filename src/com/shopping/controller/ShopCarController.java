@@ -26,7 +26,7 @@ public class ShopCarController extends HttpServlet {
 			throws ServletException, IOException {
 		//获取商品的id
 		String idStr = req.getParameter("id");
-	/*	int id = -1;
+		int id = -1;
 		boolean flag = false;
 		id = Integer.parseInt(idStr);
 		
@@ -38,15 +38,13 @@ public class ShopCarController extends HttpServlet {
 			GoodsService goodsService = new GoodsService();
 			flag = goodsService.addToCart(id,sc);
 		}
-		
-		
-		//直接调用getBooks()方法；
-		getGoods(req,resp);*/
-		String number = req.getParameter("num");
-		System.out.println("商品id："+idStr+"，，，，，购买数量："+number);
-		HttpSession session = req.getSession();
-		session.setAttribute("id", idStr);
-		resp.sendRedirect(req.getContextPath()+"/shop_car.jsp");
+		if (flag) {
+			String number = req.getParameter("num");
+			System.out.println("商品id："+idStr+"，，，，，购买数量："+number);
+			resp.sendRedirect(req.getContextPath()+"/shop_car.jsp");
+			return;
+		}
+		resp.sendRedirect(req.getContextPath()+"/main.jsp");
 		
 	}
 
