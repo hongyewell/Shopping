@@ -1533,7 +1533,7 @@
     	    var buynum = $("#buynum").val(); 
     		if(buynum>1){
     			$("#buynum").val(--buynum);
-    			document.getElementById("buysum").innerHTML= price*buynum;
+    			$("#buysum").html(price*buynum);
     		}
     	};
     	
@@ -1541,7 +1541,7 @@
     		var buynum = $("#buynum").val();
     		if(buynum<20){
     			$("#buynum").val(++buynum);
-    			document.getElementById("buysum").innerHTML= price*buynum;
+    			$("#buysum").html(price*buynum);
     		}
     	}
     	function addCart(id){

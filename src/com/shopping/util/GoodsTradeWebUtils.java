@@ -24,11 +24,14 @@ public class GoodsTradeWebUtils {
 	 * @return ShoppingCart
 	 */
 	public static ShoppingCart getShoppingCart(HttpServletRequest req){
+		String number = req.getParameter("num");
+		System.out.println("购买数量："+number);
 		HttpSession session = req.getSession();
 		ShoppingCart sc = (ShoppingCart) session.getAttribute("ShoppingCart");
 		if (sc == null) {
 			sc = new ShoppingCart();
 			session.setAttribute("ShoppingCart", sc);
+			session.setAttribute("buynum", number);
 		}
 		return sc;
 		

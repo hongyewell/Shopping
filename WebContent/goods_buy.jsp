@@ -1096,14 +1096,14 @@
                             <option value="33">香港</option>
                             <option value="34">澳门</option>
                         </select>
-                            <select onchange="load_area(this.value, 1,this.options[selectedIndex].text,0);" class="thr_scxgsel"></select>
-                            <select id="lastarea" onchange="load_area(this.value, 1,this.options[selectedIndex].text,0);" class="thr_scxgsel"></select>
+                           <!--  <select onchange="load_area(this.value, 1,this.options[selectedIndex].text,0);" class="thr_scxgsel"></select>
+                            <select id="lastarea" onchange="load_area(this.value, 1,this.options[selectedIndex].text,0);" class="thr_scxgsel"></select> -->
                         </span>
                             <script type="text/javascript">var area_title = new Array; area_title[1] = '请选择地区'; var area_extend = new Array; area_extend[1] = 'class="thr_scxgsel"'; var area_areaid = new Array; area_areaid[1] = '0'; var area_deep = new Array; area_deep[1] = '0';</script>
                             <script type="text/javascript" src="js/area.js"></script>
                             <span class="colored2" id="msg_areaid"></span></p>
                         <p class="thr_scxgp2">
-                            <input name="address[address]" type="text" id="address" class="thr_scxginp2"><span class="colored2">*</span><span class="colored2" id="msg_address"></span> 无需再填写省市区(县),填写具体的街道/村镇地址即可</p>
+                            <input name="address[address]" type="text" id="address" class="thr_scxginp2"><span class="colored2">*</span><span class="colored2" id="msg_address"></span> 需填写省市区(县),再填写具体的街道/村镇地址</p>
                         <p class="thr_scxgp">手机号码：<input name="address[mobile]" id="mobile" type="text" class="thr_scxginp"><span class="colored2">*</span><span class="colored2" id="msg_mobile"></span></p>
                         <p class="thr_scxgp">固定电话：<input name="address[telephone]" id="telephone" type="text" class="thr_scxginp"><span class="colored2" id="msg_telephone"></span></p>
                         <p class="thr_scxgp">
@@ -1328,7 +1328,7 @@
             <div class="footbot">
                 <div class="footxt">
                     <p>
-                        Copyright2008-2012 nongyao001.com All Right Reserved &#160; &#160; &#160; &#160; &#160; &#160; &#160;中国农药第一网版权所有 &#160; &#160; 未经许可 &#160; &#160; 不得转载<br />
+                        Copyright2008-2012 nongyao001.com All Right Reserved &#160; &#160; &#160; &#160; &#160; &#160; &#160;安徽惠富强农资交易平台版权所有 &#160; &#160; 未经许可 &#160; &#160; 不得转载<br />
                         法律顾问：河南英泰律师事务所 &#160; &#160; &#160; 网站备案号：豫ICP备11024324号-1<br />
                         全国咨询热线：400-6076-152 &#160; &#160; &#160; 客服热线：0371-86551595
                         <script language="javascript" type="text/javascript" src="js/5648954.js"></script>

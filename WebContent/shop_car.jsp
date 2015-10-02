@@ -1043,23 +1043,34 @@
     </div>
     <!-- 控制数量 -->
      <script type="text/javascript">
-    	function sub(price){
-    	    var buynum = $("#buynum").val(); 
+    	function sub(price,id){
+    	    var buynum = $('#'+id).val(); 
     		if(buynum>1){
-    			$("#buynum").val(--buynum);
-    			document.getElementById("buysum").innerHTML= price*buynum;
+    			$('#'+id).val(--buynum);
+    			$('#'+id+'_').html(price*buynum);
     		}
     	};
     	
-    	function add(price){
-    		var buynum = $("#buynum").val();
+    	function add(price,id){
+    		var buynum = $('#'+id).val();
     		if(buynum<20){
-    			$("#buynum").val(++buynum);
-    			document.getElementById("buysum").innerHTML= price*buynum;
+    			$('#'+id).val(++buynum);
+    			$('#'+id+'_').html(price*buynum);
     		}
     	}
     	
     </script>
+    <!-- Ajax修改单个商品的数量 -->
+    <script type="text/javascript"
+			src="${pageContext.request.contextPath}/resources/scripts/jquery-1.8.3.min.js">
+	</script>
+	<script type="text/javascript">
+	/* $(document).ready(function(){
+		$("#buynum").change(function(){
+			alert("hello");
+		});
+	}); */
+	</script>
     <div id="content">
         <div class="thr_scar">
             <div>
@@ -1089,11 +1100,11 @@
                             <td>${item.goods.goods_name}</td>
                             <td><span class="thr_scfpri">￥${item.goods.goods_price}</span></td>
                             <td>
-                                <input type="button" onclick="sub(${item.goods.goods_price})" value="-" class="thr_scfbtn"/>
-                                <input id="buynum"  type="text" value="2" class="thr_scfinp"/>
-                                <input type="button" onclick="add(${item.goods.goods_price})" value="+"  class="thr_scfbtn2"/>
+                                <input type="button" onclick="sub(${item.goods.goods_price},${item.goods.goods_id})" value="-" class="thr_scfbtn"/>
+                                <input id="${item.goods.goods_id}"  type="text" value="2" class="thr_scfinp"/>
+                                <input type="button" onclick="add(${item.goods.goods_price},${item.goods.goods_id})" value="+"  class="thr_scfbtn2"/>
                             </td>
-                            <td><span class="thr_scfpri">￥<b id="buysum">700.00</b></span></td>
+                            <td><span class="thr_scfpri">￥<b id="${item.goods.goods_id}_">${item.goods.goods_price*2}</b></span></td>
                             <td>
                                <a href="#" rel="nofollow" onclick=""  class="thr_scfa">暂不结算</a>|
                                <a href="#" rel="nofollow" onclick="" class="thr_scfa">删除</a>
@@ -1102,7 +1113,7 @@
                         </c:forEach>
                        
                         <tr>
-                            <td colspan="7" class="price">商品总金额共计（不包含运费）：<span class="thr_scfsp">￥<b id="total_amount">700</b><b>元</b></span></td>
+                            <td colspan="7" class="price">商品总金额共计（不包含运费）：<span class="thr_scfsp">￥<b id="total_amount">${sessionScope.ShoppingCart.totalMoney}</b><b>元</b></span></td>
                         </tr>
                     </table>
                     <div class="thr_scjs">
@@ -1248,7 +1259,7 @@
             <div class="footbot">
                 <div class="footxt">
                     <p>
-                        Copyright2008-2012 nongyao001.com All Right Reserved &#160; &#160; &#160; &#160; &#160; &#160; &#160;中国农药第一网版权所有 &#160; &#160; 未经许可 &#160; &#160; 不得转载<br />
+                        Copyright2008-2012 nongyao001.com All Right Reserved &#160; &#160; &#160; &#160; &#160; &#160; &#160;安徽惠富强农资交易平台版权所有 &#160; &#160; 未经许可 &#160; &#160; 不得转载<br />
                         法律顾问：河南英泰律师事务所 &#160; &#160; &#160; 网站备案号：豫ICP备11024324号-1<br />
                         全国咨询热线：400-6076-152 &#160; &#160; &#160; 客服热线：0371-86551595
                         <script language="javascript" type="text/javascript" src="js/5648954.js"></script>

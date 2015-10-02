@@ -4494,7 +4494,8 @@
 		</div>
 			<!-- 将商品信息渲染到html页面  -->
 		<script type="text/javascript"
-			src="${pageContext.request.contextPath}/resources/scripts/jquery-1.8.3.min.js"></script>
+			src="${pageContext.request.contextPath}/resources/scripts/jquery-1.8.3.min.js">
+		</script>
 	
 		<script type="text/javascript">
 			var contextPath = '${pageContext.request.contextPath}';

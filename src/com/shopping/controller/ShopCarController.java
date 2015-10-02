@@ -39,12 +39,10 @@ public class ShopCarController extends HttpServlet {
 			flag = goodsService.addToCart(id,sc);
 		}
 		if (flag) {
-			String number = req.getParameter("num");
-			System.out.println("商品id："+idStr+"，，，，，购买数量："+number);
 			resp.sendRedirect(req.getContextPath()+"/shop_car.jsp");
 			return;
 		}
-		resp.sendRedirect(req.getContextPath()+"/main.jsp");
+		resp.sendRedirect(req.getContextPath()+"/login.jsp");
 		
 	}
 

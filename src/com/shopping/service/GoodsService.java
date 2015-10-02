@@ -47,6 +47,15 @@ private GoodsDao goodsDao;
 	}
 
 
+	/**
+	 * 向购物车中添加商品
+	 * @author: yeye
+	 * @createTime: 2015年10月2日 下午11:01:48
+	 * @history:
+	 * @param id
+	 * @param sc
+	 * @return boolean
+	 */
 	public boolean addToCart(int id, ShoppingCart sc) {
 		Goods goods = goodsDao.getDetailsById(id);
 		
