@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -1047,7 +1048,8 @@
                 <h3 class="thr_scqrbt">订单信息确认</h3>
                 <div class="thr_scqrnr">
                     <h4 class="thr_scqrtit">商品信息</h4>
-                    <table cellspacing="0" cellpadding="0" class="thr_scqrbg">
+                    
+                   <table cellspacing="0" cellpadding="0" class="thr_scqrbg">
                         <tr>
                             <td class="bg2" colspan="2">商品名称</td>
                             <td class="bg">商品编号</td>
@@ -1055,33 +1057,27 @@
                             <td class="bg">数量</td>
                             <td class="bg">小计</td>
                         </tr>
+                         <c:forEach items="${sessionScope.ShoppingCart.items}" var="item">
                         <tr>
                             <td class="pic">
-                                <img src="img/14-49-35-72-1.jpg.thumb.jpg" width="56" height="56"></td>
-                            <td class="txt">高效氯氟氰菊酯2.5%(乳油)</td>
-                            <td>16112</td>
-                            <td>￥140</td>
-                            <td>16件</td>
-                            <td>￥2240.00</td>
+                                <img src="img/${item.goods.goods_img }" width="56" height="56"></td>
+                            <td class="txt">${ item.goods.goods_name}</td>
+                            <td>${item.goods.goods_number}</td>
+                            <td>￥${item.goods.goods_price}元</td>
+                            <td>${item.buynum}件</td>
+                            <td>￥${item.itemMoney}元</td>
                         </tr>
-                        <tr>
-                            <td class="pic">
-                                <img src="img/201107011134523172bd8272058d409ecb2d1ae80e403ba71d.gif" width="56" height="56"></td>
-                            <td class="txt">镁硼钙铁锌</td>
-                            <td>16068</td>
-                            <td>￥90</td>
-                            <td>10件</td>
-                            <td>￥900.00</td>
-                        </tr>
+                         </c:forEach>
+                       
                         <tr>
                             <td class="bg">使用余额</td>
                             <td class="bg">未使用</td>
                             <td class="bg">优惠金额</td>
                             <td class="bg"><b class="colored">无优惠</b></td>
-                            <td class="bg">金额总计：￥3140元</td>
-                            <td class="bg">需支付金额：<b class="colored">￥3140元</b></td>
+                            <td class="bg">金额总计：￥${sessionScope.ShoppingCart.totalMoney}元</td>
+                            <td class="bg">需支付金额：<b class="colored">￥${sessionScope.ShoppingCart.totalMoney}元</b></td>
                         </tr>
-                    </table>
+                    </table> 
                 </div>
                 <!--thr_scqrnr end-->
                 <div class="thr_scqrnr">
@@ -1107,12 +1103,16 @@
 				datas = JSON.parse(datas);
 				  var html = '';
 				  var users = datas;
+				  var mydate = new Date().toLocaleString();
+				  var num = new Date().getFullYear();
+				  var num2 = new Date().getMonth();
+				  var num3 = new Date().getDay();
 					html += '<table cellspacing="0" cellpadding="0" class="thr_scqrbg">'
 							 + '<tr>'
 							 + '<td><b>订单编号：</b></td>'
-							 + '<td class="det"><b class="colored">下单成功后，系统将自动生成订单号</b></td>'
+							 + '<td class="det"><b class="colored">'+num+''+num2+''+num3+'001</b></td>'
 							 + '<td><b>订单时间：</b></td>'
-							 + '<td class="det">2015-10-03 19:53:04</td>'
+							 + '<td class="det">'+mydate+'</td>'
 							 + '</tr>'
 							 + '<tr>'
 							 + '<td><b>收 货 人：</b></td>'
