@@ -9,9 +9,9 @@ public class ShoppingCartItem {
 	private Goods goods;
 	private int buynum;
 	
-	public ShoppingCartItem(Goods goods) {
+	public ShoppingCartItem(Goods goods,int buynum) {
 		this.goods = goods;
-		this.buynum = 2;
+		this.buynum = buynum;
 	}
 	
 	public Goods getGoods() {

@@ -26,6 +26,7 @@ public class ShopCarController extends HttpServlet {
 			throws ServletException, IOException {
 		//获取商品的id
 		String idStr = req.getParameter("id");
+		Integer buynum = Integer.parseInt(req.getParameter("num"));
 		int id = -1;
 		boolean flag = false;
 		id = Integer.parseInt(idStr);
@@ -36,7 +37,7 @@ public class ShopCarController extends HttpServlet {
 			
 			//调用GoodsService的addToCart()方法把商品放到购物车中
 			GoodsService goodsService = new GoodsService();
-			flag = goodsService.addToCart(id,sc);
+			flag = goodsService.addToCart(id,sc,buynum);
 		}
 		if (flag) {
 			resp.sendRedirect(req.getContextPath()+"/shop_car.jsp");

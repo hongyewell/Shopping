@@ -1056,11 +1056,19 @@
 
                     </p>
                 </div>
-                <form method="post" onsubmit="return checkAddress();" id="editaddress">
+             <form action="GoodsBuyController"  method="post" onsubmit="return checkAddress();" id="editaddress">
                     <h3 class="thr_scactit">新增收货人信息</h3>
                     <div class="thr_scacnr">
-                        <p class="thr_scxgp">联&nbsp;&nbsp;系&nbsp;人：<input name="address[truename]" id="truename" type="text" class="thr_scxginp"><span class="colored2">*</span><span class="colored2" id="msg_truename"></span></p>
-                        <p class="thr_scxgp">选择地区：<input name="address[areaid]" id="areaid_1" type="hidden" value="0" /><input id="name_3" type="hidden" value="" /><span id="load_area_1"><select onchange="load_area(this.value, 1,this.options[selectedIndex].text,0);" class="thr_scxgsel"><option value="0">请选择地区</option>
+						<p class="thr_scxgp">
+							联&nbsp;&nbsp;系&nbsp;人：
+							<input name="true_name"id="truename" type="text" class="thr_scxginp">
+							<span class="colored2">*</span><span class="colored2" id="msg_truename"></span>
+						</p>
+						<p class="thr_scxgp">选择地区：
+						<input name="address_id" id="areaid_1" type="hidden" value="0" />
+						<input id="name_3" type="hidden" value="" /><span id="load_area_1">
+						<select onchange="load_area(this.value, 1,this.options[selectedIndex].text,0);" class="thr_scxgsel">
+							<option value="0">请选择地区</option>
                             <option value="1">北京</option>
                             <option value="2">上海</option>
                             <option value="3">天津</option>
@@ -1103,13 +1111,26 @@
                             <script type="text/javascript" src="js/area.js"></script>
                             <span class="colored2" id="msg_areaid"></span></p>
                         <p class="thr_scxgp2">
-                            <input name="address[address]" type="text" id="address" class="thr_scxginp2"><span class="colored2">*</span><span class="colored2" id="msg_address"></span> 需填写省市区(县),再填写具体的街道/村镇地址</p>
-                        <p class="thr_scxgp">手机号码：<input name="address[mobile]" id="mobile" type="text" class="thr_scxginp"><span class="colored2">*</span><span class="colored2" id="msg_mobile"></span></p>
-                        <p class="thr_scxgp">固定电话：<input name="address[telephone]" id="telephone" type="text" class="thr_scxginp"><span class="colored2" id="msg_telephone"></span></p>
-                        <p class="thr_scxgp">
-                            <input name="sub_address" type="submit" value="" class="thr_scxgbtn">
-                            <a href="/sell/cart.php?step=1">暂不添加</a> <span class="colored2">* 注释：确认无误后，请点击【保存信息】</span></p>
-                    </div>
+                            <input name="address_detail" type="text" id="address" class="thr_scxginp2">
+                            <span class="colored2">*</span>
+                            <span class="colored2" id="msg_address"></span>
+                                                                                           需填写省市区(县),再填写具体的街道/村镇地址
+                       </p>
+						<p class="thr_scxgp">
+							手机号码：<input name="true_mobile" id="mobile" type="text" class="thr_scxginp">
+							<span class="colored2">*</span>
+							<span class="colored2" id="msg_mobile"></span>
+						</p>
+						<p class="thr_scxgp">
+							固定电话：<input name="true_telephone" id="telephone" type="text"class="thr_scxginp">
+							<span class="colored2" id="msg_telephone"></span>
+						</p>
+						<p class="thr_scxgp">
+							<input name="sub_address" type="submit" value=""class="thr_scxgbtn"> 
+							<a href="/sell/cart.php?step=1">暂不添加</a>
+							<span class="colored2">* 注释：确认无误后，请点击【保存信息】</span>
+						</p>
+					</div>
                 </form>
             </div>
             <!--thr_scacbox end-->

@@ -1086,33 +1086,59 @@
                 <!--thr_scqrnr end-->
                 <div class="thr_scqrnr">
                     <h4 class="thr_scqrtit">收货人信息</h4>
-                    <table cellspacing="0" cellpadding="0" class="thr_scqrbg">
-                        <tr>
-                            <td><b>订单编号：</b></td>
-                            <td class="det"><b class="colored">下单成功后，系统将自动生成订单号</b></td>
-                            <td><b>订单时间：</b></td>
-                            <td class="det">2015-09-30 19:53:04</td>
-                        </tr>
-                        <tr>
-                            <td><b>收 货 人：</b></td>
-                            <td class="det">冯里</td>
-                            <td><b>电话号码：</b></td>
-                            <td class="det"></td>
-                        </tr>
-                        <tr>
-                            <td><b>收货地址：</b></td>
-                            <td class="det">安徽-合肥市-蜀山区长江西路130号</td>
-                            <td><b>手机号码：</b></td>
-                            <td class="det">15209847692</td>
-                        </tr>
-                        <tr>
-                            <td><b>配送方式：</b></td>
-                            <td class="det">物流运输</td>
-                            <td><b>支付方式：</b></td>
-                            <td class="det">支付宝</td>
-                        </tr>
-                    </table>
+                    <div id="div_userinfo"></div>
+                    
                 </div>
+                 <!--获取到goods_main.jsp请求的参数作为隐藏域-->
+	<input type="hidden" id="username" value="${username}" /> 
+	
+    <!-- js请求数据，渲染到html页面 -->
+    <script type="text/javascript" src="${pageContext.request.contextPath}/resources/scripts/jquery-1.8.3.min.js"></script>
+	
+	<script type="text/javascript">
+		var contextPath = '${pageContext.request.contextPath}';
+	</script>
+	
+	<script type="text/javascript">
+		$(function() {
+			var username = $('#username').val();	// 获取隐藏域中的值
+			var data = {'username': username};
+			$.post(contextPath+'/MakeOrderController',data, 'json').done(function(datas) {
+				datas = JSON.parse(datas);
+				  var html = '';
+				  var users = datas;
+					html += '<table cellspacing="0" cellpadding="0" class="thr_scqrbg">'
+							 + '<tr>'
+							 + '<td><b>订单编号：</b></td>'
+							 + '<td class="det"><b class="colored">下单成功后，系统将自动生成订单号</b></td>'
+							 + '<td><b>订单时间：</b></td>'
+							 + '<td class="det">2015-10-03 19:53:04</td>'
+							 + '</tr>'
+							 + '<tr>'
+							 + '<td><b>收 货 人：</b></td>'
+							 + '<td class="det">'+users.user_name+'</td>'
+							 + '<td><b>电话号码：</b></td>'
+							 + '<td class="det">'+users.user_telephone+'</td>'
+							 + '</tr>'
+							 + '<tr>'
+							 + '<td><b>收货地址：</b></td>'
+							 + '<td class="det">'+users.user_address_detail+'</td>'
+							 + '<td><b>手机号码：</b></td>'
+							 + '<td class="det">'+users.user_mobile+'</td>'
+							 + '</tr>'
+							 + '<tr>'
+							 + '<td><b>配送方式：</b></td>'
+							 + '<td class="det">物流运输</td>'
+							 + '<td><b>支付方式：</b></td>'
+							 + '<td class="det">支付宝</td>'
+							 + '</tr>'
+							 + '</table>'
+					$('#div_userinfo').html(html);
+			}).fail(function(res) {
+			});
+			
+		});	
+	</script>
                 <!--thr_scqrnr end-->
                 <form action="/sell/cart.php?step=3" method="post" target="_blank">
                     <input type="hidden" name="addressid" value="9758" />

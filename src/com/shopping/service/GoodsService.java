@@ -56,11 +56,11 @@ private GoodsDao goodsDao;
 	 * @param sc
 	 * @return boolean
 	 */
-	public boolean addToCart(int id, ShoppingCart sc) {
+	public boolean addToCart(int id, ShoppingCart sc,int buynum) {
 		Goods goods = goodsDao.getDetailsById(id);
 		
 		if (goods!= null) {
-		    sc.addGoods(goods);
+		    sc.addGoods(goods,buynum);
 		    return true;
 		}
 		return false;

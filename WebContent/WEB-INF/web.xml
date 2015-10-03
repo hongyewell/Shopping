@@ -131,4 +131,21 @@
     <servlet-name>ShopCarController</servlet-name>
     <url-pattern>/ShopCarController</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>GoodsBuyController</servlet-name>
+    <servlet-class>com.shopping.controller.GoodsBuyController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GoodsBuyController</servlet-name>
+    <url-pattern>/GoodsBuyController</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>MakeOrderController</servlet-name>
+    <servlet-class>com.shopping.controller.MakeOrderController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MakeOrderController</servlet-name>
+    <url-pattern>/MakeOrderController</url-pattern>
+  </servlet-mapping>
 </web-app>

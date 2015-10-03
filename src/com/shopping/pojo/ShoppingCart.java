@@ -20,11 +20,11 @@ public class ShoppingCart {
 	 * @createTime: 2015年10月2日 上午9:42:29
 	 * @history: void
 	 */
-	public void addGoods(Goods good){
+	public void addGoods(Goods good,int buynum){
 		ShoppingCartItem sci = goods.get(good.getGoods_id());
 		
 		if (sci == null) {
-			sci = new ShoppingCartItem(good);
+			sci = new ShoppingCartItem(good, buynum);
 			goods.put(good.getGoods_id(), sci);
 		}else {
 			sci.increment();

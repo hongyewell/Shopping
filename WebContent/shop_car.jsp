@@ -1101,10 +1101,10 @@
                             <td><span class="thr_scfpri">￥${item.goods.goods_price}</span></td>
                             <td>
                                 <input type="button" onclick="sub(${item.goods.goods_price},${item.goods.goods_id})" value="-" class="thr_scfbtn"/>
-                                <input id="${item.goods.goods_id}"  type="text" value="2" class="thr_scfinp"/>
+                                <input id="${item.goods.goods_id}"  type="text" value="${item.buynum}" class="thr_scfinp"/>
                                 <input type="button" onclick="add(${item.goods.goods_price},${item.goods.goods_id})" value="+"  class="thr_scfbtn2"/>
                             </td>
-                            <td><span class="thr_scfpri">￥<b id="${item.goods.goods_id}_">${item.goods.goods_price*2}</b></span></td>
+                            <td><span class="thr_scfpri">￥<b id="${item.goods.goods_id}_">${item.itemMoney}</b></span></td>
                             <td>
                                <a href="#" rel="nofollow" onclick=""  class="thr_scfa">暂不结算</a>|
                                <a href="#" rel="nofollow" onclick="" class="thr_scfa">删除</a>
@@ -1118,7 +1118,7 @@
                     </table>
                     <div class="thr_scjs">
                         <p class="thr_scjsp">如果在购买过程中有任何疑问请拨:<span class="colored">400-6076-152</span></p>
-                        <a rel="nofollow" href="goods_buy.jsp" class="thr_scjsa"><img src="img/js_btn.gif"></a></div>
+                        <a rel="nofollow" href="goods_buy.jsp?${item.goods.goods_id}" class="thr_scjsa"><img src="img/js_btn.gif"></a></div>
                 </form>
             </div>
             <!--thr_sctxt end-->
