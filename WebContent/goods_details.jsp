@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 <title>商品详情</title>
  <meta name="keywords" content="苦参碱0.3%(水剂)新高度,供应,杀虫剂" />
     <meta name="description" content="产品性能(用途):本品为天然植物源农药，具有触杀、胃毒作用。害虫一旦接触药剂，即麻痹神经中枢，继而使虫体蛋白凝固，堵死虫体气" />

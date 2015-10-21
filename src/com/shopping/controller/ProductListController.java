@@ -31,10 +31,11 @@ public class ProductListController extends HttpServlet {
 	 * 获取商品信息列表
 	 */
 	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
 			throws ServletException, IOException {
 		
-		resp.setCharacterEncoding("utf-8");
+		req.setCharacterEncoding("utf-8");
+		resp.setContentType("text/html;charset=utf-8");
 		
 		HttpSession session = req.getSession();
 		

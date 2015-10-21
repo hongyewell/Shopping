@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
  <title>购物结算_第一步_安徽惠富强农资交易平台</title>
     <link href="css/trade.css" rel="stylesheet" />
     <script type="text/javascript">window.onerror = function () { return true; }</script>

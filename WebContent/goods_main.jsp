@@ -5,6 +5,7 @@
 <head>
 		<script type="text/javascript" src="js/fromapporpc.js"></script>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 		<title>安徽惠富强农资交易平台</title>
 		<meta name="keywords" content="安徽惠富强农资交易平台,中国农药网,农药,农药信息网" />
 		<meta name="description" content="安徽惠富强农资交易平台全国领先的农药交易平台，为广大中小农药企业提供品牌的宣传推广服务，帮您的企业拉到真实的订单，让客户买到货真价实的农药产品。" />
