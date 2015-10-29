@@ -21,7 +21,8 @@ public class GoodsBuyController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
+			throws ServletException, IOException {
 		req.setCharacterEncoding("utf-8");
 		String truename = req.getParameter("true_name");
 		String addressid = req.getParameter("address_id");

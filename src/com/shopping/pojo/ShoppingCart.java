@@ -16,6 +16,7 @@ public class ShoppingCart {
 	
 	/**
 	 * 向购物车中添加一件商品
+	 * 先判断购物车中是否有该商品
 	 * @author: yeye
 	 * @createTime: 2015年10月2日 上午9:42:29
 	 * @history: void

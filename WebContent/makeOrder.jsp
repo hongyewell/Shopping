@@ -1022,7 +1022,7 @@
             </div>
             <!--navlef_sub end-->
             <ul class="navbul">
-                <li class="navbli"><a href="#">首页</a>
+                <li class="navbli"><a href="goods_main.jsp">首页</a>
                 </li>
                 <li class="navbli"><a href="#">资讯</a></li>
                 <li class="navblion"><a href="#">产品库</a></li>

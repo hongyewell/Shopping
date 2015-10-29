@@ -85,16 +85,6 @@ public class DBUtil {
 		return stmt;
 	}
 	
-	public static PreparedStatement getPStmt(Connection conn, String sql) {
-		PreparedStatement pStmt = null;
-		try {
-			pStmt = conn.prepareStatement(sql);
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		return pStmt;
-	}
-	
 	public static void closeStmt(Statement  stmt) {
 		try {
 			if (stmt != null) {
@@ -105,6 +95,18 @@ public class DBUtil {
 			e.printStackTrace();
 		}
 	}
+	
+	public static PreparedStatement getPStmt(Connection conn, String sql) {
+		PreparedStatement pStmt = null;
+		try {
+			pStmt = conn.prepareStatement(sql);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return pStmt;
+	}
+	
+	
 	
 	public static ResultSet executeQuery(Statement stmt, String sql){
 		ResultSet rs = null;

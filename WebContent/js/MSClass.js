@@ -1,8 +1,8 @@
-<!--
+
 /*MSClass (Class Of Marquee Scroll - General Uninterrupted Scrolling(JS)) Ver 2.9*\
 
 @ Code By : Yongxiang Cui(333) E-Mail:zhadan007@21cn.com http://www.popub.net
-@ Update¡¡: 2012-01-08 (Ver 2.9.120108)
+@ Updateï¿½ï¿½: 2012-01-08 (Ver 2.9.120108)
 @ Examples: http://www.popub.net/script/MSClass.html
 
 \***============== Please keep the above copyright information ==============***/
