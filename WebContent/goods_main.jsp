@@ -1297,28 +1297,28 @@
 
 				<div class="sli_tj">
 					<ul>
-						<li class="slide_li"><a href="#"> <img
-								alt="高效氯氰菊酯10%(微乳剂) 200ml*30瓶/件" width="180" height="180"
-								title="高效氯氰菊酯10%(微乳剂) 200ml*30瓶/件" src="img/huifuqiang.jpg"
+						<li class="slide_li"><a href="http://www.ahhfq.com/"> <img
+								alt="安徽惠富强农业科技有限公司" width="180" height="180"
+								title="安徽惠富强农业科技有限公司" src="img/huifuqiang.jpg"
 								class="sli_img" />
 						</a>
-							<p class="slide_text">农资物流信息管理系统</p></li>
+							<p class="slide_text">安徽惠富强农业科技有限公司</p></li>
 
 
 						<li class="slide_li_3"><a href="#"> <img
-								alt="高效氯氰菊酯10%(微乳剂) 200ml*30瓶/件" width="180" height="180"
-								title="高效氯氰菊酯10%(微乳剂) 200ml*30瓶/件"
+								alt="农资物流信息管理系统" width="180" height="180"
+								title="农资物流信息管理系统"
 								src="img/10-41-51-62-1836.jpg.thumb.jpg" class="sli_img" />
 						</a>
 							<p class="slide_text">农资物流信息管理系统</p></li>
 						<li class="slide_li_1"><a href="#"> <img
-								alt="恶霉灵99%(原药) 5g*400袋/件" width="180" height="180"
-								title="恶霉灵99%(原药) 5g*400袋/件"
+								alt="三真信息查询服务系统" width="180" height="180"
+								title="三真信息查询服务系统"
 								src="img/10-18-51-14-17224.jpg.thumb.jpg" class="sli_img" /></a>
 							<p class="slide_text">三真信息查询服务系统</p></li>
 						<li class="slide_li_2"><a href="#"> <img
-								alt="有机硅 100ml*60瓶/件" width="180" height="180"
-								title="有机硅 100ml*60瓶/件"
+								alt="农资运输配送管理系统" width="180" height="180"
+								title="农资运输配送管理系统"
 								src="img/10-23-00-12-19486.jpg.thumb.jpg" class="sli_img" /></a>
 							<p class="slide_text">农资运输配送管理系统</p></li>
 					</ul>
@@ -1330,7 +1330,7 @@
 								href="javascript:void(0);">会员登录</a></li>
 						</ul>
 						<div class="login_con">
-							<form action="#" method="post">
+							<form action="<%=request.getContextPath() %>/login" method="post" >
 								<div class="toprdl_li">
 									<b class="toprdl_limc">用户姓名：</b> <input name="username"
 										type="text" id="username" value="" class="toprdl_linp">
@@ -1353,11 +1353,8 @@
 										href="#" rel="nofollow" class="toprdl_lisp"></a>
 								</div>
 								<a href="#" style="float: left; color: #E4C471;">忘记密码？</a> <a
-									href="#" style="float: right; color: #E4C471;">免费注册</a> <input
-									name="submit" type="submit" value="&nbsp;" class="toprdl_lbtn"
-									style="margin-left: 100px;">
-
-
+									href="#" style="float: right; color: #E4C471;">免费注册</a> 
+									<input name="submit" type="submit" value="&nbsp;" class="toprdl_lbtn" style="margin-left: 100px;">
 							</form>
 						</div>
 					</div>
@@ -4866,7 +4863,7 @@
 					href="http://www.shengzhujiage.com/">生猪价格今日猪价</a></li>
 				<li class="conlink_nrli"><a href="http://www.wdptj.com/">植物图片大全</a></li>
 				<li class="conlink_nrli"><a
-					href="http://www.nongyao001.com/appdownload/">农药第一网APP</a></li>
+					href="#">农药第一网APP</a></li>
 				<p class="clear"></p>
 			</ul>
 		</div>

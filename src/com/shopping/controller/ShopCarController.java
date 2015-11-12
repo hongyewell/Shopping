@@ -27,6 +27,9 @@ public class ShopCarController extends HttpServlet {
 		//获取商品的id
 		String idStr = req.getParameter("id");
 		Integer buynum = Integer.parseInt(req.getParameter("num"));
+		String method = req.getParameter("method");
+		System.out.println("hello ");
+		System.out.println(method);
 		int id = -1;
 		boolean flag = false;
 		id = Integer.parseInt(idStr);

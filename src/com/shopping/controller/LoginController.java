@@ -23,10 +23,10 @@ public class LoginController extends HttpServlet {
 
 	private static final long serialVersionUID = 2232531187209258846L;
 	
-	@Override
+	/*@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		resp.sendRedirect(req.getContextPath()+"/login.jsp");
-	}
+		resp.sendRedirect(req.getContextPath()+"/goods_main.jsp");
+	}*/
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
@@ -41,12 +41,12 @@ public class LoginController extends HttpServlet {
 		
 		if (user == null) {//登录失败
 			req.setAttribute("error", "用户名或密码错误");
-			req.getRequestDispatcher("/register.jsp").forward(req, resp);
+			req.getRequestDispatcher("/goods_main.jsp").forward(req, resp);
 			
 		}else {//登录成功
 			HttpSession session = req.getSession();
 			session.setAttribute("username", username);
-			resp.sendRedirect(req.getContextPath()+"/index.jsp");
+			resp.sendRedirect(req.getContextPath()+"/goods_main.jsp");
 		}
 
 	

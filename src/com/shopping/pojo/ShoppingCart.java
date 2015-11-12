@@ -16,7 +16,8 @@ public class ShoppingCart {
 	
 	/**
 	 * 向购物车中添加一件商品
-	 * 先判断购物车中是否有该商品
+	 * 先判断购物车中是否有该商品，若无，则添加该条商品记录
+	 * 若有，则增加这条商品的数量
 	 * @author: yeye
 	 * @createTime: 2015年10月2日 上午9:42:29
 	 * @history: void
@@ -35,6 +36,7 @@ public class ShoppingCart {
 	
 	/**
 	 * 检验购物车中是否有id指定的商品
+	 * 使用containsKey进行判断
 	 * @author: yeye
 	 * @createTime: 2015年10月2日 上午9:53:13
 	 * @param id
@@ -46,6 +48,7 @@ public class ShoppingCart {
 	
 	/**
 	 * 返回购物车中商品的总数量
+	 * goods.values 即遍历购物车中的每一个商品对象
 	 * @author: yeye
 	 * @createTime: 2015年10月2日 上午9:54:46
 	 * @return int

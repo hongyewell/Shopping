@@ -103,7 +103,7 @@ public class UserDao {
 	 */
 	
 	public User queryByUserNameAndPassword(String username,String password){
-		String sql = "select u.username,u.password from users u where u.username=? and u.password=?";
+		String sql = "select user_name,user_password from goods_user where user_name=? and user_password=?";
 		
 		Connection conn = DBUtil.getConn();
 		PreparedStatement pstmt = null;
