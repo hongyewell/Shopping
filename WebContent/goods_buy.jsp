@@ -82,23 +82,14 @@
 </head>
 <body>
     <div id="header">
-        <div class="headtop">
-            <div class="headtl">
-                <script type="text/javascript">addFav('收藏安徽惠富强农资交易平台');</script>
-                <b style="color:#75B03C; float: left; padding: 4px;">全国免费热线：400-6076-152</b>
-            </div>
-            <div class="headtr" id="destoon_member"  >
-               
-                    <a class="dl" href="#" rel="nofollow" >
-                        <img src="img/login.gif" />
-                    </a>
-                    <a class="zc" rel="nofollow">
-                        <img src="img/register.gif" />
-                    </a>
-                    <a class="dh" rel="nofollow">帮助中心</a>
-				</div>
-        </div>
-        <!--headtop end-->
+		<div class="headtop">
+			<div class="headtl"></div>
+			<div class="headtr" id="destoon_member">
+
+				<a class="dh" rel="nofollow">帮助中心</a>
+			</div>
+		</div>
+		<!--headtop end-->
         <div class="headmid">
             <div class="logo"><a href="#">
                 <img src="img/hfqlogo.png" title="安徽惠富强农资交易平台"></a></div>

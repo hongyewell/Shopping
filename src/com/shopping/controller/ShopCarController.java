@@ -43,7 +43,7 @@ public class ShopCarController extends HttpServlet {
 			flag = goodsService.addToCart(id,sc,buynum);
 		}
 		if (flag) {
-			resp.sendRedirect(req.getContextPath()+"/shop_car.jsp");
+			resp.sendRedirect(req.getContextPath()+"/goods_shopCar.jsp");
 			return;
 		}
 		resp.sendRedirect(req.getContextPath()+"/login.jsp");

@@ -90,4 +90,37 @@ public class UsersDao {
 		return null;
 	}
 
+	public Users userLogin(String username, String password) {
+		String sql = "select * from goods_user where user_name =? and user_password = ?";
+		Connection conn = DBUtil.getConn();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		pstmt = DBUtil.getPStmt(conn, sql);
+		try {
+			pstmt.setString(1, username);
+			pstmt.setString(2, password);
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				Users users = new Users();
+				users.setUser_id(rs.getInt("user_id"));
+				users.setUser_name(rs.getString("user_name"));
+				users.setUser_addressid(rs.getString("user_addressid"));
+				users.setUser_address_detail(rs.getString("user_address_detail"));
+				users.setUser_mobile(rs.getString("user_mobile"));
+				users.setUser_telephone(rs.getString("user_telephone"));
+				return users;
+			}
+			else {
+				return null;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			DBUtil.closeConn(conn);
+			DBUtil.closeResultSet(rs);
+		}
+		return null;
+	}
+	
+
 }

@@ -10,20 +10,25 @@ import com.shopping.pojo.Users;
 * @createTime:2015年10月3日 上午9:01:17
 */
 public class UsersService {
-	private UsersDao userDao;
+	private UsersDao usersDao;
 	
 	public UsersService() {
-		this.userDao = new UsersDao();
+		this.usersDao = new UsersDao();
 	}
 	
 
 	public int addUser(Users user ) {
-		return userDao.addUser(user);
+		return usersDao.addUser(user);
 	}
 
 
 	public Users getUserInfo(String username) {
-		return userDao.getUserInfo(username);
+		return usersDao.getUserInfo(username);
+	}
+
+
+	public Users login(String username, String password) {
+		return usersDao.userLogin(username,password);
 	}
 
 }

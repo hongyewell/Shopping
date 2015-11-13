@@ -37,7 +37,7 @@ public class GoodsBuyController extends HttpServlet {
 		System.out.println(truename+addressid+addressdetail+truemobile+truetelephone);
 		HttpSession session = req.getSession();
 		session.setAttribute("username", truename);
-		resp.sendRedirect(req.getContextPath()+"/makeOrder.jsp");
+		resp.sendRedirect(req.getContextPath()+"/goods_makeOrder.jsp");
 	}
 
 }

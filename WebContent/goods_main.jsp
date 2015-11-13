@@ -1,16 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 <head>
 <script type="text/javascript" src="js/fromapporpc.js"></script>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 <title>安徽惠富强农资交易平台</title>
-<meta name="keywords" content="安徽惠富强农资交易平台,中国农药网,农药,农药信息网" />
-<meta name="description"
-	content="安徽惠富强农资交易平台全国领先的农药交易平台，为广大中小农药企业提供品牌的宣传推广服务，帮您的企业拉到真实的订单，让客户买到货真价实的农药产品。" />
-
 <link href="css/trade.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript">
 	window.onerror = function() {
@@ -129,13 +123,11 @@
 				<script type="text/javascript">
 					addFav('收藏安徽惠富强农资交易平台');
 				</script>
-				<!--<b class="freehotl">全国免费热线：400-6076-152</b>-->
 			</div>
 			<div class="headtr" id="destoon_member">
 
-				<a class="dl" href="#" rel="nofollow"> <img src="img/login.gif" />
-				</a> <a class="zc" rel="nofollow"> <img src="img/register.gif" />
-				</a> <a class="dh" rel="nofollow">帮助中心</a>
+				<a class="dl" href="#" rel="nofollow">${username}</a> 
+				<a class="dh" rel="nofollow">帮助中心</a>
 			</div>
 		</div>
 		<div class="headmid">
@@ -1260,7 +1252,7 @@
 				</ul>
 				<div class="banner">
 					<div class="chinaz">
-						<script type="text/javascript" src="js/slide.js"></script>
+						<!-- <script type="text/javascript" src="js/slide.js"></script> -->
 						<div id="slide_a62" class="slide"
 							style="width: 1007px; height: 295px;">
 							<a href="#" target="_blank"> <img src="img/11-20-49-36-1.png"
@@ -1271,14 +1263,14 @@
 							</a> <a href="#" target="_blank"> <img
 								src="img/11-27-42-36-7989.png" width="1007" height="295" alt="" />
 							</a> <a href="#" target="_blank"> <img
-								src="img/13-50-24-14-7989.png" width="1007" height="295" alt="" />
+								src="img/11-27-42-36-7989.png" width="1007" height="295" alt="" />
 							</a> <a href="#" target="_blank"> <img
 								src="img/09-51-05-74-7989.png" width="1007" height="295" alt="" />
 							</a>
 						</div>
-						<script type="text/javascript">
+						<!-- <script type="text/javascript">
 							new dslide('slide_a62');
-						</script>
+						</script> -->
 					</div>
 				</div>
 			</div>
@@ -1340,14 +1332,8 @@
 										name="password" type="password" class="toprdl_linp"
 										id="password" />&nbsp;
 
-									<script type="text/javascript" src="js/keyboard.js"></script>
 									<img src="img/keyboard.gif " title="密码键盘 " alt="" class="c_p "
 										onclick="_k('password', 'kb', this);" />
-									<div id="kb " style="display: none;"></div>
-									<script type="text/javascript" src="js/md5.js"></script>
-									<script type="text/javascript">
-										init_md5();
-									</script>
 									<input type="checkbox" style="display: none;" name="goto"
 										value="1" class="login_dsche" id="goto" checked /> <a
 										href="#" rel="nofollow" class="toprdl_lisp"></a>
@@ -1360,7 +1346,7 @@
 					</div>
 				</div>
 			</div>
-			<script language="javascript">
+			<!-- <script language="javascript">
 				settab({
 					navEle : '.toprdl_bt li',
 					contentEle : '.login_con',
@@ -1368,7 +1354,7 @@
 					navOnCls : 'toprdl_btlion',
 					triggerEvent : 'mouseover'
 				});
-			</script>
+			</script> -->
 			<div class="clear"></div>
 			<div class="slide_new">
 				<ul class="slnew_tab">
@@ -4970,41 +4956,16 @@
 						&#160; &#160; &#160; 安徽惠富强农资交易平台版权所有 &#160;未经许可 不得转载 <br />法律顾问：河南英泰律师事务所
 						&#160; &#160; &#160; 网站备案号：豫ICP备11024324号-1 <br />全国咨询热线：400-6076-152
 						&#160; &#160; &#160; 客服热线：0371-86551595
-						<script language="javascript" type="text/javascript"
-							src="http://js.users.51.la/5648954.js">
-							
-						</script>
-					<noscript>
-						<a rel="nofollow" href="http://www.51.la/?5648954" target="_blank">
-							<img alt="我要啦免费统计" src="http://img.users.51.la/5648954.asp"
-							style="border: none" />
-						</a>
-					</noscript>
-					<script type="text/javascript">
-						var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://"
-								: " http://");
-						document
-								.write(unescape("%3Cscript src='"
-										+ _bdhmProtocol
-										+ "hm.baidu.com/h.js%3Face758f02209d32293d522bb5a5a117b' type='text/javascript'%3E%3C/script%3E"));
-					</script>
 					</p>
 				</div>
 				<!--footxt end-->
 				<div class="footpic">
-					<img style="cursor: hand;" alt="51啦统计"
-						onclick="window.open('http://www.51honest.org/wscredit/detail.credit?action=preLevel&credcode=NO.20000030555','','resizable=yes,location=yes,toolbar=yes,menubar=yes,scrollbars=yes,status=yes')"
-						src="img/80.gif" border="0" complete="complete" align="top" /> <a
-						id="_pingansec_bottomimagelarge_shiming" href="#"> <img
-						src="img/bottom_large_img.png" />
+					<img style="cursor: hand;" alt="51啦统计" src="img/80.gif" border="0" complete="complete" align="top" /> 
+					<a id="_pingansec_bottomimagelarge_shiming" href="#">
+					<img src="img/bottom_large_img.png" />
 					</a>
-					<script
-						src="http://www.anquan.org/static/outer/js/anquan_authen_124x47.js">
-						
-					</script>
-					<a href="http://www.nongyao001.com/file/image/yyzz.jpg"
-						rel="nofollow"> <img alt="营业执照" src="img/icyyzz.jpg"
-						width="124" />
+					<a href="#"
+						rel="nofollow"> <img alt="营业执照" src="img/icyyzz.jpg" width="124" />
 					</a> <a href="img/icp.jpg" rel="nofollow"> <img alt="ICP证"
 						src="img/icpzs.jpg" width="124" />
 					</a>
@@ -5118,13 +5079,11 @@
 		var _hmt = _hmt || [];
 		(function() {
 			var hm = document.createElement("script");
-			hm.src = "//hm.baidu.com/hm.js?5747290f521bec382e438d23a5e9564d";
+			hm.src = "#";
 			var s = document.getElementsByTagName("script")[0];
 			s.parentNode.insertBefore(hm, s);
 		})();
 	</script>
-	<script src="http://kefu.qycn.com/vclient/state.php?webid=99706"
-		language="javascript" type="text/javascript"></script>
 </body>
 
 </html>

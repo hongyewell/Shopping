@@ -1,18 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 <title>商品详情</title>
- <meta name="keywords" content="苦参碱0.3%(水剂)新高度,供应,杀虫剂" />
-    <meta name="description" content="产品性能(用途):本品为天然植物源农药，具有触杀、胃毒作用。害虫一旦接触药剂，即麻痹神经中枢，继而使虫体蛋白凝固，堵死虫体气" />
     <link href="css/trade.css" rel="stylesheet" type="text/css" />
-    <link href="css/miniDecoration.css" rel="stylesheet" />
-    <link href="css/share_style1_24.css" rel="stylesheet" />
-    <link href="css/icon5.css" rel="stylesheet" />
-    <script type="text/javascript">window.onerror = function () { return true; }</script>
     <script type="text/javascript" src="js/config.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
@@ -84,17 +77,9 @@
     <div id="header">
         <div class="headtop">
             <div class="headtl">
-                <script type="text/javascript">addFav('收藏安徽惠富强农资交易平台');</script>
-                <b style="color: red; float: left; padding: 4px;">全国免费热线：400-6076-152</b>
+               
             </div>
             <div class="headtr" id="destoon_member"  >
-               
-                    <a class="dl" href="#" rel="nofollow" >
-                        <img src="img/login.gif" />
-                    </a>
-                    <a class="zc" rel="nofollow">
-                        <img src="img/register.gif" />
-                    </a>
                     <a class="dh" rel="nofollow">帮助中心</a>
 				</div>
         </div>
@@ -1040,8 +1025,6 @@
     </div>
     <!--nav end-->
     <script type="text/javascript" src="js/fromapporpc.js"></script>
-    <script type="text/javascript">uaredirect("http://www.nongyao001.com/sell/show.php?itemid=85730&uagent=touch");</script>
-    <script type="text/javascript" src="js/sell.js"></script>
     <div class="clear"></div>
     <div id="sell">
         <div class="sel_dloc">您现在所在的位置： <a href="#">首页</a> &raquo; <a href="#">产品库</a> &raquo; <a href="#">杀虫剂</a> &raquo; 苦参碱0.3%(水剂)新高度</div>
@@ -1211,7 +1194,7 @@
                             <div class="clear"></div>
                         </div>
                         <!--sel_dembjb end-->
-                        <script language="javascript">var showToggle = 0; function hideW() { if (showToggle) { $('.sel_dembjb').animate({ height: 90 }, 200); showToggle = 0; } else { $('.sel_dembjb').animate({ height: 10 }, 200); showToggle = 1; } }</script>
+                        <!-- <script language="javascript">var showToggle = 0; function hideW() { if (showToggle) { $('.sel_dembjb').animate({ height: 90 }, 200); showToggle = 0; } else { $('.sel_dembjb').animate({ height: 10 }, 200); showToggle = 1; } }</script> -->
                         <h4 class="sel_demblmbt"><span class="sel_demblmbsp">产品参数</span></h4>
                         <table cellspacing="0" cellpadding="0" class="sel_demblmf">
                             <tr>
@@ -1256,7 +1239,6 @@
                         </table>
                         <div class="sel_page" id="pagecount_tl"></div>
                         <p class="clear"></p>
-                        <script type="text/javascript" src="js/ajax_page_tradelog.js"></script>
 						<script language="javascript">
 							$(function() {
 								getData_page_tradelog(1, 85730);
@@ -1283,7 +1265,6 @@
                             <p class="clear"></p>
                             <div class="sel_page" id="pagecount_1"></div>
                         </div>
-                        <script type="text/javascript" src="js/ajax_page.js"></script>
                         <script language="javascript">$(function () { getData_page(1, 85730, '1', 3); $("#pagecount_1 span a").live('click', function () { var rel = $(this).attr("rel"); if (rel) { getData_page(rel, 85730, '1', 3); } }); });</script>
                         <div id="ajaxp_2" class="commentlist">
                             <ul class="commentli">
@@ -1327,7 +1308,7 @@
                             </div>
                             <div class="sel_demblmznr">
                                 <p class="sel_demblmzp">
-                                    验证码：<input name="captcha" id="captcha" type="text" size="6" onfocus="showcaptcha();" value="点击显示验证码" onkeyup="checkcaptcha(this.value);" onblur="checkcaptcha(this.value);" class="f_gray" style="margin: 10px 0 10px 0;" />&nbsp;<img src="http://www.nongyao001.com/skin/nongyao001/image/loading.gif" title="验证码,看不清楚?请点击刷新&#10;字母不区分大小写" alt="" align="absmiddle" id="captchapng" onclick="reloadcaptcha();" style="display: none; cursor: pointer;" /><span id="ccaptcha"></span>
+                                    验证码：<input name="captcha" id="captcha" type="text" size="6" onfocus="showcaptcha();" value="点击显示验证码" onkeyup="checkcaptcha(this.value);" onblur="checkcaptcha(this.value);" class="f_gray" style="margin: 10px 0 10px 0;" />&nbsp;<img src="#" title="验证码,看不清楚?请点击刷新&#10;字母不区分大小写" alt="" align="absmiddle" id="captchapng" onclick="reloadcaptcha();" style="display: none; cursor: pointer;" /><span id="ccaptcha"></span>
                                     <input id="yzm" value="" type="hidden" />
                                     <script type="text/javascript">
                                         function showcaptcha() {
@@ -1502,28 +1483,11 @@
             <div class="footbot">
                 <div class="footxt">
                     <p>
-                        Copyright2008-2012 nongyao001.com All Right Reserved &#160; &#160; &#160; &#160; &#160; &#160; &#160;安徽惠富强农资交易平台版权所有 &#160; &#160; 未经许可 &#160; &#160; 不得转载<br />
-                        法律顾问：河南英泰律师事务所 &#160; &#160; &#160; 网站备案号：豫ICP备11024324号-1
+                        Copyright2015 CCLSOL All Right Reserved &#160; &#160; &#160; &#160; &#160; &#160; &#160;安徽惠富强农资交易平台版权所有 &#160; &#160; 未经许可 &#160; &#160; 不得转载<br />
+                        地址：安徽省合肥市长江西路130号 &#160; &#160; &#160; 网站备案号：皖ICP备11024324号-1
                         <br />
                         全国咨询热线：400-6076-152 &#160; &#160; &#160; 客服热线：0371-86551595
-                        <script language="javascript" type="text/javascript" src="js/5648954.js"></script>
-                        <noscript>
-                            <a rel="nofollow" href="#" target="_blank">
-                                <img alt="我要啦免费统计" src="#" style="border: none" /></a>
-                        </noscript>
-                        <script type="text/javascript">
-                            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-                            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Face758f02209d32293d522bb5a5a117b' type='text/javascript'%3E%3C/script%3E"));
-                        </script>
                     </p>
-                </div>
-                <!--footxt end-->
-                <div class="footpic">
-                    <img style="cursor: hand;" alt="51啦统计" onclick="window.open('http://www.51honest.org/wscredit/detail.credit?action=preLevel&credcode=NO.20000030555','','resizable=yes,location=yes,toolbar=yes,menubar=yes,scrollbars=yes,status=yes')" src="img/80.gif" border="0" complete="complete" align="top" />
-                    <script src="js/anquan_authen_124x47.js"></script>
-                    <a key="52117f8a24306332d3f29ae5" logo_size="124x47" logo_type="official" href="#">
-                        <script src="js/aq_auth.js"></script>
-                    </a>
                 </div>
             </div>
             <!--footbot end-->
@@ -1645,26 +1609,6 @@
 			
 		});	
 	</script>
-	<!--  -->
-    <script type="text/javascript">
-        var destoon_userid = 0;
-        var destoon_username = '';
-        var destoon_message = 0;
-        var destoon_chat = 0;
-        var destoon_cart = substr_count(get_cookie('cart'), ',');
-        var destoon_member = '';
-        destoon_member += '<a rel="nofollow" href="http://www.nongyao001.com/member/login.php" class="dl"><img src="img/login.gif"></a><a rel="nofollow" href="#" class="zc"><img src="img/register.gif"></a> <a rel="nofollow" href="#" class="dh">帮助中心</a>';
-        $('#destoon_member').html(destoon_member);
-        $(".lazy").scrollLoading(); </script>
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "//hm.baidu.com/hm.js?5747290f521bec382e438d23a5e9564d";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-
+	
 </body>
 </html>
