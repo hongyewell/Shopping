@@ -1010,7 +1010,7 @@
             </div>
             <!--navlef_sub end-->
             <ul class="navbul">
-                <li class="navbli"><a href="goods_main.jsp">首页</a></li>
+                <li class="navbli"><a href="product_main.jsp">首页</a></li>
                 <li class="navbli"><a href="#">资讯</a></li>
                 <li class="navblion"><a href="#">产品库</a></li>
                 <li class="navbli"><a href="#">交易</a></li>
@@ -1031,8 +1031,9 @@
         <div class="sel_dloc">您现在所在的位置： <a href="#">首页</a> &raquo; <a href="#">产品库</a> &raquo; <a href="#">杀虫剂</a> &raquo; 苦参碱0.3%(水剂)新高度</div>
         <div class="sel_detl">
         <!-- 同类产品推荐 -->
-            <div id="theSame" class="sel_detlm">
-               
+            <div class="sel_detlm">
+               <h4 class="sel_detlmbt">同类产品推荐</h4>
+               	<div id="theSame" ></div>
             </div>
             <div class="sel_detlm">
                 <h4 class="sel_detlmbt">最近浏览</h4>
@@ -1496,27 +1497,28 @@
 	<!-- 同类商品推荐 -->
 	<script type="text/javascript">
 	$(function(){
-		var my_role = $('#my_role').val();//获取隐藏域中用户角色
+		var my_role = $('#my_role').val();//一定要记得写#啊，#代表id,.代表class..
 		var data = {'role': my_role};
 		$.post(contextPath+'/SameProductController',data,'json').done(function(datas){
 			datas = JSON.parse(datas);
+			var html_same ='';  //一定要写在for循环外面，否则每次循环，html_same又被清空了..
 			for(var i=0;i<datas.length;i++){
 				var product = datas[i];
-				var html_same ='';
-				html_same +='<h4 class="sel_detlmbt">同类产品推荐</h4>'
+				var pic = 'img/'+product.product_img;
+				html_same +='<div>'
 				      		+ '<ul>'
 				      		+ '<li class="sel_detlmli">'
 				      		+ '<p class="sel_detlmlimg"><a href="#">'
-				      		+ '<img src="img/1.jpg" width="160" height="160" /></a></p>'
+				      		+ '<img src='+pic+' width="160" height="160" /></a></p>'
 				      		+ '<p class="sel_detlmlip"><a href="#">名称：'+product.product_name+'</a></p>'
 				      		+ '<p class="sel_detlmlip">规格：'+product.product_standard+'</p>'
 				      		+ '<p class="sel_detlmlip">产品类型：'+product.product_type+'</p>'
 				      		+ '<p class="sel_detlmlip">厂家：'+product.product_producer+'</p>'
 				      		+ '</li>'
 				      		+ '</ul>'
+				      		+ '<div>'
 			}
-	     $('#theSame').html(html_same);
-			
+			$('#theSame').html(html_same);
 		}).fail(function(res){
 			
 		});

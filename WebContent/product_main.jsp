@@ -1240,7 +1240,7 @@
 
 				</div>
 				<ul class="navbul">
-					<li class="navblion"><a href="#">首页</a></li>
+					<li class="navblion"><a href="product_main.jsp">首页</a></li>
 					<li class="navbli"><a href="#">资讯</a></li>
 					<li class="navbli"><a href="#">产品库</a></li>
 					<li class="navbli"><a href="#">交易</a></li>
