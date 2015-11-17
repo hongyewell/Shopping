@@ -102,7 +102,7 @@
     <servlet-name>HttpServlet</servlet-name>
     <url-pattern>/HttpServlet</url-pattern>
   </servlet-mapping>
-    <servlet>
+  <servlet>
     <servlet-name>goods</servlet-name>
     <servlet-class>com.shopping.controller.GoodsListController</servlet-class>
   </servlet>
@@ -134,13 +134,22 @@
     <servlet-name>GoodsBuyController</servlet-name>
     <url-pattern>/GoodsBuyController</url-pattern>
   </servlet-mapping>
-  
-    <servlet>
+  <servlet>
     <servlet-name>MakeOrderController</servlet-name>
     <servlet-class>com.shopping.controller.MakeOrderController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>MakeOrderController</servlet-name>
     <url-pattern>/MakeOrderController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SameProductController</display-name>
+    <servlet-name>SameProductController</servlet-name>
+    <servlet-class>com.shopping.controller.SameProductController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SameProductController</servlet-name>
+    <url-pattern>/SameProductController</url-pattern>
   </servlet-mapping>
 </web-app>

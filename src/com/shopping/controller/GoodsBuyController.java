@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.shopping.pojo.Users;
+import com.shopping.pojo.User;
 import com.shopping.service.UsersService;
 
 /**
@@ -24,19 +24,19 @@ public class GoodsBuyController extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
 			throws ServletException, IOException {
 		req.setCharacterEncoding("utf-8");
-		String truename = req.getParameter("true_name");
-		String addressid = req.getParameter("address_id");
-		String addressdetail = req.getParameter("address_detail");
-		String truemobile = req.getParameter("true_mobile");
-		String truetelephone = req.getParameter("true_telephone");
+		int user_id = Integer.parseInt(req.getParameter("true_name"));
+		String user_name = req.getParameter("address_id");
+		String user_addressDetail = req.getParameter("address_detail");
+		String user_telephone = req.getParameter("true_mobile");
+		String user_role = req.getParameter("true_telephone");
+		String user_password = req.getParameter("true_telephone");
 		
-		Users users = new Users(truename, addressid, addressdetail, truemobile, truetelephone);
+		User user = new User(user_id, user_name, user_addressDetail, user_telephone, user_role, user_password);
 		
 		UsersService usersService = new UsersService();
-		usersService.addUser(users);
-		System.out.println(truename+addressid+addressdetail+truemobile+truetelephone);
+		usersService.addUser(user);
 		HttpSession session = req.getSession();
-		session.setAttribute("username", truename);
+		session.setAttribute("username", user_name);
 		resp.sendRedirect(req.getContextPath()+"/goods_makeOrder.jsp");
 	}
 

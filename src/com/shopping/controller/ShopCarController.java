@@ -6,11 +6,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
-import com.shopping.pojo.ShoppingCart;
-import com.shopping.service.GoodsService;
-import com.shopping.util.GoodsTradeWebUtils;
+import com.shopping.service.ProductService;
 
 /**
 * @className:ShopCarController.java
@@ -36,11 +33,11 @@ public class ShopCarController extends HttpServlet {
 		
 		if (id>0) {
 			//获取购物车对象
-			ShoppingCart sc = GoodsTradeWebUtils.getShoppingCart(req);
+			/*ShoppingCart sc = GoodsTradeWebUtils.getShoppingCart(req);*/
 			
 			//调用GoodsService的addToCart()方法把商品放到购物车中
-			GoodsService goodsService = new GoodsService();
-			flag = goodsService.addToCart(id,sc,buynum);
+			ProductService goodsService = new ProductService();
+		/*	flag = goodsService.addToCart(id,sc,buynum);*/
 		}
 		if (flag) {
 			resp.sendRedirect(req.getContextPath()+"/goods_shopCar.jsp");

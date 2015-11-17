@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.shopping.pojo.Users;
+import com.shopping.pojo.User;
 import com.shopping.util.DBUtil;
 
 /**
@@ -14,7 +14,7 @@ import com.shopping.util.DBUtil;
 * @author:yeye
 * @createTime:2015年10月3日 上午8:40:08
 */
-public class UsersDao {
+public class UserDao {
 	
 	/**
 	 * 添加住户信息
@@ -23,8 +23,8 @@ public class UsersDao {
 	 * @param user
 	 * @return int
 	 */
-	public int addUser(Users user){
-		String sql = "insert into goods_user values (null,?,?,?,?,?)";
+	public int addUser(User user){
+		String sql = "insert into user_info values (null,?,?,?,?,?)";
 		
 		Connection conn = DBUtil.getConn();
 		PreparedStatement pstmt = null;
@@ -32,13 +32,11 @@ public class UsersDao {
 		
 		try {
 			int res = 0;
-			
 			pstmt.setString(1, user.getUser_name());
-			pstmt.setString(2, user.getUser_addressid());
-			pstmt.setString(3, user.getUser_address_detail());
-			pstmt.setString(4, user.getUser_mobile());
-			pstmt.setString(5, user.getUser_telephone());
-			
+			pstmt.setString(2, user.getUser_addressDetail());
+			pstmt.setString(3, user.getUser_telephone());
+			pstmt.setString(4, user.getUser_role());
+			pstmt.setString(5, user.getUser_password());
 			res = pstmt.executeUpdate();
 			return res;
 		
@@ -59,8 +57,8 @@ public class UsersDao {
 	 * @param username
 	 * @return Users
 	 */
-	public Users getUserInfo(String username) {
-		String sql = "select * from goods_user where user_name = ?";
+	public User getUserInfo(String username) {
+		String sql = "select * from user_info where user_name = ?";
 		Connection conn = DBUtil.getConn();
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -69,14 +67,14 @@ public class UsersDao {
 			pstmt.setString(1, username);
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
-				Users users = new Users();
-				users.setUser_id(rs.getInt("user_id"));
-				users.setUser_name(rs.getString("user_name"));
-				users.setUser_addressid(rs.getString("user_addressid"));
-				users.setUser_address_detail(rs.getString("user_address_detail"));
-				users.setUser_mobile(rs.getString("user_mobile"));
-				users.setUser_telephone(rs.getString("user_telephone"));
-				return users;
+				User user = new User();
+				user.setUser_id(rs.getInt("user_id"));
+				user.setUser_name(rs.getString("user_name"));
+				user.setUser_addressDetail(rs.getString("user_addressDetail"));
+				user.setUser_telephone(rs.getString("user_telephone"));
+				user.setUser_role(rs.getString("user_role"));
+				user.setUser_password(rs.getString("user_password"));
+				return user;
 			}
 			else {
 				return null;
@@ -90,8 +88,8 @@ public class UsersDao {
 		return null;
 	}
 
-	public Users userLogin(String username, String password) {
-		String sql = "select * from goods_user where user_name =? and user_password = ?";
+	public User userLogin(String username, String password) {
+		String sql = "select * from user_info where user_name =? and user_password = ?";
 		Connection conn = DBUtil.getConn();
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -101,14 +99,14 @@ public class UsersDao {
 			pstmt.setString(2, password);
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
-				Users users = new Users();
-				users.setUser_id(rs.getInt("user_id"));
-				users.setUser_name(rs.getString("user_name"));
-				users.setUser_addressid(rs.getString("user_addressid"));
-				users.setUser_address_detail(rs.getString("user_address_detail"));
-				users.setUser_mobile(rs.getString("user_mobile"));
-				users.setUser_telephone(rs.getString("user_telephone"));
-				return users;
+				User user = new User();
+				user.setUser_id(rs.getInt("user_id"));
+				user.setUser_name(rs.getString("user_name"));
+				user.setUser_addressDetail(rs.getString("user_addressDetail"));
+				user.setUser_telephone(rs.getString("user_telephone"));
+				user.setUser_role(rs.getString("user_role"));
+				user.setUser_password(rs.getString("user_password"));
+				return user;
 			}
 			else {
 				return null;

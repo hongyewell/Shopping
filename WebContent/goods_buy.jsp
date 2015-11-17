@@ -1253,7 +1253,7 @@
                 </div>
                 <!--thr_scaczt2 end-->
                 <p class="thr_scaczd">
-                    <input name="submits" type="button" onclick="javascript:window.location.href='makeOrder.jsp'" class="thr_scacbtn2" /></p>
+                    <input name="submits" type="button" onclick="javascript:window.location.href='goods_makeOrder.jsp'" class="thr_scacbtn2" /></p>
             </div>
             <!--thr_scacbox end-->
             </form>       

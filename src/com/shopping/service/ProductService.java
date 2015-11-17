@@ -1,82 +1,60 @@
 package com.shopping.service;
 
 import java.util.List;
+
 import com.shopping.dao.ProductDao;
 import com.shopping.pojo.Product;
 
 /**
-* @className:ProductService.java
-* @classDescription:
-* @author:yeye
-* @createTime:2015年8月13日 下午3:15:22
-*/
+ * @className:GoodsService.java
+ * @classDescription:
+ * @author:yeye
+ * @createTime:2015年9月29日 下午3:13:06
+ */
 public class ProductService {
-	
 	private ProductDao productDao;
-	
-	public ProductService(){
+
+	public ProductService() {
 		this.productDao = new ProductDao();
 	}
 	
-	
-	
 	/**
-	 * 所有商品列表
+	 * 根据用户角色获取同类商品
 	 *
 	 * @author: yeye
-	 * @createTime: 2015年8月19日 下午7:44:14
+	 * @createTime: 2015年11月17日 下午8:31:01
 	 * @history:
+	 * @param role
 	 * @return List<Product>
 	 */
-	public List<Product>getAllProduct(){
-		return productDao.queryAllProduct();
-	}
-	
-	
-	
-	
-	/**
-	 * 感兴趣的商品列表
-	 *
-	 * @author: yeye
-	 * @createTime: 2015年8月13日 下午3:18:53
-	 * @history:
-	 * @return List<Product>
-	 */
-	public List<Product> getCareProduct(String username) {
-		return productDao.queryCareProduct(username);
+	public List<Product> getSameProducts(String role){
+		return productDao.querySameProducts(role);
 	}
 
-	
-	
 	/**
-	 * 商品详情
+	 * 根据商品类别获取商品列表
 	 *
 	 * @author: yeye
-	 * @createTime: 2015年8月17日 下午4:37:22
+	 * @createTime: 2015年9月29日 下午3:16:48
+	 * @history:
+	 * @return List<Goods>
+	 */
+	public List<Product> getAllProducts(int type) {
+		return productDao.queryAllProducts(type);
+
+	}
+
+	/**
+	 * 获取商品详情
+	 *
+	 * @author: yeye
+	 * @createTime: 2015年9月30日 下午8:00:27
 	 * @history:
 	 * @param id
-	 * @return Product
+	 * @return Goods
 	 */
-	public Product getProductDetails(int id){
-		return productDao.getDetailsById(id);
+	public Product getProductDetails(int id) {
+		return productDao.getProductDetailsById(id);
 	}
-	
-	
-	
-	
-	/**
-	 * 获取浏览前三条的记录
-	 *
-	 * @author: yeye
-	 * @createTime: 2015年8月18日 下午8:56:36
-	 * @history:
-	 * @param list
-	 * @return List<Product>
-	 */
-	public List<Product>getViewList(String list){
-		return productDao.getViewList(list); 
-	}
-	
-	
+
 }

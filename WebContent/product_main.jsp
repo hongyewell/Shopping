@@ -126,7 +126,7 @@
 			</div>
 			<div class="headtr" id="destoon_member">
 
-				<a class="dl" href="#" rel="nofollow">${username}</a> 
+				<a class="dl" href="#" rel="nofollow">${user.user_name}</a> 
 				<a class="dh" rel="nofollow">帮助中心</a>
 			</div>
 		</div>
@@ -5017,34 +5017,34 @@
 				(function(j) {
 					var data = {'type' : j};
 					var myDiv = $('#d' + j);
-					$.post(contextPath + '/goods', data, 'json').done(
+					$.post(contextPath + '/products', data, 'json').done(
 									function(datas) {
 										datas = JSON.parse(datas);
 										var html = '';
 										for (var i = 0, len = datas.length; i < len; i++) {
-											var goods = datas[i];
-											var pic = 'img/' + goods.goods_img;
-											var link = 'goods_details.jsp?id='+ goods.goods_id;
+											var products = datas[i];
+											var pic = 'img/' + products.product_img;
+											var link = 'product_detail.jsp?id='+ products.product_id;
 											html += "<li class=\"con1fl_nrli1\">"
 													+ "<div class=\"con1fl_nrli_con_box\">"
 													+ "<p>"
 													+ '<a href='+link+'>'
-													+ '<img alt='+goods.goods_name+' class=\"lazy\" src='+pic+' title='+goods.goods_name+' src='+pic+' width=\"154\" height=\"154\"/>'
+													+ '<img alt='+products.product_name+' class=\"lazy\" src='+pic+' title='+products.product_name+' src='+pic+' width=\"154\" height=\"154\"/>'
 													+ "</a>"
 													+ "</p>"
 													+ "<div class=\"con1fl_nrtxt\">"
-													+ '<p><a href=\"goods_detail.jsp\" title='+goods.goods_name+'>'
-													+ goods.goods_name
+													+ '<p><a href=\"goods_detail.jsp\" title='+products.product_name+'>'
+													+ products.product_name
 													+ '</a></p>'
 													+ '<p>'
-													+ goods.goods_standard
+													+ products.product_standard
 													+ '</p>'
 													+ '<p>'
-													+ goods.goods_producer
+													+ products.product_producer
 													+ '</p>'
 													+ "</div>"
 													+ '<div class=\"con1fl_nrli_pri_box\"><span class=\"con1fl_nrli_pri_pre\">'
-													+ goods.goods_price
+													+ products.product_price
 													+ '</span></div>'
 													+ "</div>" + "</li>";
 										}

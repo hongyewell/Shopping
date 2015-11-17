@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.google.gson.Gson;
-import com.shopping.pojo.Goods;
-import com.shopping.service.GoodsService;
+import com.shopping.pojo.Product;
+import com.shopping.service.ProductService;
 
 /**
 * @className:GoodsDetailController.java
@@ -16,7 +16,7 @@ import com.shopping.service.GoodsService;
 * @author:yeye
 * @createTime:2015年9月30日 下午8:03:43
 */
-public class GoodsDetailController extends HttpServlet {
+public class ProductDetailController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	@Override
@@ -25,9 +25,9 @@ public class GoodsDetailController extends HttpServlet {
 		
 	    resp.setCharacterEncoding("utf-8");
 		
-		GoodsService goodsService = new GoodsService();     
+		ProductService goodsService = new ProductService();     
 		Integer goods_id =Integer.parseInt(req.getParameter("id")) ;
-		Goods goodsDetail = goodsService.getGoodsDetails(goods_id);
+		Product goodsDetail = goodsService.getProductDetails(goods_id);
 		Gson gson = new Gson();
 		String goodsDetailJson = gson.toJson(goodsDetail);
 		PrintWriter out = resp.getWriter();

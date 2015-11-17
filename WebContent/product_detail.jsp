@@ -80,6 +80,7 @@
                
             </div>
             <div class="headtr" id="destoon_member"  >
+            		<a class="dl" href="#" rel="nofollow">${user.user_name}</a> 
                     <a class="dh" rel="nofollow">帮助中心</a>
 				</div>
         </div>
@@ -1029,43 +1030,9 @@
     <div id="sell">
         <div class="sel_dloc">您现在所在的位置： <a href="#">首页</a> &raquo; <a href="#">产品库</a> &raquo; <a href="#">杀虫剂</a> &raquo; 苦参碱0.3%(水剂)新高度</div>
         <div class="sel_detl">
-            <div class="sel_detlm">
-                <h4 class="sel_detlmbt">同类产品推荐</h4>
-                <ul>
-                    <li class="sel_detlmli">
-                    
-                        <p class="sel_detlmlimg"><a href="#">
-                            <img src="img/1.jpg" width="160" alt="苦参碱0.3%(水剂) 100g*40瓶/件" height="160" /></a></p>
-                        <p class="sel_detlmlip"><a href="#">名称：苦参碱0.3%(水剂)</a></p>
-                        <p class="sel_detlmlip">规格：100g*40瓶/件</p>
-                        <p class="sel_detlmlip">产品类型：杀虫剂</p>
-                        <p class="sel_detlmlip">厂家：大连奥德植保药业有限公司</p>
-                    </li>
-                    <li class="sel_detlmli">
-                        <p class="sel_detlmlimg"><a href="#">
-                            <img src="img/2.jpg" width="160" alt="苦参碱0.3%(水剂) 200ml×20瓶/件" height="160" /></a></p>
-                        <p class="sel_detlmlip"><a href="#">名称：苦参碱0.3%(水剂)</a></p>
-                        <p class="sel_detlmlip">规格：200ml×20瓶/件</p>
-                        <p class="sel_detlmlip">产品类型：杀虫剂</p>
-                        <p class="sel_detlmlip">厂家：山西德威生化有限责任公司</p>
-                    </li>
-                    <li class="sel_detlmli">
-                        <p class="sel_detlmlimg"><a href="#">
-                            <img src="img/3.jpg" width="160" alt="苦参碱0.3%(水剂) 150ml*20瓶/件" height="160" /></a></p>
-                        <p class="sel_detlmlip"><a href="#">名称：苦参碱0.3%(水剂)</a></p>
-                        <p class="sel_detlmlip">规格：150ml*20瓶/件</p>
-                        <p class="sel_detlmlip">产品类型：杀虫剂</p>
-                        <p class="sel_detlmlip">厂家：山东戴盟得生物科技有限公司</p>
-                    </li>
-                    <li class="sel_detlmli">
-                        <p class="sel_detlmlimg"><a href="#">
-                            <img src="img/4.jpg" width="160" alt="苦参碱0.3%(水剂)新高度 500ml*20瓶/件" height="160" /></a></p>
-                        <p class="sel_detlmlip"><a href="#">名称：苦参碱0.3%(水剂)新高度</a></p>
-                        <p class="sel_detlmlip">规格：500ml*20瓶/件</p>
-                        <p class="sel_detlmlip">产品类型：杀虫剂</p>
-                        <p class="sel_detlmlip">厂家：陕西国丰化工有限公司</p>
-                    </li>
-                </ul>
+        <!-- 同类产品推荐 -->
+            <div id="theSame" class="sel_detlm">
+               
             </div>
             <div class="sel_detlm">
                 <h4 class="sel_detlmbt">最近浏览</h4>
@@ -1516,7 +1483,8 @@
     </script>
  
     <!--获取到goods_main.jsp请求的参数作为隐藏域-->
-	<input type="hidden" id="goodsId" value="<%=request.getParameter("id") %>" /> 
+	<input type="hidden" id="productId" value="<%=request.getParameter("id") %>" /> 
+	<input type="hidden" id="my_role" value="${user.user_role}">
 	
     <!-- js请求数据，渲染到html页面 -->
     <script type="text/javascript" src="${pageContext.request.contextPath}/resources/scripts/jquery-1.8.3.min.js"></script>
@@ -1525,41 +1493,72 @@
 		var contextPath = '${pageContext.request.contextPath}';
 	</script>
 	
+	<!-- 同类商品推荐 -->
+	<script type="text/javascript">
+	$(function(){
+		var my_role = $('#my_role').val();//获取隐藏域中用户角色
+		var data = {'role': my_role};
+		$.post(contextPath+'/SameProductController',data,'json').done(function(datas){
+			datas = JSON.parse(datas);
+			for(var i=0;i<datas.length;i++){
+				var product = datas[i];
+				var html_same ='';
+				html_same +='<h4 class="sel_detlmbt">同类产品推荐</h4>'
+				      		+ '<ul>'
+				      		+ '<li class="sel_detlmli">'
+				      		+ '<p class="sel_detlmlimg"><a href="#">'
+				      		+ '<img src="img/1.jpg" width="160" height="160" /></a></p>'
+				      		+ '<p class="sel_detlmlip"><a href="#">名称：'+product.product_name+'</a></p>'
+				      		+ '<p class="sel_detlmlip">规格：'+product.product_standard+'</p>'
+				      		+ '<p class="sel_detlmlip">产品类型：'+product.product_type+'</p>'
+				      		+ '<p class="sel_detlmlip">厂家：'+product.product_producer+'</p>'
+				      		+ '</li>'
+				      		+ '</ul>'
+			}
+	     $('#theSame').html(html_same);
+			
+		}).fail(function(res){
+			
+		});
+	});
+	</script>
+	
+	<!-- 获取商品详情 -->
 	<script type="text/javascript">
 		$(function() {
-			var id = $('#goodsId').val();	// 获取隐藏域中的值
+			var id = $('#productId').val();	// 获取隐藏域中的值
 			var data = {'id': id};
-			$.post(contextPath+'/goodsDetail',data, 'json').done(function(datas) {
+			$.post(contextPath+'/productDetail',data, 'json').done(function(datas) {
 				datas = JSON.parse(datas);
 				  var html = '';
 				  var html2 = ''; 
 				  var html3 = '';
 				  var html4 = '';
-				  var goods = datas;
-				  var pic = 'img/'+goods.goods_img;
-				  var price = goods.goods_price;
+				  var product = datas;
+				  var pic = 'img/'+product.product_img;
+				  var price = product.product_price;
 				
 					html += "<div>"
 					        + "<p>"
-					        + '<img src='+pic+'  alt='+goods.goods_name+' width=\"350\" height=\"372\">'
+					        + '<img src='+pic+'  alt='+product.product_name+' width=\"350\" height=\"372\">'
 					        + "</p>"
 					        +'<p class="sel_detrtlp">收藏次数(0)</p>'
 					        + "</div> "	         
 					$('#div_img').html(html);
 					        
 					  html2 += "<div>"
-						     + '<h4 class="sel_detrtrbt">产品编号：'+goods.goods_number+'</h4>'
+						     + '<h4 class="sel_detrtrbt">产品编号：'+product.product_number+'</h4>'
 					         + '<ul>'
-					         + '<li class="sel_detrtrli">产品类型：'+goods.goods_type+'</li>'
-					         + '<li class="sel_detrtrli">农药登记证：'+goods.goods_registration+'</li>'
+					         + '<li class="sel_detrtrli">产品类型：'+product.product_type+'</li>'
+					         + '<li class="sel_detrtrli">农药登记证：'+product.product_registration+'</li>'
 					         + '<li class="sel_detrtrli" title=""</li>'
-					         + '<li class="sel_detrtrli">产品规格：'+goods.goods_standard+'</li>'
-					         + '<li class="sel_detrtrli">证件到期时间：'+goods.goods_deadline+'</li>'
+					         + '<li class="sel_detrtrli">产品规格：'+product.product_standard+'</li>'
+					         + '<li class="sel_detrtrli">证件到期时间：'+product.product_deadline+'</li>'
 					         + '<li class="sel_detrtrli">诚信度：<img src="img/x2.gif" /></li>'
-					         + '<li class="sel_detrtrli">发布时间：'+goods.goods_publish+'</li>'
+					         + '<li class="sel_detrtrli">发布时间：'+product.product_publish+'</li>'
 					         + '<p class="clear"></p>'
 					         + '</ul>'
-					         + '<p class="sel_detrtrp">生产厂家：'+goods.goods_producer+'</p>'
+					         + '<p class="sel_detrtrp">生产厂家：'+product.product_producer+'</p>'
 					         + "</div>"
 					  $('#div_info').html(html2); 
 					         
@@ -1567,10 +1566,10 @@
 					          + '产品价格： <b class="colored">￥'+price+'元/件</b>'
 					          + '</p>'
 					          + '<p class="sel_detrtrsjp">'
-					          + '防治对象： <span class="colored">'+goods.goods_prevention+'</span>'
+					          + '防治对象： <span class="colored">'+product.product_prevention+'</span>'
 					          + '</p>'
 					          + '<p class="sel_detrtrsjp">'
-					          + '推荐起发数量： <span class="colored">'+goods.goods_minNum+'件</span>'
+					          + '推荐起发数量： <span class="colored">'+product.product_minNum+'件</span>'
 					          + '</p>'
 					          + '<form id="cartsub" action="#" method="post">'
 					          + '<div class="sel_detrtrsjp">'
@@ -1592,7 +1591,7 @@
 					          + '<a href="#" class="sel_detrtra">'
 					          + '<img src="img/sell_icongm.gif" onclick="" title="购买" />'
 					          + '</a>'
-					          + '<a onclick="addCart('+goods.goods_id+')" class="sel_detrtra">'
+					          + '<a onclick="addCart('+product.product_id+')" class="sel_detrtra">'
 					          + '<img src="img/sell_iconjr.jpg" title="加入购物车" />'
 					          + '</a>'
 					          + '<a href="#" class="sel_detrtra">'
@@ -1601,7 +1600,7 @@
 		          $('#div_buy').html(html3); 
 					          
 					          
-					html4 += '<div>'+goods.goods_instructions+ '</div>'
+					html4 += '<div>'+product.product_instructions+ '</div>'
 					$('#div_help').html(html4);
 	
 			}).fail(function(res) {

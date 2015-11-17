@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.google.gson.Gson;
-import com.shopping.pojo.Users;
+import com.shopping.pojo.User;
 import com.shopping.service.UsersService;
 
 /**
@@ -29,7 +29,7 @@ public class MakeOrderController extends HttpServlet{
 		
 		UsersService usersService = new UsersService();  
 		String username =req.getParameter("username") ;
-		Users usersInfo = usersService.getUserInfo(username);
+		User usersInfo = usersService.getUserInfo(username);
 		
 		Gson gson = new Gson();
 		String userInfoJson = gson.toJson(usersInfo);
