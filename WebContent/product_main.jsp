@@ -1339,7 +1339,7 @@
 										href="#" rel="nofollow" class="toprdl_lisp"></a>
 								</div>
 								<a href="#" style="float: left; color: #E4C471;">忘记密码？</a> <a
-									href="#" style="float: right; color: #E4C471;">免费注册</a> 
+									href="user_register.jsp" style="float: right; color: #E4C471;">免费注册</a> 
 									<input name="submit" type="submit" value="&nbsp;" class="toprdl_lbtn" style="margin-left: 100px;">
 							</form>
 						</div>
@@ -2680,10 +2680,10 @@
 			<div class="clear"></div>
 		</div>
 
-		<div class="con1f_7 F-7" id="con1f_7">
-			<div class="con1fl_7">
-				<h2 class="con7fl_bt">
-					<span class="con1fl_btsp7">4F其他</span>
+		<div class="con1f_4 F-4" id="con1f_4">
+			<div class="con1fl_4">
+				<h2 class="con4fl_bt">
+					<span class="con1fl_btsp4">4F其他</span>
 				</h2>
 				<div class="con1fl_nav">
 					<div class="con1fl_nav_con">
@@ -4803,7 +4803,7 @@
 				<p class="clear"></p>
 			</ul>
 			<ul class="conlink_nr">
-				<li class="conlink_nrli"><a href="http://www.nongyao001.com">安徽惠富强农资交易平台</a></li>
+				<li class="conlink_nrli"><a href="#">惠富强农资交易平台</a></li>
 				<li class="conlink_nrli"><a href="http://huafei.kuotu.com">化肥价格行情</a></li>
 				<li class="conlink_nrli"><a href="http://www.nongcun5.com">中国农村网</a></li>
 				<li class="conlink_nrli"><a href="http://www.cnoa360.com">有机农业网</a></li>
@@ -4986,15 +4986,15 @@
 			<a rel="nofollow" href="javascript:scrollTocom(2205)">3F
 				&nbsp;除草剂</a>
 		</div>
-		<div class="gd_menu_8" id="con1f_7">
-			<a rel="nofollow" href="javascript:scrollTocom(4490)">4F &nbsp;其它</a>
+		<div class="gd_menu_5" id="con1f_7">
+			<a rel="nofollow" href="javascript:scrollTocom(2785)">4F &nbsp;其它</a>
 		</div>
-		<div class="gd_menu_9" id="con1f_8">
-			<a rel="nofollow" href="javascript:scrollTocom(5050)">5F
+		<div class="gd_menu_6" id="con1f_5">
+			<a rel="nofollow" href="javascript:scrollTocom(3360)">5F
 				&nbsp;购买记录</a>
 		</div>
-		<div class="gd_menu_10" id="con1f_9">
-			<a rel="nofollow" href="javascript:scrollTocom(5480)">6F
+		<div class="gd_menu_7" id="con1f_6">
+			<a rel="nofollow" href="javascript:scrollTocom(3780)">6F
 				&nbsp;病虫害</a>
 		</div>
 		<div class="gd_menu_13" id="back2top">

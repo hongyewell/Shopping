@@ -4,7 +4,7 @@
 <html>
 <head>
     <script type="text/javascript" src="js/fromapporpc.js"></script>
-    <script type="text/javascript">uaredirect("http://www.nongyao001.com/member/register.php?uagent=touch");</script>
+    <script type="text/javascript">uaredirect("#script>
     <meta http-equiv="Content-Type" content="text/html;charset=gbk" />
     <title>会员注册_安徽惠富强农资交易平台</title>
     <link href="css/trade.css" rel="stylesheet" />
@@ -1059,7 +1059,7 @@
             </div>
             <!--navlef_sub end-->
             <ul class="navbul">
-                <li class="navblion"><a href="#">首页</a>
+                <li class="navblion"><a href="product_main.jsp">首页</a>
                 </li>
                 <li class="navbli"><a href="#">资讯</a></li>
                 <li class="navbli"><a href="#">产品库</a></li>
@@ -1079,8 +1079,8 @@
     <div id="register">
         <div class="regis_box">
             <ul class="regis_btul">
-                <li class="regis_btlion"><a rel="nofollow" href="register.php">个人会员注册</a></li>
-                <li class="regis_btli"><a rel="nofollow" href="/dailishang/">申请成为代理商</a></li>
+                <li class="regis_btlion"><a rel="nofollow" href="#">个人会员注册</a></li>
+                <li class="regis_btli"><a rel="nofollow" href="#">申请成为代理商</a></li>
             </ul>
             <div class="regis_det">
                 <div class="regis_dnr">
@@ -1174,7 +1174,7 @@
 
                                     </span>
                                     <script type="text/javascript">var area_title = new Array; area_title[1] = '请选择'; var area_extend = new Array; area_extend[1] = 'class="regis_dfinp2"'; var area_areaid = new Array; area_areaid[1] = '0'; var area_deep = new Array; area_deep[1] = '0';</script>
-                                   <!--  <script type="text/javascript" src="js/area.js"></script> -->
+                                   <script type="text/javascript" src="js/area.js"></script>
                                     <span id="dareaid" class="f_red"></span></td>
                                 <td>
                                     <p class="regis_dfsp">地区须选到县或区</p>
@@ -1212,7 +1212,7 @@
                                                 Dd('captchapng').style.display = '';
                                             }
                                             if (Dd('captchapng').src.indexOf('loading.gif') != -1) {
-                                                Dd('captchapng').src = 'http://www.nongyao001.com/api/captcha.png.php?action=image';
+                                                Dd('captchapng').src = '#captcha.png.php?action=image';
                                             }
                                             if (Dd('captcha').value == '点击显示验证码') {
                                                 Dd('captcha').value = '';
@@ -1220,7 +1220,7 @@
                                             Dd('captcha').className = '';
                                         }
                                         function reloadcaptcha() {
-                                            Dd('captchapng').src = 'http://www.nongyao001.com/api/captcha.png.php?action=image&refresh=' + Math.random();
+                                            Dd('captchapng').src = '#captcha.png.php?action=image&refresh=' + Math.random();
                                             Dd('ccaptcha').innerHTML = '';
                                             Dd('captcha').value = '';
                                         }
@@ -1231,11 +1231,11 @@
                                         function _checkcaptcha() {
                                             if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
                                                 if (xmlHttp.responseText == '0') {
-                                                    Dd('ccaptcha').innerHTML = '&nbsp;&nbsp;<img src="http://www.nongyao001.com/skin/nongyao001/image/check_right.gif" align="absmiddle"/>';
+                                                    Dd('ccaptcha').innerHTML = '&nbsp;&nbsp;<img src="#>';
                                                     Dd('yzm').value = 'pass';
                                                 } else {
                                                     Dd('captcha').focus;
-                                                    Dd('ccaptcha').innerHTML = '&nbsp;&nbsp;<img src="http://www.nongyao001.com/skin/nongyao001/image/check_error.gif" align="absmiddle"/>';
+                                                    Dd('ccaptcha').innerHTML = '&nbsp;&nbsp;<img src="#>';
                                                     Dd('yzm').value = 'error';
                                                 }
                                             }
@@ -1467,7 +1467,7 @@
             }
         }
         function err_msg(str, id) {
-            Dd('d' + id).innerHTML = '<img src="http://www.nongyao001.com/skin/nongyao001/image/check_' + (str ? 'error' : 'right') + '.gif" align="absmiddle"/> ' + str;
+            Dd('d' + id).innerHTML = '<img src="#> ' + str;
         }
         function validate(type) {
             if (type == 'cpassword') {
@@ -1683,7 +1683,7 @@
         var destoon_chat = 0;
         var destoon_cart = substr_count(get_cookie('cart'), ',');
         var destoon_member = '';
-        destoon_member += '<a rel="nofollow" href="http://www.nongyao001.com/member/logout.php" class="dh">退出登录</a> <a rel="nofollow"  class="dh" href="http://www.nongyao001.com/member/">个人中心</a> <a rel="nofollow" href="http://www.nongyao001.com/help/" class="dh">帮助中心</a>';
+        destoon_member += '<a rel="nofollow" href="#a>';
         $('#destoon_member').html(destoon_member);
         window.setInterval('PushNew()', 60 * 1000); $(".lazy").scrollLoading(); $('#back2top').click(function () {
             $("html, body").animate({ scrollTop: 0 }, 200);

@@ -1297,7 +1297,7 @@
         var destoon_chat = 0;
         var destoon_cart = substr_count(get_cookie('cart'), ',');
         var destoon_member = '';
-        destoon_member += '<a rel="nofollow" href="http://www.nongyao001.com/member/logout.php" class="dh">退出登录</a> <a rel="nofollow"  class="dh" href="http://www.nongyao001.com/member/">个人中心</a> <a rel="nofollow" href="http://www.nongyao001.com/help/" class="dh">帮助中心</a>';
+        destoon_member += '<a rel="nofollow" href="#a>';
         $('#destoon_member').html(destoon_member);
         window.setInterval('PushNew()', 60 * 1000); $(".lazy").scrollLoading(); $('#back2top').click(function () {
             $("html, body").animate({ scrollTop: 0 }, 200);

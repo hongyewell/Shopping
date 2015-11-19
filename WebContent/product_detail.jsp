@@ -1284,7 +1284,7 @@
                                                 Dd('captchapng').style.display = '';
                                             }
                                             if (Dd('captchapng').src.indexOf('loading.gif') != -1) {
-                                                Dd('captchapng').src = 'http://www.nongyao001.com/api/captcha.png.php?action=image';
+                                                Dd('captchapng').src = '#captcha.png.php?action=image';
                                             }
                                             if (Dd('captcha').value == '点击显示验证码') {
                                                 Dd('captcha').value = '';
@@ -1292,7 +1292,7 @@
                                             Dd('captcha').className = '';
                                         }
                                         function reloadcaptcha() {
-                                            Dd('captchapng').src = 'http://www.nongyao001.com/api/captcha.png.php?action=image&refresh=' + Math.random();
+                                            Dd('captchapng').src = '#captcha.png.php?action=image&refresh=' + Math.random();
                                             Dd('ccaptcha').innerHTML = '';
                                             Dd('captcha').value = '';
                                         }

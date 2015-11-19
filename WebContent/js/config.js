@@ -1,1 +1,1 @@
-if(window.location.href.indexOf("nongyao001.com") != -1){document.domain = "nongyao001.com";}var DTPath = "http://www.nongyao001.com/";var SKPath = "http://www.nongyao001.com/skin/nongyao001/";var MEPath = "http://www.nongyao001.com/member/";var EXPath = "http://www.nongyao001.com/extend/";var CKDomain = ".nongyao001.com";var CKPath = "/";var CKPrex = "DfL_";
+if(window.location.href.indexOf("nongyao001.com") != -1){document.domain = "nongyao001.com";}var DTPath = "#";var CKPrex = "DfL_";
