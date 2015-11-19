@@ -17,7 +17,7 @@ import com.shopping.util.DBUtil;
 */
 public class ProductDao {
 	/**
-	 * 根据用户角色筛选前三个相似商品
+	 * 根据用户id筛选前三个相似商品
 	 *
 	 * @author: yeye
 	 * @createTime: 2015年11月17日 下午8:29:10
@@ -25,14 +25,14 @@ public class ProductDao {
 	 * @param role
 	 * @return List<Product>
 	 */
-	public List<Product> querySameProducts(String role){
-		String sql = "select  * from product_info where product_prevention = ? limit 3;";
+	public List<Product> querySameProducts(int id){
+		String sql = "select  * from product_info where product_prevention = (select user_role from user_role where user_id = ?)limit 3;";
 		Connection conn = DBUtil.getConn();
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
 			pstmt = DBUtil.getPStmt(conn, sql);
-			pstmt.setString(1, role);
+			pstmt.setInt(1, id);
 			rs = pstmt.executeQuery();
 			
 			List<Product> products = new ArrayList<Product>();

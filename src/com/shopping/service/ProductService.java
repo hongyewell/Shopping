@@ -27,8 +27,8 @@ public class ProductService {
 	 * @param role
 	 * @return List<Product>
 	 */
-	public List<Product> getSameProducts(String role){
-		return productDao.querySameProducts(role);
+	public List<Product> getSameProducts(int id){
+		return productDao.querySameProducts(id);
 	}
 
 	/**

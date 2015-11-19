@@ -104,7 +104,6 @@ public class UserDao {
 				user.setUser_name(rs.getString("user_name"));
 				user.setUser_addressDetail(rs.getString("user_addressDetail"));
 				user.setUser_telephone(rs.getString("user_telephone"));
-				user.setUser_role(rs.getString("user_role"));
 				user.setUser_password(rs.getString("user_password"));
 				return user;
 			}

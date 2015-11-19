@@ -1485,7 +1485,7 @@
  
     <!--获取到goods_main.jsp请求的参数作为隐藏域-->
 	<input type="hidden" id="productId" value="<%=request.getParameter("id") %>" /> 
-	<input type="hidden" id="my_role" value="${user.user_role}">
+	<input type="hidden" id="my_id" value="${user.user_id}">
 	
     <!-- js请求数据，渲染到html页面 -->
     <script type="text/javascript" src="${pageContext.request.contextPath}/resources/scripts/jquery-1.8.3.min.js"></script>
@@ -1497,8 +1497,8 @@
 	<!-- 同类商品推荐 -->
 	<script type="text/javascript">
 	$(function(){
-		var my_role = $('#my_role').val();//一定要记得写#啊，#代表id,.代表class..
-		var data = {'role': my_role};
+		var my_id = $('#my_id').val();//一定要记得写#啊，#代表id,.代表class..
+		var data = {'id': my_id};
 		$.post(contextPath+'/SameProductController',data,'json').done(function(datas){
 			datas = JSON.parse(datas);
 			var html_same ='';  //一定要写在for循环外面，否则每次循环，html_same又被清空了..

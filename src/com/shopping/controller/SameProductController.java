@@ -21,11 +21,11 @@ public class SameProductController extends HttpServlet {
 			throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
-		String role = request.getParameter("role");
-		System.out.println(role);
+		int id = Integer.parseInt(request.getParameter("id"));
+		System.out.println(id);
 		ProductService  productService = new ProductService();
 		List<Product> products = new ArrayList<Product>(); 
-		products = productService.getSameProducts(role);
+		products = productService.getSameProducts(id);
 		Gson gson = new Gson();
 		String productJson = gson.toJson(products);
 		PrintWriter out = response.getWriter();

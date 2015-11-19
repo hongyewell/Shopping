@@ -1,4 +1,4 @@
-﻿@charset "gb2312";
+@charset "gb2312";
 #login_box{background:#f5f5f5;padding-bottom:40px;}
 .login_det{margin:0 auto;width:950px;}
 .login_dbg{float:left;padding:46px 0 0 0;}
@@ -20,7 +20,7 @@
 .login_dsp5{padding:20px 0 15px 30px;line-height:25px;}
 .login_dsinp{width:263px;height:38px;padding-left:5px;border:1px solid #d7d7d7;}
 .login_dsche{margin:0 6px 0 10px;}
-.login_dsbtn{background:url(../image/login_btn.gif) no-repeat;width:114px;height:35px;cursor:pointer;border:none;margin-right:12px;}
+.login_dsbtn{background:url(../img/login_btn.gif) no-repeat;width:114px;height:35px;cursor:pointer;border:none;margin-right:12px;}
 .login_dstit{font-size:14px;}
 #login_tc{margin:0 auto;width:437px;height:314px;margin-top:50px;border:1px solid #cecece;}
 .login_tnav{height:37px;background:#f8f8f8;border-bottom:1px solid #cecece;padding:8px 17px 0 13px;}
@@ -48,7 +48,7 @@
 .regis_dform{width:800px;}
 .regis_dform td{padding:10px 15px;}
 .regis_dform td.bt{width:140px;text-align:right;}
-.regis_dform td.mid{width:285px;}
+.regis_dform td.mid{width:260px;}
 .regis_dfinp, .regis_dfinp2{height:25px;border:1px solid #b1b1b1;padding-left:5px;}
 .regis_dfinp{width:248px;}
 .regis_dfinp2{width:81px;padding:0px;}

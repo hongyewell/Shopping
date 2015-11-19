@@ -1,10 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<script type="text/javascript"
-	src="js/fromapporpc.js"></script>
+<script type="text/javascript" src="js/fromapporpc.js"></script>
 <script type="text/javascript">
 	uaredirect("#");
 </script>
@@ -17,8 +15,6 @@
 		return true;
 	}
 </script>
-<script type="text/javascript"
-	src="http://www.nongyao001.com/lang/zh-cn/lang.js"></script>
 <script type="text/javascript" src="js/config.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
@@ -28,7 +24,7 @@
 <script src="js/jquery-settab.js" type="text/javascript"></script>
 <script type="text/javascript">
 	var searchid = 5;
-	window["siteaburl"] = 'http://www.nongyao001.com/';
+	window["siteaburl"] = '';
 </script>
 <script>
 	$(function() {
@@ -132,7 +128,7 @@
 			</div>
 			<div class="shop">
 				<span class="shsp"><a rel="nofollow"
-					href="http://www.nongyao001.com/sell/cart.php">去购物车结算</a></span><b
+					href="#">去购物车结算</a></span><b
 					class="shb" id="tipscartnum"></b><img alt="购物车"
 					src="img/arrow_r.png" />
 			</div>
@@ -1804,41 +1800,28 @@
 				<ul class="login_dtul">
 					<li class="login_dtlion"><a href="javascript:void(0)">会员登录</a></li>
 				</ul>
-				<form method="post" action="login.php" onsubmit="return Dcheck();">
-					<input name="forward" type="hidden" id="forward"
-						value="#">
-						<div class="login_dsm">
-							<div class="login-con">
-								<div class="login_dsp">
-									用户名： <input name="username" type="text" id="username"
-										value="why1993" class="login_dsinp">
-								</div>
-								<div class="login_dsp">
-									密&nbsp;&nbsp;&nbsp;码： <input name="password" type="password"
-										class="login_dsinp" id="password" value="" /> &nbsp;
-<!-- 									<script type="text/javascript"
-										src="js/keyboard.js"></script>
- -->									<!-- <img src="http://www.nongyao001.com/file/image/keyboard.gif"
-										title="密码键盘" alt="" class="c_p"
-										onclick="_k('password', 'kb', this);" /> -->
-									<div id="kb" style="display: none;"></div>
-									<!-- <script type="text/javascript"
-										src="js/md5.js"></script> -->
-									<script type="text/javascript">
-										init_md5();
-									</script>
-								</div>
-								<div class="login_dsp2">
-									<input type="checkbox" class="login_dsche" name="cookietime"
-										value="1" id="cookietime" /> <label for="cookietime">记住我</label>
-									<input type="checkbox" name="goto" value="1"
-										class="login_dsche" id="goto" /> <label for="goto">进入商务室</label>
-								</div>
-								<div class="login_dsp3">
-									<input name="submit" type="submit" value="&nbsp;"
-										class="login_dsbtn"> <a rel="nofollow" href="send.php">忘记密码？</a>|
-										<a href="register.php" rel="nofollow" class="colorblue">注册新账号</a>
-								</div>
+				<form method="post" action="<%=request.getContextPath()%>/login">
+					<input name="forward" type="hidden" id="forward" value="#">
+					<div class="login_dsm">
+						<div class="login-con">
+							<div class="login_dsp">
+								用户名： <input name="username" type="text" id="username"  class="login_dsinp">
+							</div>
+							<div class="login_dsp">
+								密&nbsp;&nbsp;&nbsp;码： <input name="password" type="password"
+									class="login_dsinp" id="password" value="" /> &nbsp;
+							</div>
+							<div class="login_dsp2">
+								<input type="checkbox" class="login_dsche" name="cookietime"
+									value="1" id="cookietime" /> <label for="cookietime">记住我</label>
+								<input type="checkbox" name="goto" value="1" class="login_dsche"
+									id="goto" /> <label for="goto">进入商务室</label>
+							</div>
+							<div class="login_dsp3">
+								<input name="submit" type="submit" value="&nbsp;"
+									class="login_dsbtn"> <a rel="nofollow" href="send.php">忘记密码？</a>|
+								<a href="register.php" rel="nofollow" class="colorblue">注册新账号</a>
+							</div>
 				</form>
 				<div class="login_dsp4"></div>
 
