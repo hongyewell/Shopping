@@ -1177,35 +1177,39 @@
 			<div class="regis_det">
 				<div class="regis_dnr">
 					<h3 class="regis_dtit">账户信息</h3>
-					<form action="register.php" method="post"
-						onsubmit="return check();">
-						<input name="action" type="hidden" id="action"
-							value="218266807cdf1bb1e51675a71f196675" /> <input
-							name="forward" type="hidden" />
+					<!-- form表单提交注册信息 -->
+					<form action="#" method="post">
+						<input name="action" type="hidden" id="action" value="218266807cdf1bb1e51675a71f196675" /> 
+						<input name="forward" type="hidden" />
 						<table cellspacing="0" cellpadding="0" class="regis_dform">
 							<tr>
-								<td class="bt">会&nbsp;&nbsp;员&nbsp;&nbsp;名 <span
-									class="colored">*</span></td>
-								<td class="mid"><input type="text" class="regis_dfinp"
-									name="post[username]" id="username"
-									onblur="validator('username');" autocomplete="off" /> <span
-									id="dusername" class="f_red"></span></td>
+								<td class="bt">
+									会&nbsp;&nbsp;员&nbsp;&nbsp;名 
+									<span class="colored">*</span>
+								</td>
+								<td class="mid">
+									<input type="text" class="regis_dfinp" name="username" id="username" onblur="validator('username');" autocomplete="off" /> 
+									<span id="dusername" class="f_red"></span>
+								</td>
 								<td><p class="regis_dfsp">会员名不能是中文或特殊字符</p></td>
 							</tr>
 							<tr>
 								<td class="bt">登录密码 <span class="colored">*</span></td>
-								<td class="mid"><input name="post[password]" id="password"
-									onblur="validator('password');" autocomplete="off"
-									type="password" class="regis_dfinp" /> <span id="dpassword"
-									class="f_red"></span></td>
+								<td class="mid">
+									<input name="post[password]" id="password" onblur="validator('password');" autocomplete="off" type="password" class="regis_dfinp" /> 
+									<span id="dpassword" class="f_red"></span>
+								</td>
 								<td><p class="regis_dfsp">仅支持字母和数字，请妥善保存密码</p></td>
 							</tr>
 							<tr>
-								<td class="bt">重复输入密码 <span class="colored">*</span></td>
-								<td class="mid"><input type="password" class="regis_dfinp"
-									name="post[cpassword]" id="cpassword"
-									onblur="validate('cpassword');" /> <span id="dcpassword"
-									class="f_red"></span></td>
+								<td class="bt">
+									重复输入密码 
+										<span class="colored">*</span>
+								</td>
+								<td class="mid">
+									<input type="password" class="regis_dfinp" name="post[cpassword]" id="cpassword" onblur="validate('cpassword');" /> 
+									<span id="dcpassword" class="f_red"></span>
+								</td>
 								<td><p class="regis_dfsp">再次输入密码</p></td>
 							</tr>
 						</table>
@@ -1213,10 +1217,10 @@
 						<table cellspacing="0" cellpadding="0" class="regis_dform">
 							<tr>
 								<td class="bt">真实姓名 <span class="colored">*</span></td>
-								<td class="mid"><input name="post[truename]" id="truename"
-									onblur="validate('truename');" type="text" class="regis_dfinp" />
-									<span id="dtruename" class="f_red"></span></td>
-
+								<td class="mid">
+									<input name="post[truename]" id="truename" onblur="validate('truename');" type="text" class="regis_dfinp" />
+									<span id="dtruename" class="f_red"></span>
+								</td>
 							</tr>
 							<tr>
 								<td class="bt">所在地区 <span class="colored">*</span></td>
@@ -1227,23 +1231,44 @@
 							</tr>
 							<tr>
 								<td class="bt">详细地址 <span class="colored">*</span></td>
-								<td class="mid"><input name="post[address]" id="address"
-									type="text" class="regis_dfinp" /> <span id="daddress"
-									class="f_red"></span></td>
+								<td class="mid">
+									<input name="post[address]" id="address" type="text" class="regis_dfinp" /> 
+									<span id="daddress" class="f_red"></span>
+								</td>
 								<td><p class="regis_dfsp">填写具体街道地址，无需再填写省市县（区）</p></td>
 							</tr>
 							<tr>
-								<td class="bt">手&nbsp;&nbsp;机&nbsp;&nbsp;号 <span
-									class="colored">*</span></td>
-								<td class="mid"><input name="post[mobile]" id="mobile"
-									onblur="validate('mobile');" type="text" class="regis_dfinp" />
-									<span id="dmobile" class="f_red"></span></td>
+								<td class="bt">
+									手&nbsp;&nbsp;机&nbsp;&nbsp;号 <span class="colored">*</span>
+								</td>
+								<td class="mid">
+									<input name="post[mobile]" id="mobile" onblur="validate('mobile');" type="text" class="regis_dfinp" />
+									<span id="dmobile" class="f_red"></span>
+								</td>
 								<td><p class="regis_dfsp">为了到货无误，请填写您的手机号码</p></td>
 							</tr>
 							<tr>
+								<td class="bt">
+									关&nbsp;&nbsp;注&nbsp;&nbsp;的 
+									<span class="colored">*</span>
+								</td>
+								<td class="mid">
+								<script type="text/javascript">
+								function test(){
+									var obj = document.getElementById("province");
+									var index = obj.selectedIndex;
+									var text = obj.options[index].text; 
+									alert(text);
+								}
+								</script>
+								</td>
+								<td><p class="regis_dfsp">请选择您最关注的</p></td>
+							</tr>
+							<tr>
 								<td class="bt">&nbsp;</td>
-								<td colspan="2"><input name="submit" type="submit"
-									value="同意以下条款，并提交注册" class="regis_dfbtn" /></td>
+								<td colspan="2">
+									<input name="submit" type="submit" value="同意以下条款，并提交注册" class="regis_dfbtn" />
+								</td>
 							</tr>
 						</table>
 					</form>
@@ -1449,11 +1474,11 @@
 				return false;
 			}
 			f = 'password';
-			if (Dd(f).value.length < 6) {
+			/* if (Dd(f).value.length < 6) {
 				err_msg('请填写会员登录密码', f);
 				Df(f);
 				return false;
-			}
+			} */
 			if (Dd('d' + f).innerHTML.indexOf('error') != -1) {
 				Df(f);
 				return false;

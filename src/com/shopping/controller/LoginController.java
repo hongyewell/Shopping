@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.shopping.pojo.User;
-import com.shopping.service.UsersService;
+import com.shopping.service.UserService;
 
 /**
  * 用户登录
@@ -27,7 +27,7 @@ public class LoginController extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
 			throws ServletException, IOException {
 	    req.setCharacterEncoding("utf-8");
-		UsersService userService = new UsersService();
+		UserService userService = new UserService();
 		
 		String username = req.getParameter("username");
 		String password = req.getParameter("password");

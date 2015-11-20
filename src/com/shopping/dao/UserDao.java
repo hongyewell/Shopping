@@ -24,7 +24,7 @@ public class UserDao {
 	 * @return int
 	 */
 	public int addUser(User user){
-		String sql = "insert into user_info values (null,?,?,?,?,?)";
+		String sql = "insert into user_info values (null,?,?,?,?,?,?,?)";
 		
 		Connection conn = DBUtil.getConn();
 		PreparedStatement pstmt = null;
@@ -35,8 +35,10 @@ public class UserDao {
 			pstmt.setString(1, user.getUser_name());
 			pstmt.setString(2, user.getUser_addressDetail());
 			pstmt.setString(3, user.getUser_telephone());
-			pstmt.setString(4, user.getUser_role());
-			pstmt.setString(5, user.getUser_password());
+			pstmt.setString(4, user.getUser_password());
+			pstmt.setString(5, user.getUser_province());
+			pstmt.setString(6, user.getUser_city());
+			pstmt.setString(7, user.getUser_area());
 			res = pstmt.executeUpdate();
 			return res;
 		

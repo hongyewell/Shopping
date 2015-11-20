@@ -9,10 +9,10 @@ import com.shopping.pojo.User;
  * @author:yeye
  * @createTime:2015年10月3日 上午9:01:17
  */
-public class UsersService {
+public class UserService {
 	private UserDao userDao;
 
-	public UsersService() {
+	public UserService() {
 		this.userDao = new UserDao();
 	}
 

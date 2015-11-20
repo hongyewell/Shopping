@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import com.google.gson.Gson;
 import com.shopping.pojo.User;
-import com.shopping.service.UsersService;
+import com.shopping.service.UserService;
 
 /**
 * @className:MakeOrderController.java
@@ -27,7 +27,7 @@ public class MakeOrderController extends HttpServlet{
 		
 	    resp.setCharacterEncoding("utf-8");
 		
-		UsersService usersService = new UsersService();  
+		UserService usersService = new UserService();  
 		String username =req.getParameter("username") ;
 		User usersInfo = usersService.getUserInfo(username);
 		

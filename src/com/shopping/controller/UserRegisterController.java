@@ -7,7 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.shopping.service.UsersService;
+import com.shopping.pojo.User;
+import com.shopping.service.UserService;
 
 /**
 * @className:UserRegisterController.java
@@ -18,25 +19,29 @@ import com.shopping.service.UsersService;
 public class UserRegisterController extends HttpServlet {
 
 	private static final long serialVersionUID = 1530760271665679896L;
-	
-	private UsersService userService;
-	
-	/**
-	 * 初始化userService
-	 */
 	@Override
-	public void init() throws ServletException {
-		this.userService = new UsersService();
-	}
-	
-	/**
-	 * 处理用户请求
-	 */
-	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
 			throws ServletException, IOException {
 		// 处理表单数据乱码
 				req.setCharacterEncoding("utf-8");
+			    String username="小红叶子";
+			    String addressDetail="霍山路130号";
+			    String telephone = "18255172917";
+			    String password ="123";
+			    String province ="安徽省";
+			    String city ="合肥市";
+			    String area ="蜀山区";
+			    UserService userService = new UserService();
+			    User user = new User();
+			    user.setUser_name(username);
+			    user.setUser_addressDetail(addressDetail);
+			    user.setUser_telephone(telephone);
+			    user.setUser_password(password);
+			    user.setUser_province(province);
+			    user.setUser_city(city);
+			    user.setUser_area(area);
+			    userService.addUser(user);
+			    
 				
 				/*// 获取表单数据
 				String username = req.getParameter("username");

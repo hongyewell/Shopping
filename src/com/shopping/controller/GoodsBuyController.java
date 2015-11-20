@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.shopping.pojo.User;
-import com.shopping.service.UsersService;
+import com.shopping.service.UserService;
 
 /**
 * @className:GoodsBuyController.java
@@ -33,7 +33,7 @@ public class GoodsBuyController extends HttpServlet {
 		
 		User user = new User(user_id, user_name, user_addressDetail, user_telephone, user_role, user_password);
 		
-		UsersService usersService = new UsersService();
+		UserService usersService = new UserService();
 		usersService.addUser(user);
 		HttpSession session = req.getSession();
 		session.setAttribute("username", user_name);
